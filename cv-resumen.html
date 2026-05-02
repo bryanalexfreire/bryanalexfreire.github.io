@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV Resumen — Bryan Alexander Freire Chamorro</title>
+  <meta name="description" content="CV resumen en formato ATS friendly (texto limpio y legible por sistemas de reclutamiento)." />
+  <style>
+    @page {
+      size: A4;
+      margin: 2.54cm 2.54cm 2.54cm 2.54cm; /* 1 inch all sides — Harvard/ATS standard */
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Calibri', Arial, Helvetica, sans-serif;
+      color: #000;
+      background: #f5f5f5;
+      line-height: 1.4;
+      font-size: 10.5pt;
+    }
+
+    .actions {
+      max-width: 900px;
+      margin: 16px auto 0;
+      padding: 0 12px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      border: 1px solid #cfd4dc;
+      background: #fff;
+      color: #111;
+      text-decoration: none;
+      border-radius: 6px;
+      padding: 8px 12px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .btn.primary {
+      background: #111;
+      border-color: #111;
+      color: #fff;
+    }
+
+    .print-hint {
+      width: 100%;
+      margin: 2px 0 0;
+      color: #555;
+      font-size: 12px;
+    }
+
+    .sheet {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 10px auto;
+      background: #fff;
+      border: 1px solid #d9d9d9;
+      box-shadow: 0 8px 24px rgba(0,0,0,.08);
+      padding: 2.54cm;
+    }
+
+    h1 {
+      margin: 0 0 4px;
+      font-size: 18pt;
+      line-height: 1.15;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+
+    .contact {
+      font-size: 10pt;
+      margin-bottom: 10px;
+      border-bottom: 1.5px solid #000;
+      padding-bottom: 6px;
+    }
+
+    .contact div { margin-bottom: 2px; }
+
+    h2 {
+      font-size: 11pt;
+      margin: 14px 0 5px;
+      padding-bottom: 3px;
+      border-bottom: 1.5px solid #000;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    p { margin: 0 0 6px; }
+
+    ul {
+      margin: 4px 0 6px 18px;
+      padding: 0;
+    }
+
+    li { margin-bottom: 4px; }
+
+    .job {
+      margin-bottom: 10px;
+      break-inside: avoid;
+    }
+
+    .job-title {
+      font-weight: 700;
+      font-size: 10.5pt;
+      margin: 0;
+    }
+
+    .job-meta {
+      margin: 1px 0 4px;
+      font-size: 10pt;
+      color: #333;
+    }
+
+    .muted { color: #333; }
+
+    .small { font-size: 10pt; }
+
+    .keywords {
+      margin-top: 2px;
+      font-size: 10pt;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        padding: 0;
+      }
+      .actions {
+        display: none !important;
+      }
+      .sheet {
+        width: auto;
+        min-height: auto;
+        margin: 0;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+      }
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+    }
+
+    @media (max-width: 920px) {
+      .sheet {
+        width: calc(100% - 16px);
+        min-height: auto;
+        padding: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="actions">
+    <button class="btn primary" onclick="window.print()">Descargar PDF</button>
+    <a class="btn" href="index.html">Volver al sitio</a>
+    <p class="print-hint">Tip: en la ventana de impresión abre "Más opciones" y desactiva "Encabezados y pies de página" para que no aparezcan título ni URL en el PDF.</p>
+  </div>
+
+  <main class="sheet" role="main">
+    <header>
+      <h1>Bryan Alexander Freire Chamorro</h1>
+
+      <div class="contact">
+        <div><strong>Email:</strong> bryanalexfreire@gmail.com</div>
+        <div><strong>Teléfono:</strong> (+593) 984 291 545</div>
+        <div><strong>Ubicación:</strong> Quito, Ecuador</div>
+        <div><strong>LinkedIn:</strong> https://www.linkedin.com/in/bryanalexanderfreire/</div>
+        <div><strong>GitHub:</strong> https://github.com/bryanalexfreire</div>
+        <div><strong>Cv Digital:</strong> <a href="https://bryanalexfreire.github.io/" target="_blank" rel="noopener noreferrer">https://bryanalexfreire.github.io/</a></div>
+      </div>
+    </header>
+
+    <section>
+      <h2>Resumen Profesional</h2>
+      <p>Ingeniero de Calidad de Software especializado en QA Automation, API Testing y Performance Testing en banca y fintech. Diseño estrategias de Risk-Based Testing integradas a CI/CD para acelerar entregas con calidad. Resultados recientes: reducción de 35% en defectos post-release y reducción del ciclo de validación de APIs de 60 a ~30 minutos.</p>
+    </section>
+
+    <section>
+      <h2>Experiencia Profesional</h2>
+
+      <article class="job">
+        <p class="job-title">Ingeniero de Calidad (QA Engineer) — Banco Pichincha S.A</p>
+        <p class="job-meta muted">Ene. 2026 – Presente | Quito, Ecuador</p>
+        <ul>
+          <li>Lideré iniciativas de QA Automation y API Testing con Karate, SerenityBDD y Java, elevando cobertura funcional y de regresión en +30%.</li>
+          <li>Implementé Performance Testing con K6 en flujos de alto volumen, reduciendo tiempos de respuesta en validaciones clave en 25%.</li>
+          <li>Integré controles de calidad en pipelines CI/CD con Azure DevOps y Git, disminuyendo defectos post-release en 35%.</li>
+          <li>Optimicé ejecución de suites API de +60 a ~30 minutos con priorización por criticidad, acelerando feedback técnico en 50%.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <p class="job-title">QA Engineer — NTT DATA</p>
+        <p class="job-meta muted">Sep. 2023 – Ene. 2026 | Quito, Ecuador</p>
+        <ul>
+          <li>Diseñé estrategias de pruebas funcionales, automatizadas y performance con SerenityBDD, Karate y K6 (+28% cobertura de requerimientos).</li>
+          <li>Automaticé escenarios críticos de negocio en APIs y flujos E2E (-35% tiempo de regresión por release).</li>
+          <li>Validé servicios REST con Postman y PostgreSQL, reduciendo defectos UAT transaccionales en 25%.</li>
+          <li>Estandaricé planificación, estimación y gestión de riesgos en marcos ágiles (+20% predictibilidad de entregas).</li>
+        </ul>
+      </article>
+      <p class="small"><strong>Experiencia adicional:</strong> QA Intern (Bayteq), Pasante QA (Zurich Insurance), IT Intern (Banco Guayaquil), IT Intern (Halliburton).</p>
+    </section>
+    <section>
+      <h2>Habilidades Técnicas</h2>
+      <p><strong>Automatización y Frameworks:</strong> Selenium, SerenityBDD, Karate DSL, Cucumber, TestNG, Pytest, BDD, Screenplay.</p>
+      <p><strong>Lenguajes:</strong> Java, JavaScript, Python, SQL.</p>
+      <p><strong>APIs y Backend:</strong> REST APIs, Postman, validación API, contract testing.</p>
+      <p><strong>Performance:</strong> K6, JMeter.</p>
+      <p><strong>Bases de datos:</strong> PostgreSQL, Redis.</p>
+      <p><strong>DevOps/CI-CD:</strong> Azure DevOps, Git, Maven, Gradle, Jenkins, SonarCloud.</p>
+      <p><strong>Gestión y calidad:</strong> Jira, X-Ray, Zephyr, Confluence, Scrum, Kanban, TDD, ATDD, testing basado en riesgo.</p>
+    </section>
+
+    <section>
+      <h2>Proyectos Destacados</h2>
+      <ul>
+        <li><strong>Transporte Metro de Quito:</strong> Automatización de validaciones API/E2E para la recarga de Tarjeta Ciudad y tarjeta prepago del Metro de Quito a través de los canales digitales del banco, y su conciliación en plataforma de alta transaccionalidad. Resultado: +30% cobertura en escenarios críticos y reducción de 40% en defectos tardíos.</li>
+        <li><strong>Cuentas de inversión y ahorro:</strong> Optimización de estrategia API y performance integrada a CI/CD en operaciones bancarias de alto volumen. Resultado: -35% defectos post-release y reducción de ciclo API de 60 a ~30 minutos.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Certificaciones Principales</h2>
+      <ul>
+        <li>ISTQB® Certified Tester, Foundation Level - Agile Tester (2014) — abr. 2025</li>
+        <li>CSM - SCRUM MASTER — nov. 2024</li>
+        <li>ISTQB® Foundation Level 4.0 — jun. 2024</li>
+        <li>Stratio Generative AI Data Governance — jul. 2025</li>
+        <li>Stratio Generative AI Data Fabric Basics — jul. 2025</li>
+        <li>Stratio Generative AI Data Processing — jul. 2025</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Educación e Idiomas</h2>
+      <p><strong>Educación:</strong> Ingeniería en Sistemas de Información (Universidad Tecnológica Israel, Oct. 2021 – Sep. 2024). Full Stack Bootcamp (Kruger Instituto Xponencial, Jul. 2024 – Nov. 2024).</p>
+      <p><strong>Idiomas:</strong> Español (nativo), Inglés (intermedio con suficiencia laboral).</p>
+    </section>
+
+    <section>
+      <h2>Palabras Clave ATS</h2>
+      <p class="keywords">QA Automation, API Testing, Performance Testing, Risk-Based Testing, Quality Engineering, Selenium, SerenityBDD, Karate DSL, Cucumber, K6, JMeter, CI/CD, Azure DevOps, Jira, X-Ray, SQL, PostgreSQL, Scrum, Kanban.</p>
+    </section>
+  </main>
+</body>
+</html>

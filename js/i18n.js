@@ -159,6 +159,18 @@
       'cert.btn.download': '📥 Descargar PDF',
       'cert.pending': 'Certificado pendiente de digitalización',
       'section.courses': 'Formación continua',
+      'section.education': 'Educación',
+      'cert.label': 'Certificación',
+      'cert.issued': 'Emitido',
+      'cert.issuer': 'Emisor',
+      'cert.status': 'Estado',
+      'date.incourse': 'En curso',
+      'date.jul2025': 'jul. 2025',
+      'date.abr2025': 'abr. 2025',
+      'date.mar2025': 'mar. 2025',
+      'date.feb2025': 'feb. 2025',
+      'date.nov2024': 'nov. 2024',
+      'date.jun2024': 'jun. 2024',
       'footer.text': 'CV para uso profesional'
     },
     en: {
@@ -320,6 +332,18 @@
       'cert.btn.verified': '🔗 View verified credential',
       'cert.btn.download': '📥 Download PDF',
       'section.courses': 'Continuing Education',
+      'section.education': 'Education',
+      'cert.label': 'Certification',
+      'cert.issued': 'Issued',
+      'cert.issuer': 'Issuer',
+      'cert.status': 'Status',
+      'date.incourse': 'In progress',
+      'date.jul2025': 'Jul. 2025',
+      'date.abr2025': 'Apr. 2025',
+      'date.mar2025': 'Mar. 2025',
+      'date.feb2025': 'Feb. 2025',
+      'date.nov2024': 'Nov. 2024',
+      'date.jun2024': 'Jun. 2024',
       'footer.text': 'CV for professional use'
     }
   };

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PLAN DE CONOCIMIENTO | Carrera en Quality Engineering</title>
+  <meta name="description" content="Plan de carrera paso a paso para Quality Engineering: de Junior a Chapter Lead." />
+  <link rel="stylesheet" href="assets/css/plan-conocimiento.css" />
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <div class="hero__content">
+      <p class="eyebrow">PLAN DE CONOCIMIENTO</p>
+      <h1>Ruta de Carrera en Quality Engineering</h1>
+      <p class="subtitle">Guía práctica y progresiva para crecer desde un perfil Junior hasta Chapter Lead en ingeniería de calidad.</p>
+      <a class="cta" href="#etapas">Explorar etapas</a>
+    </div>
+  </header>
+
+  <nav class="top-nav" aria-label="Navegación principal">
+    <a href="#inicio">Inicio</a>
+    <a href="#etapas">Etapas</a>
+    <a href="#junior">Junior</a>
+    <a href="#semi-senior">Semi Senior</a>
+    <a href="#senior">Senior</a>
+    <a href="#staff">Staff / Principal</a>
+    <a href="#lead">Lead</a>
+    <a href="#chapter-lead">Chapter Lead</a>
+  </nav>
+
+  <main>
+    <section class="section" id="etapas">
+      <h2>Etapas de crecimiento profesional</h2>
+      <p>Este plan está organizado por niveles. Cada etapa incluye qué aprender, cómo mejorar, qué responsabilidades asumir y qué criterios cumplir para avanzar.</p>
+      <ol class="timeline">
+        <li>Junior Quality Engineer</li>
+        <li>Semi Senior Quality Engineer</li>
+        <li>Senior Quality Engineer</li>
+        <li>Staff / Principal Quality Engineer</li>
+        <li>Quality Engineering Lead</li>
+        <li>Chapter Lead de Quality Engineering</li>
+      </ol>
+    </section>
+
+    <section class="stage" id="junior">
+      <h3>1) Junior Quality Engineer</h3>
+      <p><strong>Resumen del rol:</strong> Ejecuta pruebas funcionales guiadas, documenta defectos con claridad y aprende los fundamentos del ciclo de calidad.</p>
+      <ul>
+        <li><strong>Habilidades técnicas núcleo:</strong> fundamentos de SDLC/STLC, SQL básico, HTTP, uso de Jira/Xray.</li>
+        <li><strong>Prácticas de calidad:</strong> diseño de casos de prueba, trazabilidad requisito-prueba-defecto.</li>
+        <li><strong>Estrategia de testing:</strong> smoke, regresión, pruebas exploratorias y de aceptación.</li>
+        <li><strong>Automatización:</strong> primeros scripts UI/API (Playwright, Cypress o Postman/Newman).</li>
+        <li><strong>CI/CD y tooling:</strong> Git básico, ejecución de suites en pipelines existentes.</li>
+        <li><strong>Métricas y gobierno:</strong> severidad/prioridad, tasa de defectos reabiertos, cobertura de casos.</li>
+        <li><strong>Colaboración y comunicación:</strong> reportes diarios claros, feedback temprano al equipo.</li>
+        <li><strong>Liderazgo esperado:</strong> ownership de historias de baja complejidad.</li>
+        <li><strong>Proyectos sugeridos:</strong> checklist de regresión para un módulo crítico y smoke suite API.</li>
+        <li><strong>Criterio para avanzar:</strong> ejecución consistente, defectos bien documentados y autonomía inicial.</li>
+      </ul>
+      <p class="next-step"><strong>Siguiente paso práctico:</strong> automatizar 10 escenarios críticos y presentarlos en una retrospectiva.</p>
+    </section>
+
+    <section class="stage" id="semi-senior">
+      <h3>2) Semi Senior Quality Engineer</h3>
+      <p><strong>Resumen del rol:</strong> Diseña pruebas de forma más autónoma, mejora suites automatizadas y participa en decisiones de calidad del sprint.</p>
+      <ul>
+        <li><strong>Habilidades técnicas núcleo:</strong> testing de APIs REST, bases de datos relacionales/no relacionales, mocking.</li>
+        <li><strong>Prácticas de calidad:</strong> risk-based testing, análisis de impacto, refactor de casos redundantes.</li>
+        <li><strong>Estrategia de testing:</strong> pirámide de pruebas, shift-left, criterios de entrada/salida.</li>
+        <li><strong>Automatización:</strong> framework mantenible con buenas prácticas (Page Object/Screenplay), integración en CI.</li>
+        <li><strong>CI/CD y tooling:</strong> pipelines con stages de calidad, reportes de resultados automáticos.</li>
+        <li><strong>Métricas y gobierno:</strong> flaky tests, tiempo de ejecución, defect leakage por release.</li>
+        <li><strong>Colaboración y comunicación:</strong> trabajo cercano con Dev/PO/UX para prevenir defectos.</li>
+        <li><strong>Liderazgo esperado:</strong> mentoría técnica a perfiles junior.</li>
+        <li><strong>Proyectos sugeridos:</strong> suite de regresión API+UI con datos de prueba versionados.</li>
+        <li><strong>Criterio para avanzar:</strong> estabilidad en automatización, análisis de riesgo confiable y mentoría efectiva.</li>
+      </ul>
+      <p class="next-step"><strong>Siguiente paso práctico:</strong> definir y medir un objetivo trimestral de reducción de defectos escapados.</p>
+    </section>
+
+    <section class="stage" id="senior">
+      <h3>3) Senior Quality Engineer</h3>
+      <p><strong>Resumen del rol:</strong> Define estrategia de calidad a nivel de producto/equipo y habilita decisiones basadas en evidencia.</p>
+      <ul>
+        <li><strong>Habilidades técnicas núcleo:</strong> arquitectura de sistemas, patrones de integración, observabilidad aplicada a QA.</li>
+        <li><strong>Prácticas de calidad:</strong> calidad por diseño, definición de quality gates, revisión de requisitos no funcionales.</li>
+        <li><strong>Estrategia de testing:</strong> estrategia integral (funcional, integración, performance, seguridad).</li>
+        <li><strong>Automatización:</strong> orquestación multi-capa y reducción de deuda técnica en frameworks de pruebas.</li>
+        <li><strong>CI/CD y tooling:</strong> quality gates con cobertura, estático, performance baseline y reportes ejecutivos.</li>
+        <li><strong>Métricas y gobierno:</strong> DRE, MTTR de incidentes de calidad, tendencia de defectos por dominio.</li>
+        <li><strong>Colaboración y comunicación:</strong> facilita decisiones entre equipos, comunica riesgos y trade-offs.</li>
+        <li><strong>Liderazgo esperado:</strong> liderazgo técnico transversal sin autoridad formal.</li>
+        <li><strong>Proyectos sugeridos:</strong> rediseño de estrategia de pruebas para un dominio con alta criticidad.</li>
+        <li><strong>Criterio para avanzar:</strong> impacto medible en calidad de negocio y mejora sostenida del flujo de entrega.</li>
+      </ul>
+      <p class="next-step"><strong>Siguiente paso práctico:</strong> crear un dashboard ejecutivo de calidad y usarlo en planning/release.</p>
+    </section>
+
+    <section class="stage" id="staff">
+      <h3>4) Staff / Principal Quality Engineer</h3>
+      <p><strong>Resumen del rol:</strong> Establece estándares organizacionales, guía decisiones técnicas complejas y escala prácticas de calidad.</p>
+      <ul>
+        <li><strong>Habilidades técnicas núcleo:</strong> diseño de plataformas de testing, contratos entre servicios, calidad en arquitecturas distribuidas.</li>
+        <li><strong>Prácticas de calidad:</strong> governance por dominio, políticas de calidad reutilizables, auditorías internas.</li>
+        <li><strong>Estrategia de testing:</strong> estrategia multi-producto con enfoque en resiliencia y costo-eficiencia.</li>
+        <li><strong>Automatización:</strong> habilitar frameworks compartidos y componentes reutilizables para equipos.</li>
+        <li><strong>CI/CD y tooling:</strong> estandarización de plantillas de pipeline y quality scorecards.</li>
+        <li><strong>Métricas y gobierno:</strong> KPIs organizacionales (escape rate, predictibilidad, riesgo residual).</li>
+        <li><strong>Colaboración y comunicación:</strong> influencia con arquitectura, seguridad, plataforma y liderazgo ejecutivo.</li>
+        <li><strong>Liderazgo esperado:</strong> referente técnico de la disciplina a nivel organización.</li>
+        <li><strong>Proyectos sugeridos:</strong> framework corporativo de pruebas de contrato y performance.</li>
+        <li><strong>Criterio para avanzar:</strong> adopción amplia de estándares y mejora sistémica comprobable.</li>
+      </ul>
+      <p class="next-step"><strong>Siguiente paso práctico:</strong> diseñar un roadmap anual de madurez de calidad por dominios.</p>
+    </section>
+
+    <section class="stage" id="lead">
+      <h3>5) Quality Engineering Lead</h3>
+      <p><strong>Resumen del rol:</strong> Coordina personas y estrategia técnica, priorizando resultados de negocio y excelencia de entrega.</p>
+      <ul>
+        <li><strong>Habilidades técnicas núcleo:</strong> toma de decisiones de arquitectura de calidad y priorización técnica.</li>
+        <li><strong>Prácticas de calidad:</strong> estandarización operativa, definición de políticas por riesgo.</li>
+        <li><strong>Estrategia de testing:</strong> alineación entre objetivos de producto, riesgos y capacidad de equipos.</li>
+        <li><strong>Automatización:</strong> planes de escalado, presupuesto técnico y mejora de productividad.</li>
+        <li><strong>CI/CD y tooling:</strong> métricas de flujo de entrega (lead time, failure rate, recovery).</li>
+        <li><strong>Métricas y gobierno:</strong> acuerdos de calidad con stakeholders y revisión periódica de KPIs.</li>
+        <li><strong>Colaboración y comunicación:</strong> negociación con producto, ingeniería y negocio.</li>
+        <li><strong>Liderazgo esperado:</strong> gestión de desempeño, coaching y desarrollo de carrera del equipo.</li>
+        <li><strong>Proyectos sugeridos:</strong> plan semestral de transformación QA para varios squads.</li>
+        <li><strong>Criterio para avanzar:</strong> equipos más autónomos, métricas estables y cultura de calidad consolidada.</li>
+      </ul>
+      <p class="next-step"><strong>Siguiente paso práctico:</strong> implementar una cadencia mensual de revisión de riesgos y calidad.</p>
+    </section>
+
+    <section class="stage" id="chapter-lead">
+      <h3>6) Chapter Lead de Quality Engineering</h3>
+      <p><strong>Resumen del rol:</strong> Lidera la disciplina de QA a escala organizacional, definiendo visión, talento, estándares y evolución del chapter.</p>
+      <ul>
+        <li><strong>Habilidades técnicas núcleo:</strong> estrategia tecnológica para calidad a 12-24 meses.</li>
+        <li><strong>Prácticas de calidad:</strong> modelo de madurez, comunidades de práctica, lineamientos corporativos.</li>
+        <li><strong>Estrategia de testing:</strong> gobierno integral de calidad por portafolio y criticidad de negocio.</li>
+        <li><strong>Automatización:</strong> inversión estratégica en plataformas, tooling y aceleradores internos.</li>
+        <li><strong>CI/CD y tooling:</strong> arquitectura de pipelines estándar con guardrails de calidad y seguridad.</li>
+        <li><strong>Métricas y gobierno:</strong> OKRs de capítulo, benchmarking interno/externo, gestión de riesgos globales.</li>
+        <li><strong>Colaboración y comunicación:</strong> storytelling ejecutivo, alineación con dirección y otras chapters.</li>
+        <li><strong>Liderazgo esperado:</strong> planificación de talento, succession plan, mentoring de leads.</li>
+        <li><strong>Proyectos sugeridos:</strong> programa anual de excelencia en calidad y certificación interna.</li>
+        <li><strong>Criterio de consolidación:</strong> capítulo autosostenible, impacto de negocio visible y evolución continua.</li>
+      </ul>
+      <p class="next-step"><strong>Siguiente paso práctico:</strong> publicar un marco de competencias oficial del chapter y medir adopción trimestral.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>PLAN DE CONOCIMIENTO · Sitio estático en español para plan de carrera de Quality Engineering.</p>
+  </footer>
+</body>
+</html>

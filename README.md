@@ -1,59 +1,41 @@
-﻿# CV Profesional - Bryan Alexander Freire Chamorro
+# PLAN DE CONOCIMIENTO
 
-Proyecto de portafolio/CV construido con HTML, CSS y JavaScript vanilla.
+Sitio web estático en español que presenta un plan de carrera para profesionales de **Quality Engineering**, desde **Junior** hasta **Chapter Lead**.
 
-## Estructura vigente
+## Objetivo
+
+Proveer una guía paso a paso con:
+
+- resumen de cada rol
+- habilidades técnicas y de automatización
+- prácticas de calidad y estrategia de testing
+- conocimientos de CI/CD y tooling
+- métricas y gobierno de calidad
+- colaboración, comunicación y liderazgo
+- proyectos sugeridos y criterios para avanzar
+
+## Estructura principal
 
 ```text
 .
-├── index.html
-├── certificados.html
-├── cv-resumen.html
-├── cv-resumen-en.html
+├── plan-de-conocimiento.html
 ├── assets/
-│   ├── css/
-│   │   └── styles.css
-│   ├── docs/
-│   │   └── certificados/
-│   └── js/
-│       └── theme.js
-├── js/
-│   ├── i18n.js
-│   └── certificados.js
+│   └── css/
+│       └── plan-conocimiento.css
 └── README.md
 ```
 
-## Arquitectura
+## Uso local
 
-El proyecto fue depurado para dejar unicamente el runtime activo:
+1. Abre `plan-de-conocimiento.html` en tu navegador.
+2. Navega por las secciones usando el menú superior.
 
-- [index.html](index.html)
-- [certificados.html](certificados.html)
-- [cv-resumen.html](cv-resumen.html)
-- [cv-resumen-en.html](cv-resumen-en.html)
-- [assets/css/styles.css](assets/css/styles.css)
-- [assets/docs/certificados](assets/docs/certificados)
-- [assets/js/theme.js](assets/js/theme.js)
-- [js/i18n.js](js/i18n.js)
-- [js/certificados.js](js/certificados.js)
+No se requieren dependencias ni proceso de build.
 
-## Uso
+## Publicación estática
 
-1. Abre [index.html](index.html) en el navegador.
-2. Usa los botones superiores para cambiar idioma y tema.
-3. Usa "Descargar CV rapido" para abrir [cv-resumen.html](cv-resumen.html) (español) o [cv-resumen-en.html](cv-resumen-en.html) (inglés).
-4. Abre [certificados.html](certificados.html) para ver la galeria.
+Este contenido está listo para publicarse como sitio estático (por ejemplo, GitHub Pages u otro hosting estático).
 
-## Mantenimiento
+## Limitación del entorno de ejecución
 
-- Edita contenido del CV directamente en [index.html](index.html)
-- Edita resúmenes en [cv-resumen.html](cv-resumen.html) (español) y [cv-resumen-en.html](cv-resumen-en.html) (inglés)
-- Edita traducciones en [js/i18n.js](js/i18n.js)
-- Edita la galeria en [certificados.html](certificados.html)
-- Ajusta estilos en [assets/css/styles.css](assets/css/styles.css)
-
-## Tecnologias
-
-- HTML5 semantico
-- CSS3 con variables de tema
-- JavaScript vanilla para interactividad
+Se implementó el sitio completo dentro de este repositorio porque el entorno de ejecución actual no permite crear directamente un repositorio nuevo y privado con el nombre exacto **`PLAN DE CONOCIMIENTO`**.

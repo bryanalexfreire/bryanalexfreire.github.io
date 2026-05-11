@@ -1,59 +1,56 @@
-﻿# CV Profesional - Bryan Alexander Freire Chamorro
+# PLAN DE CONOCIMIENTO
 
-Proyecto de portafolio/CV construido con HTML, CSS y JavaScript vanilla.
+Sitio web estático en español con una ruta profesional para **Quality Engineering** desde nivel **Junior** hasta **Chapter Lead**.
 
-## Estructura vigente
+## Objetivo
+
+Ofrecer una guía paso a paso sobre qué aprender, practicar y demostrar en cada etapa de carrera para crecer con foco en calidad, automatización y liderazgo técnico.
+
+## Etapas incluidas
+
+1. Junior QA Engineer
+2. Semi Senior QA Engineer
+3. Senior QA Engineer
+4. QA Lead
+5. Chapter Lead de Quality Engineering
+
+Cada etapa incluye:
+
+- resumen del rol
+- habilidades técnicas clave
+- prácticas de calidad a reforzar
+- estrategia de testing
+- automatización
+- CI/CD y tooling
+- métricas y gobierno de calidad
+- colaboración y comunicación
+- liderazgo
+- proyectos o ejercicios sugeridos
+- criterios para avanzar al siguiente nivel
+
+## Estructura
 
 ```text
 .
 ├── index.html
-├── certificados.html
-├── cv-resumen.html
-├── cv-resumen-en.html
 ├── assets/
-│   ├── css/
-│   │   └── styles.css
-│   ├── docs/
-│   │   └── certificados/
-│   └── js/
-│       └── theme.js
-├── js/
-│   ├── i18n.js
-│   └── certificados.js
+│   └── css/
+│       ├── plan-conocimiento.css
+│       └── styles.css
 └── README.md
 ```
 
-## Arquitectura
+> El repositorio contiene otros archivos históricos del portafolio original que se mantienen para no romper compatibilidad.
 
-El proyecto fue depurado para dejar unicamente el runtime activo:
+## Uso local
 
-- [index.html](index.html)
-- [certificados.html](certificados.html)
-- [cv-resumen.html](cv-resumen.html)
-- [cv-resumen-en.html](cv-resumen-en.html)
-- [assets/css/styles.css](assets/css/styles.css)
-- [assets/docs/certificados](assets/docs/certificados)
-- [assets/js/theme.js](assets/js/theme.js)
-- [js/i18n.js](js/i18n.js)
-- [js/certificados.js](js/certificados.js)
+Como es un sitio estático, no requiere instalación de dependencias ni proceso de build:
 
-## Uso
+1. Clona el repositorio.
+2. Abre `index.html` en tu navegador.
+3. Navega por las secciones desde el menú superior.
 
-1. Abre [index.html](index.html) en el navegador.
-2. Usa los botones superiores para cambiar idioma y tema.
-3. Usa "Descargar CV rapido" para abrir [cv-resumen.html](cv-resumen.html) (español) o [cv-resumen-en.html](cv-resumen-en.html) (inglés).
-4. Abre [certificados.html](certificados.html) para ver la galeria.
+## Personalización rápida
 
-## Mantenimiento
-
-- Edita contenido del CV directamente en [index.html](index.html)
-- Edita resúmenes en [cv-resumen.html](cv-resumen.html) (español) y [cv-resumen-en.html](cv-resumen-en.html) (inglés)
-- Edita traducciones en [js/i18n.js](js/i18n.js)
-- Edita la galeria en [certificados.html](certificados.html)
-- Ajusta estilos en [assets/css/styles.css](assets/css/styles.css)
-
-## Tecnologias
-
-- HTML5 semantico
-- CSS3 con variables de tema
-- JavaScript vanilla para interactividad
+- Contenido y secciones: `index.html`
+- Estilos y responsive: `assets/css/plan-conocimiento.css`

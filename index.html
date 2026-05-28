@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <!-- ====== METADATOS BÁSICOS ====== -->
@@ -45,10 +45,10 @@
   <!-- ====== SELECTOR DE IDIOMA Y TEMA ====== -->
   <div class="language-switcher">
     <!-- Idioma -->
-    <button class="lang-btn active" data-lang="es" aria-label="Cambiar a Español">
+    <button class="lang-btn" data-lang="es" aria-label="Cambiar a Español">
       <span data-i18n="lang.spanish">Español</span>
     </button>
-    <button class="lang-btn" data-lang="en" aria-label="Switch to English">
+    <button class="lang-btn active" data-lang="en" aria-label="Switch to English">
       <span data-i18n="lang.english">English</span>
     </button>
 
@@ -78,13 +78,14 @@
         <!-- CAMBIAR: Rol objetivo -->
         <p class="role" data-i18n="header.role">Senior Quality Engineer | QA Automation & API Testing | Risk-Based Validation | Technical Leadership | ISTQB® | CSM®</p>
         <div class="hero-actions" aria-label="Acciones principales">
-          <a class="btn btn-primary" href="cv-resumen.html" target="_blank" rel="noopener noreferrer" data-i18n="hero.cta.download" data-lang-href-es="cv-resumen.html" data-lang-href-en="cv-resumen-en.html">📄 Descargar CV rápido</a>
-          <a class="btn btn-outline" href="https://www.linkedin.com/in/bryanalexanderfreire/" target="_blank" rel="noopener noreferrer" data-i18n="hero.cta.linkedin">💬 Contactar por LinkedIn</a>
+          <a class="btn btn-primary" href="cv-resumen-en.html" target="_blank" rel="noopener noreferrer" data-i18n="hero.cta.download" data-lang-href-es="cv-resumen.html" data-lang-href-en="cv-resumen-en.html"></a>
+          <a class="btn btn-outline" href="https://www.linkedin.com/in/bryanalexanderfreire/" target="_blank" rel="noopener noreferrer" data-i18n="hero.cta.linkedin">💬 Connect on LinkedIn</a>
+          <a class="btn btn-outline" href="mailto:bryanalexfreire@gmail.com" data-i18n="hero.cta.email">✉️ Book a call</a>
         </div>
-        <ul class="hero-metrics" aria-label="Métricas ejecutivas de impacto">
-          <li data-i18n="hero.metric1">-35% defectos post-release</li>
-          <li data-i18n="hero.metric2">-50% tiempo de feedback técnico</li>
-          <li data-i18n="hero.metric3">+30% cobertura funcional y regresión</li>
+        <ul class="hero-metrics" aria-label="Executive impact metrics">
+          <li data-i18n="hero.metric1">-35% post-release defects</li>
+          <li data-i18n="hero.metric2">-50% technical feedback time</li>
+          <li data-i18n="hero.metric3">+30% functional & regression coverage</li>
         </ul>
       </div>
 
@@ -109,13 +110,13 @@
     <!-- ====== PERFIL PROFESIONAL ====== -->
     <section class="section">
       <h2 data-i18n="section.summary">Perfil Profesional</h2>
-      <p data-i18n="summary.text">
-        Ingeniero de Calidad de Software especializado en QA Automation, API Testing y Performance Testing en banca y fintech.
-        Diseño estrategias de Risk-Based Testing integradas a CI/CD para acelerar entregas con calidad.
-        Logré reducir en 35% los defectos post-release y recortar de 60 a ~30 minutos los ciclos de validación de APIs.
-        Enfocado en liderazgo técnico, colaboración cross-functional y resultados medibles de negocio.
+      <p data-i18n="summary.text"></p>
+    </section>
 
-        <!-- TIP: Este párrafo es tu propuesta de valor. Actualízalo si cambias de foco. -->
+    <!-- ====== PALABRAS CLAVE ====== -->
+    <section class="section">
+      <p data-i18n="keywords.text">
+        <strong>Palabras clave para ATS:</strong> QA Engineer, Test Automation, API Testing, Performance Testing, SerenityBDD, Karate, K6, Selenium, Postman, Azure DevOps, CI/CD, BDD, Scrum, ISTQB, Banking, Fintech, Remote, Hybrid, English, Spanish
       </p>
     </section>
 
@@ -135,112 +136,85 @@
     <!-- ====== EXPERIENCIA ====== -->
     <section class="section">
       <h2 data-i18n="section.experience">Experiencia</h2>
+      <h3 data-i18n="job.bp.title">Ingeniero de Calidad (Q Engineer) — Banco Pichincha S.A</h3>
+      <p class="meta" data-i18n="job.bp.period">Ene. 2026 – Presente • Quito, Ecuador</p>
+      <div class="kpi-chips" aria-label="Resultados destacados">
+        <span class="kpi-chip" data-i18n="job.bp.kpi1">+30% cobertura funcional y regresión</span>
+        <span class="kpi-chip" data-i18n="job.bp.kpi2">-35% defectos post-release</span>
+        <span class="kpi-chip" data-i18n="job.bp.kpi3">-50% tiempo de feedback técnico</span>
+      </div>
+      <ul>
+        <li data-i18n="job.bp.desc1">Lideré iniciativas de QA Automation y API Testing para validaciones críticas con Karate, SerenityBDD y Java, elevando la cobertura funcional y de regresión en +30%.</li>
+        <li data-i18n="job.bp.desc2">Implementé Performance Testing con K6 en flujos de alto volumen, reduciendo tiempos de respuesta en validaciones clave en 25%.</li>
+        <li data-i18n="job.bp.desc3">Integré controles de calidad en pipelines CI/CD con Azure DevOps y Git, disminuyendo defectos post-release en 35%.</li>
+        <li data-i18n="job.bp.desc4">Rediseñé la estrategia de Risk-Based Testing junto a equipos de negocio y riesgos, mejorando la detección temprana de incidencias críticas en 40%.</li>
+        <li data-i18n="job.bp.desc5">Optimicé la ejecución de suites API de +60 a ~30 minutos con priorización por criticidad, acelerando el feedback técnico en 50%.</li>
+        <li data-i18n="job.bp.desc6">Mentoricé a 5+ QA en BDD, API testing y buenas prácticas de automatización, incrementando la autonomía técnica del equipo en 30%.</li>
+      </ul>
+      <!-- ...existing code for more jobs... -->
+    </section>
 
-      <article class="job">
-        <header>
-          <h3 data-i18n="job.bp.title">Ingeniero de Calidad (Q Engineer) — Banco Pichincha S.A</h3>
-          <p class="meta" data-i18n="job.bp.period">Ene. 2026 – Presente • Quito, Ecuador</p>
-        </header>
-        <div class="kpi-chips" aria-label="Resultados destacados">
-          <span class="kpi-chip" data-i18n="job.bp.kpi1">+30% cobertura funcional y regresión</span>
-          <span class="kpi-chip" data-i18n="job.bp.kpi2">-35% defectos post-release</span>
-          <span class="kpi-chip" data-i18n="job.bp.kpi3">-50% tiempo de feedback técnico</span>
-        </div>
-        <ul>
-          <li data-i18n="job.bp.desc1">Lideré iniciativas de QA Automation y API Testing para validaciones críticas con Karate, SerenityBDD y Java, elevando la cobertura funcional y de regresión en +30%.</li>
-          <li data-i18n="job.bp.desc2">Implementé Performance Testing con K6 en flujos de alto volumen, reduciendo tiempos de respuesta en validaciones clave en 25%.</li>
-          <li data-i18n="job.bp.desc3">Integré controles de calidad en pipelines CI/CD con Azure DevOps y Git, disminuyendo defectos post-release en 35%.</li>
-          <li data-i18n="job.bp.desc4">Rediseñé la estrategia de Risk-Based Testing junto a equipos de negocio y riesgos, mejorando la detección temprana de incidencias críticas en 40%.</li>
-          <li data-i18n="job.bp.desc5">Optimicé la ejecución de suites API de +60 a ~30 minutos con priorización por criticidad, acelerando el feedback técnico en 50%.</li>
-          <li data-i18n="job.bp.desc6">Mentoricé a 5+ QA en BDD, API testing y buenas prácticas de automatización, incrementando la autonomía técnica del equipo en 30%.</li>
-        </ul>
-      </article>
-
-      <article class="job">
-        <header>
-          <h3 data-i18n="job.ntt2.title">Q Engineer — NTT DATA</h3>
-          <p class="meta" data-i18n="job.ntt2.period">Sep. 2023 – Ene. 2026 • Quito, Ecuador</p>
-        </header>
-        <div class="kpi-chips" aria-label="Resultados destacados">
-          <span class="kpi-chip" data-i18n="job.ntt2.kpi1">+28% cobertura de requerimientos</span>
-          <span class="kpi-chip" data-i18n="job.ntt2.kpi2">-35% tiempo de regresión por release</span>
-          <span class="kpi-chip" data-i18n="job.ntt2.kpi3">+20% predictibilidad de entregas</span>
-        </div>
-        <ul>
-          <li data-i18n="job.ntt2.desc1">Diseñé estrategias de pruebas funcionales, automatizadas y de performance con SerenityBDD, Karate y K6, incrementando la cobertura de requerimientos en 28%.</li>
-          <li data-i18n="job.ntt2.desc2">Automaticé escenarios críticos de negocio en APIs y flujos E2E, reduciendo tiempos de regresión por release en 35%.</li>
-          <li data-i18n="job.ntt2.desc3">Estandaricé planificación, estimación y gestión de riesgos en marcos ágiles (Scrum/Kanban), mejorando la predictibilidad de entregas en 20%.</li>
-          <li data-i18n="job.ntt2.desc4">Validé servicios REST con Postman y consultas PostgreSQL, reduciendo defectos transaccionales detectados en UAT en 25%.</li>
-        </ul>
-      </article>
+      <h3 data-i18n="job.ntt2.title">Q Engineer — NTT DATA</h3>
+      <p class="meta" data-i18n="job.ntt2.period">Sep. 2023 – Ene. 2026 • Quito, Ecuador</p>
+      <div class="kpi-chips" aria-label="Resultados destacados">
+        <span class="kpi-chip" data-i18n="job.ntt2.kpi1">+28% cobertura de requerimientos</span>
+        <span class="kpi-chip" data-i18n="job.ntt2.kpi2">-35% tiempo de regresión por release</span>
+        <span class="kpi-chip" data-i18n="job.ntt2.kpi3">+20% predictibilidad de entregas</span>
+      </div>
+      <ul>
+        <li data-i18n="job.ntt2.desc1">Diseñé estrategias de pruebas funcionales, automatizadas y de performance con SerenityBDD, Karate y K6, incrementando la cobertura de requerimientos en 28%.</li>
+        <li data-i18n="job.ntt2.desc2">Automaticé escenarios críticos de negocio en APIs y flujos E2E, reduciendo tiempos de regresión por release en 35%.</li>
+        <li data-i18n="job.ntt2.desc3">Estandaricé planificación, estimación y gestión de riesgos en marcos ágiles (Scrum/Kanban), mejorando la predictibilidad de entregas en 20%.</li>
+        <li data-i18n="job.ntt2.desc4">Validé servicios REST con Postman y consultas PostgreSQL, reduciendo defectos transaccionales detectados en UAT en 25%.</li>
+      </ul>
 
       <details class="experience-more">
         <summary data-i18n="experience.showmore">Ver experiencia anterior</summary>
 
-        <article class="job">
-          <header>
-            <h3 data-i18n="job.bayteq.title">QA Intern — Bayteq</h3>
-            <p class="meta" data-i18n="job.bayteq.period">Mar. 2023 – Jun. 2023 • Quito, Ecuador</p>
-          </header>
-          <ul>
-            <li data-i18n="job.bayteq.desc1">Apoyé el análisis de requerimientos y la planificación de pruebas con Jira, elevando la claridad de criterios de aceptación en 25%.</li>
-            <li data-i18n="job.bayteq.desc2">Ejecuté pruebas funcionales sobre módulos priorizados y reporté hallazgos con evidencia estructurada, incrementando la tasa de resolución en primer ciclo en 20%.</li>
-            <li data-i18n="job.bayteq.desc3">Colaboré en sesiones de readiness con QA y desarrollo, reduciendo retrabajos previos a salida a pruebas en 15%.</li>
-            <li data-i18n="job.bayteq.desc4">Consolidé reportes de avance y defectos para seguimiento semanal, mejorando la visibilidad del estado de calidad para stakeholders en 30%.</li>
-          </ul>
-        </article>
+        <h3 data-i18n="job.bayteq.title">QA Intern — Bayteq</h3>
+        <p class="meta" data-i18n="job.bayteq.period">Mar. 2023 – Jun. 2023 • Quito, Ecuador</p>
+        <ul>
+          <li data-i18n="job.bayteq.desc1">Apoyé el análisis de requerimientos y la planificación de pruebas con Jira, elevando la claridad de criterios de aceptación en 25%.</li>
+          <li data-i18n="job.bayteq.desc2">Ejecuté pruebas funcionales sobre módulos priorizados y reporté hallazgos con evidencia estructurada, incrementando la tasa de resolución en primer ciclo en 20%.</li>
+          <li data-i18n="job.bayteq.desc3">Colaboré en sesiones de readiness con QA y desarrollo, reduciendo retrabajos previos a salida a pruebas en 15%.</li>
+          <li data-i18n="job.bayteq.desc4">Consolidé reportes de avance y defectos para seguimiento semanal, mejorando la visibilidad del estado de calidad para stakeholders en 30%.</li>
+        </ul>
 
-        <article class="job">
-          <header>
-            <h3 data-i18n="job.perseject.title">Analista QA — Perseject</h3>
-            <p class="meta" data-i18n="job.perseject.period">Dic. 2022 – Mar. 2023 • Quito, Ecuador</p>
-          </header>
-          <ul>
-            <li data-i18n="job.perseject.desc1">Diseñé y ejecuté pruebas automatizadas y de rendimiento para web apps con Selenium y K6, reduciendo incidencias en producción en 22%.</li>
-            <li data-i18n="job.perseject.desc2">Validé compatibilidad cross-browser y cross-device en flujos críticos, incrementando la estabilidad funcional entre plataformas en 30%.</li>
-            <li data-i18n="job.perseject.desc3">Documenté resultados con indicadores de severidad y prioridad, acelerando la toma de decisiones de liberación en 20%.</li>
-            <li data-i18n="job.perseject.desc4">Propuse mejoras de calidad con enfoque preventivo y seguimiento de acciones, disminuyendo defectos repetitivos en 18%.</li>
-          </ul>
-        </article>
+        <h3 data-i18n="job.perseject.title">Analista QA — Perseject</h3>
+        <p class="meta" data-i18n="job.perseject.period">Dic. 2022 – Mar. 2023 • Quito, Ecuador</p>
+        <ul>
+          <li data-i18n="job.perseject.desc1">Diseñé y ejecuté pruebas automatizadas y de rendimiento para web apps con Selenium y K6, reduciendo incidencias en producción en 22%.</li>
+          <li data-i18n="job.perseject.desc2">Validé compatibilidad cross-browser y cross-device en flujos críticos, incrementando la estabilidad funcional entre plataformas en 30%.</li>
+          <li data-i18n="job.perseject.desc3">Documenté resultados con indicadores de severidad y prioridad, acelerando la toma de decisiones de liberación en 20%.</li>
+          <li data-i18n="job.perseject.desc4">Propuse mejoras de calidad con enfoque preventivo y seguimiento de acciones, disminuyendo defectos repetitivos en 18%.</li>
+        </ul>
 
-        <article class="job">
-          <header>
-            <h3 data-i18n="job.zurich.title">Pasante QA — Zurich Insurance</h3>
-            <p class="meta" data-i18n="job.zurich.period">Jun. 2022 – Dic. 2022 • Quito, Ecuador</p>
-          </header>
-          <ul>
-            <li data-i18n="job.zurich.desc1">Diseñé y ejecuté pruebas automatizadas y de performance para aplicaciones de seguros, mejorando la cobertura de escenarios críticos en 25%.</li>
-            <li data-i18n="job.zurich.desc2">Preparé y optimicé datos de prueba para casos de negocio complejos, reduciendo inconsistencias en ejecución de pruebas en 20%.</li>
-            <li data-i18n="job.zurich.desc3">Validé cumplimiento de requerimientos funcionales y no funcionales con matrices de trazabilidad, elevando la visibilidad de cobertura en 30%.</li>
-            <li data-i18n="job.zurich.desc4">Colaboré con equipos internacionales en revisiones de calidad y criterios de salida, disminuyendo reprocesos de validación en 15%.</li>
-          </ul>
-        </article>
+        <h3 data-i18n="job.zurich.title">Pasante QA — Zurich Insurance</h3>
+        <p class="meta" data-i18n="job.zurich.period">Jun. 2022 – Dic. 2022 • Quito, Ecuador</p>
+        <ul>
+          <li data-i18n="job.zurich.desc1">Diseñé y ejecuté pruebas automatizadas y de performance para aplicaciones de seguros, mejorando la cobertura de escenarios críticos en 25%.</li>
+          <li data-i18n="job.zurich.desc2">Preparé y optimicé datos de prueba para casos de negocio complejos, reduciendo inconsistencias en ejecución de pruebas en 20%.</li>
+          <li data-i18n="job.zurich.desc3">Validé cumplimiento de requerimientos funcionales y no funcionales con matrices de trazabilidad, elevando la visibilidad de cobertura en 30%.</li>
+          <li data-i18n="job.zurich.desc4">Colaboré con equipos internacionales en revisiones de calidad y criterios de salida, disminuyendo reprocesos de validación en 15%.</li>
+        </ul>
 
-        <article class="job">
-          <header>
-            <h3 data-i18n="job.bg.title">IT Intern — Banco Guayaquil</h3>
-            <p class="meta" data-i18n="job.bg.period">Ene. 2022 – Jun. 2022 • Quito, Ecuador</p>
-          </header>
-          <ul>
-            <li data-i18n="job.bg.desc1">Brindé soporte técnico operativo a usuarios de sistemas bancarios, mejorando tiempos de atención de incidencias en 20%.</li>
-            <li data-i18n="job.bg.desc2">Ejecuté mantenimiento preventivo y correctivo de equipos de trabajo, reduciendo interrupciones operativas en 18%.</li>
-            <li data-i18n="job.bg.desc3">Gestioné tickets y trazabilidad de casos con priorización por impacto, incrementando el cumplimiento de SLA en 15%.</li>
-            <li data-i18n="job.bg.desc4">Elaboré reportes de control operativo para seguimiento semanal, optimizando la toma de decisiones del área en 20%.</li>
-          </ul>
-        </article>
+        <h3 data-i18n="job.bg.title">IT Intern — Banco Guayaquil</h3>
+        <p class="meta" data-i18n="job.bg.period">Ene. 2022 – Jun. 2022 • Quito, Ecuador</p>
+        <ul>
+          <li data-i18n="job.bg.desc1">Brindé soporte técnico operativo a usuarios de sistemas bancarios, mejorando tiempos de atención de incidencias en 20%.</li>
+          <li data-i18n="job.bg.desc2">Ejecuté mantenimiento preventivo y correctivo de equipos de trabajo, reduciendo interrupciones operativas en 18%.</li>
+          <li data-i18n="job.bg.desc3">Gestioné tickets y trazabilidad de casos con priorización por impacto, incrementando el cumplimiento de SLA en 15%.</li>
+          <li data-i18n="job.bg.desc4">Elaboré reportes de control operativo para seguimiento semanal, optimizando la toma de decisiones del área en 20%.</li>
+        </ul>
 
-        <article class="job">
-          <header>
-            <h3 data-i18n="job.halli.title">IT Intern — Halliburton</h3>
-            <p class="meta" data-i18n="job.halli.period">Mar. 2018 – Ago. 2018 • Orellana, Ecuador</p>
-          </header>
-          <ul>
-            <li data-i18n="job.halli.desc1">Atendí soporte técnico a usuarios locales y remotos, resolviendo incidencias de primer nivel con mejora de tiempos de respuesta en 25%.</li>
-            <li data-i18n="job.halli.desc2">Realicé diagnóstico y documentación técnica de fallas recurrentes, reduciendo reincidencias operativas en 15%.</li>
-            <li data-i18n="job.halli.desc3">Apoyé la gestión básica de red y conectividad en sitio, mejorando disponibilidad de servicios en ventanas críticas.</li>
-            <li data-i18n="job.halli.desc4">Coordiné escalamiento con help desk internacional y seguimiento de casos, elevando tasa de cierre efectivo en 20%.</li>
-          </ul>
-        </article>
+        <h3 data-i18n="job.halli.title">IT Intern — Halliburton</h3>
+        <p class="meta" data-i18n="job.halli.period">Mar. 2018 – Ago. 2018 • Orellana, Ecuador</p>
+        <ul>
+          <li data-i18n="job.halli.desc1">Atendí soporte técnico a usuarios locales y remotos, resolviendo incidencias de primer nivel con mejora de tiempos de respuesta en 25%.</li>
+          <li data-i18n="job.halli.desc2">Realicé diagnóstico y documentación técnica de fallas recurrentes, reduciendo reincidencias operativas en 15%.</li>
+          <li data-i18n="job.halli.desc3">Apoyé la gestión básica de red y conectividad en sitio, mejorando disponibilidad de servicios en ventanas críticas.</li>
+          <li data-i18n="job.halli.desc4">Coordiné escalamiento con help desk internacional y seguimiento de casos, elevando tasa de cierre efectivo en 20%.</li>
+        </ul>
       </details>
     </section>
 
@@ -275,7 +249,6 @@
     <!-- ====== HABILIDADES TÉCNICAS ====== -->
     <section class="section">
       <h2 data-i18n="section.skills">Habilidades Técnicas</h2>
-
       <div class="skills-grid">
         <div>
           <h3 data-i18n="skills.frameworks">Automatización y Frameworks</h3>
@@ -285,21 +258,18 @@
             <li>Screenplay • BDD</li>
           </ul>
         </div>
-
         <div>
           <h3 data-i18n="skills.dev">Lenguajes y desarrollo</h3>
           <ul>
             <li>Java • JavaScript • Python • SQL</li>
           </ul>
         </div>
-
         <div>
           <h3 data-i18n="skills.performance">Pruebas de rendimiento</h3>
           <ul>
             <li>K6 • JMeter</li>
           </ul>
         </div>
-
         <div>
           <h3 data-i18n="skills.api">APIs y Backend</h3>
           <ul>
@@ -307,14 +277,12 @@
             <li>Validación API • Contract Testing</li>
           </ul>
         </div>
-
         <div>
           <h3 data-i18n="skills.db">Bases de Datos</h3>
           <ul>
             <li>PostgreSQL • Redis</li>
           </ul>
         </div>
-
         <div>
           <h3 data-i18n="skills.devops2">DevOps y CI/CD</h3>
           <ul>
@@ -322,14 +290,12 @@
             <li>SonarCloud • Jenkins</li>
           </ul>
         </div>
-
         <div>
           <h3 data-i18n="skills.quality">Gestión de Calidad</h3>
           <ul>
             <li>Jira • X-Ray • Zephyr • Confluence</li>
           </ul>
         </div>
-
         <div>
           <h3 data-i18n="skills.methodologies">Metodologías</h3>
           <ul>
@@ -369,7 +335,6 @@
       <!-- ====== Enlace a la galería de certificados ====== -->
       <p style="margin-top: .75rem">
         <!-- CAMBIAR: Si renombras el archivo certificados.html o lo alojas en otra ruta, actualiza el href -->
-
         <a href="certificados.html" target="_blank" rel="noopener" data-i18n="cert.link">
           Ver todos los certificados»
         </a>
@@ -388,7 +353,6 @@
         <li><strong>Karate DSL: API Automation and Performance from Zero to Hero</strong> — Udemy • <span data-i18n="date.mar2025">mar. 2025</span></li>
         <li><strong>Dynatrace Fundamentals</strong> — Pluralsight • <span data-i18n="date.abr2025">abr. 2025</span></li>
       </ul>
-
       <h3 data-i18n="courses.h.devops">DevOps, Cloud y Observabilidad</h3>
       <ul class="courses">
         <li><strong>Developing Docker Apps: Core Principles</strong> — Pluralsight • <span data-i18n="date.abr2025">abr. 2025</span></li>
@@ -400,7 +364,6 @@
         <li><strong>DevOps y cloud con Azure DevOps, App Service Pipelines y Git</strong> — Udemy • <span data-i18n="date.mar2025">mar. 2025</span></li>
         <li><strong>Ultimate Docker: guía de cero hasta despliegues</strong> — Udemy • <span data-i18n="date.mar2025">mar. 2025</span></li>
       </ul>
-
       <h3 data-i18n="courses.h.ai">IA, Productividad y Desarrollo Web</h3>
       <ul class="courses">
         <li><strong>Aceleración del desarrollo de aplicaciones mediante GitHub Copilot</strong> — Microsoft • <span data-i18n="date.feb2025">feb. 2025</span></li>
@@ -408,7 +371,6 @@
         <li><strong>Curso de introducción al desarrollo web: HTML y CSS (1/2)</strong> — Google • <span data-i18n="date.feb2025">feb. 2025</span></li>
         <li><strong>Curso de introducción al desarrollo web: HTML y CSS (2/2)</strong> — Google • <span data-i18n="date.feb2025">feb. 2025</span></li>
       </ul>
-
       <h3 data-i18n="courses.h.professional">Habilidades profesionales</h3>
       <ul class="courses">
         <li><strong>Curso Completo en Design Thinking</strong> — Udemy • <span data-i18n="date.feb2025">feb. 2025</span></li>
@@ -417,11 +379,9 @@
         <li><strong>Servicio al cliente: Cómo manejar clientes difíciles</strong> — Udemy • <span data-i18n="date.mar2025">mar. 2025</span></li>
         <li><strong>Liderazgo y gestión de equipos</strong> — Udemy • <span data-i18n="date.mar2025">mar. 2025</span></li>
       </ul>
-
       <!-- ====== Enlace a la galería de certificados ====== -->
       <p style="margin-top: .75rem">
         <!-- CAMBIAR: Si renombras el archivo certificados.html o lo alojas en otra ruta, actualiza el href -->
-
         <a href="certificados.html" target="_blank" rel="noopener" data-i18n="cert.link">
           Ver todos los certificados»
         </a>

@@ -65,8 +65,8 @@ body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   background: var(--bg);
   color: var(--text);
-  font-size: clamp(0.98rem, 0.95rem + 0.2vw, 1.06rem);
-  line-height: 1.65;
+  font-size: clamp(1.15rem, 1.08rem + 0.35vw, 1.25rem);
+  line-height: 1.7;
   transition: background-color var(--transition), color var(--transition);
 }
 
@@ -159,6 +159,11 @@ select:focus-visible {
   border-bottom: 2px solid var(--border);
   padding-bottom: 1rem;
   margin-bottom: 1.5rem;
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .identity h1 {
@@ -166,6 +171,7 @@ select:focus-visible {
   margin: 0 0 0.25rem;
   color: var(--primary);
   line-height: 1.2;
+  max-width: 100%;
 }
 
 .role {
@@ -173,7 +179,7 @@ select:focus-visible {
   color: var(--muted);
   font-weight: 600;
   font-size: 1rem;
-  max-width: 78ch;
+  max-width: 100%;
 }
 
 .availability-badge {
@@ -257,6 +263,11 @@ select:focus-visible {
 
 .section {
   margin: 2.1rem 0;
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .section h2 {
@@ -268,11 +279,8 @@ select:focus-visible {
   line-height: 1.3;
 }
 
-.section > p,
-.job ul,
-.courses,
-.cert-list {
-  max-width: 74ch;
+.section > p {
+  max-width: 100%;
 }
 
 .skills-grid {
@@ -292,29 +300,8 @@ select:focus-visible {
   padding-left: 1rem;
 }
 
-.job {
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  padding: 1rem 1.15rem;
-  margin-bottom: 0.95rem;
-  background: var(--surface-alt);
-  box-shadow: var(--shadow-sm);
-  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition), background-color var(--transition);
-}
 
-.job:hover {
-  transform: translateY(-1px);
-  border-color: var(--primary);
-  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.1);
-}
-
-.job header h3 {
-  margin: 0;
-  font-size: 1.05rem;
-  line-height: 1.35;
-}
-
-.job .meta {
+.meta {
   display: inline-block;
   margin: 0.35rem 0 0.65rem;
   color: var(--muted);
@@ -360,11 +347,10 @@ select:focus-visible {
   margin-bottom: 0.5rem;
 }
 
-.job ul li {
+ul li {
   margin-bottom: 0.4rem;
 }
-
-.job ul li::marker {
+ul li::marker {
   color: var(--accent);
 }
 

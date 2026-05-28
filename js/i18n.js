@@ -1,6 +1,8 @@
 (function(){
   const translations = {
     es: {
+      // 'section.references' y 'references.text' eliminados
+      'keywords.text': '<strong>Palabras clave para ATS:</strong> QA Engineer, Test Automation, API Testing, Performance Testing, SerenityBDD, Karate, K6, Selenium, Postman, Azure DevOps, CI/CD, BDD, Scrum, ISTQB, Banking, Fintech, Remote, Hybrid, English, Spanish',
       'lang.spanish': 'Español',
       'lang.english': 'English',
       'header.role': 'Senior Quality Engineer | QA Automation & API Testing | Risk-Based Validation | Technical Leadership | ISTQB® | CSM®',
@@ -16,13 +18,13 @@
       'header.cvdigital.text': 'Ver CV',
       'header.availability': 'Disponible para entrevistas',
       'header.lastupdate': 'Última actualización:',
-      'hero.cta.download': '📄 Descargar CV rápido',
+      'hero.cta.download': '📄 Descargar CV (ES)',
       'hero.cta.linkedin': '💬 Contactar por LinkedIn',
       'hero.metric1': '-35% defectos post-release',
       'hero.metric2': '-50% tiempo de feedback técnico',
       'hero.metric3': '+30% cobertura funcional y regresión',
       'section.summary': 'Perfil Profesional',
-      'summary.text': 'Ingeniero de Calidad de Software especializado en QA Automation, API Testing y Performance Testing en banca y fintech. Diseño estrategias de Risk-Based Testing integradas a CI/CD para acelerar entregas con calidad. Logré reducir en 35% los defectos post-release y recortar de 60 a ~30 minutos los ciclos de validación de APIs. Enfocado en liderazgo técnico, colaboración cross-functional y resultados medibles de negocio.',
+      'summary.text': 'Ingeniero de Calidad de Software Senior especializado en QA Automation, API Testing y Performance Testing para banca y fintech. Experiencia laboral en Ecuador en modalidad remota e híbrida, colaborando con equipos cross-functional. Diseño e implementación de estrategias de Risk-Based Testing integradas a pipelines CI/CD (Azure DevOps) y metodologías Agile y DevOps. Manejo avanzado de SerenityBDD, Karate, K6, Postman, Selenium, Jira y Git. Certificado ISTQB® y Scrum Master. Destacado por comunicación intercultural, adaptabilidad y mentoría en equipos distribuidos. Logré reducir en 35% los defectos post-release y recortar de 60 a ~30 minutos los ciclos de validación de APIs mediante liderazgo técnico y resultados medibles de negocio.',
       'section.keycompetencies': 'Competencias Clave',
       'keycompetencies.quality': 'Quality Engineering',
       'keycompetencies.automation': 'Automatización de Pruebas',
@@ -58,20 +60,21 @@
       'skills.quality': 'Gestión de Calidad',
       'skills.methodologies': 'Metodologías',
       'section.experience': 'Experiencia',
-      'job.bp.title': 'Ingeniero de Calidad (Q Engineer) — Banco Pichincha S.A',
+      'job.bp.title': 'QA Engineer — Banco Pichincha S.A',
       'job.bp.period': 'Ene. 2026 – Presente • Quito, Ecuador',
-      'job.bp.desc1': 'Lideré iniciativas de QA Automation y API Testing para validaciones críticas con Karate, SerenityBDD y Java, elevando la cobertura funcional y de regresión en +30%.',
-      'job.bp.desc2': 'Implementé Performance Testing con K6 en flujos de alto volumen, reduciendo tiempos de respuesta en validaciones clave en 25%.',
+      'job.bp.desc1': 'Lideré iniciativas de automatización de pruebas y validación de APIs con Karate, SerenityBDD y Java, logrando +30% de cobertura funcional y de regresión.',
+      'job.bp.desc2': 'Implementé pruebas de performance con K6 en flujos bancarios de alto volumen, reduciendo tiempos de respuesta en 25%.',
       'job.bp.desc3': 'Integré controles de calidad en pipelines CI/CD con Azure DevOps y Git, disminuyendo defectos post-release en 35%.',
       'job.bp.desc4': 'Rediseñé la estrategia de Risk-Based Testing junto a equipos de negocio y riesgos, mejorando la detección temprana de incidencias críticas en 40%.',
       'job.bp.desc5': 'Optimicé la ejecución de suites API de +60 a ~30 minutos con priorización por criticidad, acelerando el feedback técnico en 50%.',
-      'job.bp.desc6': 'Mentoricé a 5+ QA en BDD, API testing y buenas prácticas de automatización, incrementando la autonomía técnica del equipo en 30%.',
+      'job.bp.desc6': 'Mentoricé a 5+ QA en BDD, API testing y automatización, incrementando la autonomía técnica del equipo en 30%.',
       'job.bp.kpi1': '+30% cobertura funcional y regresión',
       'job.bp.kpi2': '-35% defectos post-release',
       'job.bp.kpi3': '-50% tiempo de feedback técnico',
       'job.ntt2.title': 'Q Engineer — NTT DATA',
+        'job.ntt2.title': 'QA Engineer — NTT DATA',
       'job.ntt2.period': 'Sep. 2023 – Ene. 2026 • Quito, Ecuador',
-      'job.ntt2.desc1': 'Diseñé estrategias de pruebas funcionales, automatizadas y de performance con SerenityBDD, Karate y K6, incrementando la cobertura de requerimientos en 28%.',
+        'job.ntt2.desc1': 'Diseñé y ejecuté estrategias de pruebas funcionales, automatizadas y de performance con SerenityBDD, Karate y K6, logrando +28% de cobertura de requerimientos.',
       'job.ntt2.desc2': 'Automaticé escenarios críticos de negocio en APIs y flujos E2E, reduciendo tiempos de regresión por release en 35%.',
       'job.ntt2.desc3': 'Estandaricé planificación, estimación y gestión de riesgos en marcos ágiles (Scrum/Kanban), mejorando la predictibilidad de entregas en 20%.',
       'job.ntt2.desc4': 'Validé servicios REST con Postman y consultas PostgreSQL, reduciendo defectos transaccionales detectados en UAT en 25%.',
@@ -79,8 +82,9 @@
       'job.ntt2.kpi2': '-35% tiempo de regresión por release',
       'job.ntt2.kpi3': '+20% predictibilidad de entregas',
       'job.ntt1.title': 'Junior Software Engineer in Test — NTT DATA',
+        'job.ntt1.title': 'QA Engineer (Junior) — NTT DATA',
       'job.ntt1.period': 'Sep. 2023 – Ago. 2025 • Quito, Ecuador',
-      'job.ntt1.desc1': 'Diseñé y ejecuté pruebas funcionales y no funcionales para sistemas de pago con Jira/X-Ray, mejorando la trazabilidad requisito-prueba en 30%.',
+        'job.ntt1.desc1': 'Diseñé y ejecuté pruebas funcionales y no funcionales para sistemas de pago con Jira/X-Ray, mejorando la trazabilidad requisito-prueba en 30%.',
       'job.ntt1.desc2': 'Validé servicios REST con Postman y consultas PostgreSQL, reduciendo defectos transaccionales detectados en UAT en 25%.',
       'job.ntt1.desc3': 'Implementé automatización BDD con SerenityBDD, Karate y Cucumber, disminuyendo el esfuerzo manual recurrente de regresión en 40%.',
       'job.ntt1.desc4': 'Apliqué prácticas TDD y ATDD en colaboración con desarrollo, aumentando la detección temprana de defectos en etapas de construcción en 20%.',
@@ -89,14 +93,16 @@
       'job.ntt1.kpi3': '-40% esfuerzo manual de regresión',
       'experience.showmore': 'Ver experiencia anterior',
       'job.bayteq.title': 'QA Intern — Bayteq',
+        'job.bayteq.title': 'QA Intern — Bayteq',
       'job.bayteq.period': 'Mar. 2023 – Jun. 2023 • Quito, Ecuador',
-      'job.bayteq.desc1': 'Apoyé el análisis de requerimientos y la planificación de pruebas con Jira, elevando la claridad de criterios de aceptación en 25%.',
+        'job.bayteq.desc1': 'Apoyé el análisis de requerimientos y la planificación de pruebas con Jira, logrando +25% de claridad en criterios de aceptación.',
       'job.bayteq.desc2': 'Ejecuté pruebas funcionales sobre módulos priorizados y reporté hallazgos con evidencia estructurada, incrementando la tasa de resolución en primer ciclo en 20%.',
       'job.bayteq.desc3': 'Colaboré en sesiones de readiness con QA y desarrollo, reduciendo retrabajos previos a salida a pruebas en 15%.',
       'job.bayteq.desc4': 'Consolidé reportes de avance y defectos para seguimiento semanal, mejorando la visibilidad del estado de calidad para stakeholders en 30%.',
       'job.perseject.title': 'Analista QA — Perseject',
+        'job.perseject.title': 'QA Analyst — Perseject',
       'job.perseject.period': 'Dic. 2022 – Mar. 2023 • Quito, Ecuador',
-      'job.perseject.desc1': 'Diseñé y ejecuté pruebas automatizadas y de rendimiento para web apps con Selenium y K6, reduciendo incidencias en producción en 22%.',
+        'job.perseject.desc1': 'Diseñé y ejecuté pruebas automatizadas y de rendimiento para web apps con Selenium y K6, logrando -22% de incidencias en producción.',
       'job.perseject.desc2': 'Validé compatibilidad cross-browser y cross-device en flujos críticos, incrementando la estabilidad funcional entre plataformas en 30%.',
       'job.perseject.desc3': 'Documenté resultados con indicadores de severidad y prioridad, acelerando la toma de decisiones de liberación en 20%.',
       'job.perseject.desc4': 'Propuse mejoras de calidad con enfoque preventivo y seguimiento de acciones, disminuyendo defectos repetitivos en 18%.',
@@ -123,6 +129,12 @@
       'courses.h.ai': 'IA, Productividad y Desarrollo Web',
       'courses.h.professional': 'Habilidades profesionales',
       'section.certifications': 'Certificaciones',
+      'cert.list.istqb': 'ISTQB® Certified Tester Foundation Level (válido en Europa)',
+      'cert.list.scrum': 'Scrum Master (ScrumStudy, internacional)',
+      'cert.list.azure': 'Microsoft Azure Fundamentals (en curso)',
+      'cert.list.coursera': 'Automated Software Testing (Coursera, University of Minnesota, inglés)',
+      'cert.list.udemy': 'API Testing with Postman (Udemy, inglés)',
+      'cert.list.edx': 'DevOps Practices and Principles (edX, LinuxFoundation, inglés)',
       'cert.list.stratio.governance': 'Stratio Generative AI Data Governance',
       'cert.list.stratio.processing': 'Stratio Generative AI Data Processing',
       'cert.list.stratio.fabric': 'Stratio Generative AI Data Fabric Basics',
@@ -174,6 +186,8 @@
       'footer.text': 'CV para uso profesional'
     },
     en: {
+      // 'section.references' and 'references.text' removed
+      'keywords.text': '<strong>ATS Keywords:</strong> QA Engineer, Test Automation, API Testing, Performance Testing, SerenityBDD, Karate, K6, Selenium, Postman, Azure DevOps, CI/CD, BDD, Scrum, ISTQB, Banking, Fintech, Remote, Hybrid, English, Spanish',
       'lang.spanish': 'Español',
       'lang.english': 'English',
       'header.role': 'Senior Quality Engineer | QA Automation & API Testing | Risk-Based Validation | Technical Leadership | ISTQB® | CSM®',
@@ -189,13 +203,13 @@
       'header.cvdigital.text': 'View CV',
       'header.availability': 'Open to interview opportunities',
       'header.lastupdate': 'Last update:',
-      'hero.cta.download': '📄 Download quick CV',
+      'hero.cta.download': '📄 Download CV (EN)',
       'hero.cta.linkedin': '💬 Contact on LinkedIn',
       'hero.metric1': '-35% post-release defects',
       'hero.metric2': '-50% technical feedback time',
       'hero.metric3': '+30% functional and regression coverage',
       'section.summary': 'Summary',
-      'summary.text': 'Quality Engineer specialized in QA Automation, API Testing, and Performance Testing for banking and fintech. I design Risk-Based Testing strategies integrated into CI/CD to accelerate high-quality deliveries. I reduced post-release defects by 35% and cut API validation cycles from 60 to ~30 minutes. Focused on technical leadership, cross-functional collaboration, and measurable business outcomes.',
+      'summary.text': 'Senior Quality Engineer specialized in QA Automation, API Testing, and Performance Testing for banking and fintech. Professional experience in Ecuador in remote and hybrid roles, collaborating with cross-functional teams. Designed and implemented Risk-Based Testing strategies integrated with CI/CD pipelines (Azure DevOps) and Agile/DevOps methodologies. Advanced skills in SerenityBDD, Karate, K6, Postman, Selenium, Jira, and Git. ISTQB® and Scrum Master certified. Recognized for intercultural communication, adaptability, and mentoring in distributed teams. Achieved a 35% reduction in post-release defects and accelerated API validation cycles from 60 to ~30 minutes through technical leadership and measurable business outcomes.',
       'section.keycompetencies': 'Key Competencies',
       'keycompetencies.quality': 'Quality Engineering',
       'keycompetencies.automation': 'Test Automation',
@@ -231,14 +245,14 @@
       'skills.quality': 'Quality Management',
       'skills.methodologies': 'Methodologies',
       'section.experience': 'Experience',
-      'job.bp.title': 'Quality Engineer (Q Engineer) — Banco Pichincha S.A',
+      'job.bp.title': 'QA Engineer — Banco Pichincha S.A',
       'job.bp.period': 'Jan. 2026 – Present • Quito, Ecuador',
-      'job.bp.desc1': 'Led QA Automation and API Testing initiatives for critical validations using Karate, SerenityBDD, and Java, increasing functional and regression coverage by +30%.',
-      'job.bp.desc2': 'Implemented Performance Testing with K6 on high-volume flows, reducing response times in key validations by 25%.',
+      'job.bp.desc1': 'Led test automation and API validation initiatives with Karate, SerenityBDD, and Java, achieving +30% functional and regression coverage.',
+      'job.bp.desc2': 'Implemented performance testing with K6 on high-volume banking flows, reducing response times by 25%.',
       'job.bp.desc3': 'Integrated quality controls into CI/CD pipelines with Azure DevOps and Git, reducing post-release defects by 35%.',
       'job.bp.desc4': 'Redesigned the Risk-Based Testing strategy with business and risk teams, improving early detection of critical incidents by 40%.',
       'job.bp.desc5': 'Optimized API suite execution from +60 to ~30 minutes with criticality-based prioritization, accelerating technical feedback by 50%.',
-      'job.bp.desc6': 'Mentored 5+ QA engineers in BDD, API testing, and automation best practices, increasing team technical autonomy by 30%.',
+      'job.bp.desc6': 'Mentored 5+ QA engineers in BDD, API testing, and automation, increasing team technical autonomy by 30%.',
       'job.bp.kpi1': '+30% functional and regression coverage',
       'job.bp.kpi2': '-35% post-release defects',
       'job.bp.kpi3': '-50% technical feedback time',
@@ -296,6 +310,12 @@
       'courses.h.ai': 'AI, Productivity & Web Development',
       'courses.h.professional': 'Professional Skills',
       'section.certifications': 'Certifications',
+      'cert.list.istqb': 'ISTQB® Certified Tester Foundation Level (valid in Europe)',
+      'cert.list.scrum': 'Scrum Master (ScrumStudy, international)',
+      'cert.list.azure': 'Microsoft Azure Fundamentals (in progress)',
+      'cert.list.coursera': 'Automated Software Testing (Coursera, University of Minnesota, English)',
+      'cert.list.udemy': 'API Testing with Postman (Udemy, English)',
+      'cert.list.edx': 'DevOps Practices and Principles (edX, LinuxFoundation, English)',
       'cert.list.stratio.governance': 'Stratio Generative AI Data Governance',
       'cert.list.stratio.processing': 'Stratio Generative AI Data Processing',
       'cert.list.stratio.fabric': 'Stratio Generative AI Data Fabric Basics',
@@ -358,7 +378,12 @@
       if(el.tagName.toLowerCase() === 'input' || el.tagName.toLowerCase() === 'textarea'){
         el.placeholder = text;
       } else {
-        el.textContent = text;
+        // Permitir HTML en referencias y palabras clave
+        if(key === 'references.text' || key === 'keywords.text') {
+          el.innerHTML = text;
+        } else {
+          el.textContent = text;
+        }
       }
     });
     // Update href for elements that have per-language URL variants
@@ -374,7 +399,7 @@
   }
 
   document.addEventListener('DOMContentLoaded', function(){
-    const saved = localStorage.getItem('site-lang') || 'es';
+    const saved = localStorage.getItem('site-lang') || 'en';
     applyTranslations(saved);
     setActiveLangButton(saved);
 

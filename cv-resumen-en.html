@@ -1,259 +1,195 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CV Summary — Bryan Alexander Freire Chamorro</title>
-  <meta name="description" content="ATS-friendly CV — clean text layout readable by recruitment systems." />
-  <style>
-    @page {
-      size: A4;
-      margin: 2.54cm 2.54cm 2.54cm 2.54cm;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: 'Calibri', Arial, Helvetica, sans-serif;
-      color: #000;
-      background: #f5f5f5;
-      line-height: 1.4;
-      font-size: 10.5pt;
-    }
-
-    .actions {
-      max-width: 900px;
-      margin: 16px auto 0;
-      padding: 0 12px;
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      border: 1px solid #cfd4dc;
-      background: #fff;
-      color: #111;
-      text-decoration: none;
-      border-radius: 6px;
-      padding: 8px 12px;
-      font-size: 14px;
-      font-weight: 600;
-      cursor: pointer;
-    }
-
-    .btn.primary {
-      background: #111;
-      border-color: #111;
-      color: #fff;
-    }
-
-    .print-hint {
-      width: 100%;
-      margin: 2px 0 0;
-      color: #555;
-      font-size: 12px;
-    }
-
-    .sheet {
-      width: 210mm;
-      min-height: 297mm;
-      margin: 10px auto;
-      background: #fff;
-      border: 1px solid #d9d9d9;
-      box-shadow: 0 8px 24px rgba(0,0,0,.08);
-      padding: 2.54cm;
-    }
-
-    h1 {
-      margin: 0 0 4px;
-      font-size: 18pt;
-      line-height: 1.15;
-      font-weight: 700;
-      letter-spacing: 0.3px;
-    }
-
-    .contact {
-      font-size: 10pt;
-      margin-bottom: 10px;
-      border-bottom: 1.5px solid #000;
-      padding-bottom: 6px;
-    }
-
-    .contact div { margin-bottom: 2px; }
-
-    h2 {
-      font-size: 11pt;
-      margin: 14px 0 5px;
-      padding-bottom: 3px;
-      border-bottom: 1.5px solid #000;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    p { margin: 0 0 6px; }
-
-    ul {
-      margin: 2px 0 2px 18px;
-      padding: 0;
-    }
-
-    li { margin-bottom: 2px; }
-
-    .job {
-      margin-bottom: 2px;
-      break-inside: avoid;
-    }
-
-    .job-title {
-      font-weight: 700;
-      font-size: 10.5pt;
-      margin: 0;
-    }
-
-    .job-meta {
-      margin: 1px 0 4px;
-      font-size: 10pt;
-      color: #333;
-    }
-
-    .muted { color: #333; }
-
-    .small { font-size: 10pt; }
-
-    .keywords {
-      margin-top: 2px;
-      font-size: 10pt;
-    }
-
-    @media print {
-      body {
-        background: #fff;
-        padding: 0;
-      }
-      .actions {
-        display: none !important;
-      }
-      .sheet {
-        width: auto;
-        min-height: auto;
-        margin: 0;
-        border: none;
-        box-shadow: none;
-        padding: 0;
-      }
-      a {
-        color: #000;
-        text-decoration: none;
-      }
-    }
-
-    @media (max-width: 920px) {
-      .sheet {
-        width: calc(100% - 16px);
-        min-height: auto;
-        padding: 14px;
-      }
-    }
-  </style>
+  <title>ATS CV - Bryan Alexander Freire Chamorro</title>
+  <meta name="description" content="ATS CV optimized for recruitment systems and human readability." />
+  <script src="assets/js/pages/cv-resumen-en.js"></script>
+  <link rel="stylesheet" href="assets/css/pages/cv-resumen.css">
 </head>
 <body>
-  <div class="actions">
-    <button class="btn primary" onclick="window.print()">Download PDF</button>
-    <a class="btn" href="index.html">Back to site</a>
-    <p class="print-hint">Tip: in the print dialog open "More settings" and disable "Headers and footers" so title and URL are not included in the PDF.</p>
+  <div class="cv-actions">
+    <button class="cv-btn" onclick="window.print()">Download ATS CV</button>
+    <a class="cv-btn" href="index.html">Back to site</a>
   </div>
 
-  <main class="sheet" role="main">
-    <header>
-      <h1>Bryan Alexander Freire Chamorro</h1>
+  <main class="ats-stage" role="main">
 
-      <div class="contact">
-        <div><strong>Email:</strong> bryanalexfreire@gmail.com</div>
-        <div><strong>Phone:</strong> (+593) 984 291 545</div>
-        <div><strong>Location:</strong> Quito, Ecuador</div>
-        <div><strong>LinkedIn:</strong> https://www.linkedin.com/in/bryanalexanderfreire/</div>
-        <div><strong>GitHub:</strong> https://github.com/bryanalexfreire</div>
-        <div><strong>Digital CV:</strong> <a href="https://bryanalexfreire.github.io/" target="_blank" rel="noopener noreferrer">https://bryanalexfreire.github.io/</a></div>
-      </div>
-    </header>
+    <section class="ats-paper">
+      <header>
+        <h1>Bryan Alexander Freire Chamorro</h1>
 
-    <section>
-      <h2>Summary</h2>
-      <p>Senior Software Quality Engineer specialized in QA Automation, API Testing, and Performance Testing for banking and fintech. Professional experience in Ecuador in remote and hybrid roles, collaborating with cross-functional teams. Designed and implemented Risk-Based Testing strategies integrated with CI/CD pipelines (Azure DevOps) and Agile/DevOps methodologies. Advanced skills in SerenityBDD, Karate, K6, Postman, Selenium, Jira, and Git. ISTQB® and Scrum Master certified. Recognized for intercultural communication, adaptability, and mentoring in distributed teams. Achieved a 35% reduction in post-release defects and accelerated API validation cycles from 60 to ~30 minutes through technical leadership and measurable business outcomes.</p>
-    </section>
+        <div class="cv-meta-grid">
+          <div><strong>Quito, Ecuador</strong></div>
+          <div><strong>+593 984 291 545</strong></div>
+          <div><strong>bryanalexfreire@gmail.com</strong></div>
+          <div><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/bryanalexanderfreire" target="_blank" rel="noopener noreferrer">linkedin.com/in/bryanalexanderfreire</a></div>
+          <div><strong>GitHub:</strong> <a href="https://github.com/bryanalexfreire" target="_blank" rel="noopener noreferrer">github.com/bryanalexfreire</a></div>
+          <div><strong>Portfolio:</strong> <a href="https://bryanalexfreire.github.io" target="_blank" rel="noopener noreferrer">Bryan Freire</a></div>
+        </div>
+      </header>
 
-    <section>
-      <h2>Professional Experience</h2>
+      <div class="cv-separator"></div>
 
-      <article class="job">
-        <p class="job-title">Quality Engineer (Q Engineer) — Banco Pichincha S.A</p>
-        <p class="job-meta muted">Jan. 2026 – Present | Quito, Ecuador</p>
-        <ul>
-          <li>Led test automation and API validation initiatives with Karate, SerenityBDD, and Java, achieving +30% functional and regression coverage.</li>
-          <li>Implemented performance testing with K6 on high-volume banking flows, reducing response times by 25%.</li>
-          <li>Integrated quality controls into CI/CD pipelines with Azure DevOps and Git, reducing post-release defects by 35%.</li>
-          <li>Redesigned the Risk-Based Testing strategy with business and risk teams, improving early detection of critical incidents by 40%.</li>
-          <li>Optimized API suite execution from +60 to ~30 minutes with criticality-based prioritization, accelerating technical feedback by 50%.</li>
-          <li>Mentored 5+ QA engineers in BDD, API testing, and automation, increasing team technical autonomy by 30%.</li>
-        </ul>
-      </article>
-      <article class="job">
-        <p class="job-title">Q Engineer — NTT DATA</p>
-        <p class="job-meta muted">Sep. 2023 – Jan. 2026 | Quito, Ecuador</p>
-        <ul>
-          <li>Designed functional, automated, and performance testing strategies with SerenityBDD, Karate, and K6, increasing requirements coverage by 28%.</li>
-          <li>Automated critical business scenarios in APIs and E2E flows, reducing regression time per release by 35%.</li>
-          <li>Standardized planning, estimation, and risk management in agile frameworks (Scrum/Kanban), improving delivery predictability by 20%.</li>
-          <li>Validated REST services with Postman and PostgreSQL queries, reducing transactional UAT defects by 25%.</li>
-        </ul>
-      </article>
+      <section>
+        <h2>Professional Summary</h2>
+        <p>
+          Senior QA Automation Engineer with more than 4 years of experience in E2E automation, API Testing, Performance
+          Testing, and quality strategies for banking and fintech. Experienced implementing automation frameworks with
+          Selenium, SerenityBDD, Karate, and K6, integrated into CI/CD pipelines through Azure DevOps. Specialized in
+          risk-based validation, production defect reduction, and regression cycle optimization.
+        </p>
+      </section>
 
-      <p class="small"><strong>Additional experience:</strong> QA Analyst (Perseject), QA Intern (Bayteq), QA Intern (Zurich Insurance), IT Intern (Banco Guayaquil), IT Intern (Halliburton).</p>
-    </section>
-    <section>
-      <h2>Technical Skills</h2>
-      <p><strong>Automation & Frameworks:</strong> Selenium, SerenityBDD, Karate DSL, Cucumber, TestNG, Pytest, BDD, Screenplay.</p>
-      <p><strong>Languages:</strong> Java, JavaScript, Python, SQL.</p>
-      <p><strong>APIs & Backend:</strong> REST APIs, Postman, API validation, contract testing.</p>
-      <p><strong>Performance:</strong> K6, JMeter.</p>
-      <p><strong>Databases:</strong> PostgreSQL, Redis.</p>
-      <p><strong>DevOps / CI-CD:</strong> Azure DevOps, Git, Maven, Gradle, Jenkins, SonarCloud.</p>
-      <p><strong>Quality management:</strong> Jira, X-Ray, Zephyr, Confluence, Scrum, Kanban, TDD, ATDD, risk-based testing.</p>
-    </section>
+      <div class="cv-separator"></div>
 
-    <section>
-      <h2>Featured Projects</h2>
-      <ul>
-        <li><strong>Quito Metro Transport:</strong> API/E2E validation automation for Metro de Quito Tarjeta Ciudad and prepaid card top-ups through the bank's digital channels, plus reconciliation on a high-transaction platform. Result: +30% coverage in critical scenarios and 40% reduction in late-stage defects.</li>
-        <li><strong>Investment & Savings Accounts:</strong> Optimization of API and performance testing strategy integrated into CI/CD for high-volume banking operations. Result: -35% post-release defects and API cycle reduced from 60 to ~30 minutes.</li>
-      </ul>
-    </section>
+      <section class="cv-skills">
+        <h2>Technical Skills</h2>
+        <p><strong>QA Automation:</strong> Selenium, SerenityBDD, Karate, Cucumber, Playwright</p>
+        <p><strong>API Testing:</strong> Postman, Karate, REST Assured, Contract Testing</p>
+        <p><strong>Performance Testing:</strong> K6, JMeter</p>
+        <p><strong>Programming:</strong> Java, SQL, JavaScript, Python</p>
+        <p><strong>CI/CD:</strong> Azure DevOps, Git, Jenkins, Maven, Gradle</p>
+        <p><strong>Databases:</strong> PostgreSQL, Redis</p>
+        <p><strong>Methodologies:</strong> Scrum, Kanban, Risk-Based Testing, BDD, TDD</p>
+      </section>
 
-    <section>
-      <h2>Key Certifications</h2>
-      <ul>
-        <li>ISTQB® Certified Tester, Foundation Level - Agile Tester (2014) — Apr. 2025</li>
-        <li>CSM - SCRUM MASTER — Nov. 2024</li>
-        <li>ISTQB® Foundation Level 4.0 — Jun. 2024</li>
-        <li>Stratio Generative AI Data Governance — Jul. 2025</li>
-        <li>Stratio Generative AI Data Fabric Basics — Jul. 2025</li>
-        <li>Stratio Generative AI Data Processing — Jul. 2025</li>
-      </ul>
-    </section>
+      <div class="cv-separator"></div>
 
-    <section>
-      <h2>Education &amp; Languages</h2>
-      <p><strong>Education:</strong> Information Systems Engineering (Universidad Tecnológica Israel, Oct. 2021 – Sep. 2024). Full Stack Bootcamp (Kruger Instituto Xponencial, Jul. 2024 – Nov. 2024).</p>
-      <p><strong>Languages:</strong> Spanish (native), English (intermediate with professional working proficiency).</p>
-    </section>
+      <section>
+        <h2>Professional Experience</h2>
 
-    <section>
-      <h2>ATS Keywords</h2>
-      <p class="keywords">QA Engineer, Test Automation, API Testing, Performance Testing, SerenityBDD, Karate, K6, Selenium, Postman, Azure DevOps, CI/CD, BDD, Scrum, ISTQB, Banking, Fintech, Remote, Hybrid, English, Spanish</p>
+        <article class="cv-job">
+          <div class="cv-job-head">
+            <span><strong>Banco Pichincha S.A</strong></span>
+            <span>Jan. 2026 - Present</span>
+          </div>
+          <div class="cv-job-role-row">
+            <span>Senior QA Automation Engineer</span>
+            <span>Quito, Ecuador</span>
+          </div>
+          <ul>
+            <li>Led API automation initiatives using Karate and SerenityBDD.</li>
+            <li>Designed risk-based validation strategies with business and risk teams.</li>
+            <li>Implemented performance tests on high-volume banking flows using K6.</li>
+            <li>Integrated quality controls within CI/CD pipelines.</li>
+            <li>Prioritized API validation suites based on functional criticality.</li>
+            <li>Mentored QA engineers in automation, API testing, and BDD.</li>
+          </ul>
+        </article>
+
+        <article class="cv-job">
+          <div class="cv-job-head">
+            <span><strong>NTT DATA</strong></span>
+            <span>Sep. 2023 - Jan. 2026</span>
+          </div>
+          <div class="cv-job-role-row">
+            <span>QA Engineer</span>
+            <span>Quito, Ecuador</span>
+          </div>
+          <ul>
+            <li>Designed functional and automated test strategies.</li>
+            <li>Implemented API and E2E automation.</li>
+            <li>Executed performance testing with K6.</li>
+            <li>Managed risk and planning in agile teams.</li>
+            <li>Validated integrations through REST APIs and PostgreSQL.</li>
+          </ul>
+        </article>
+
+        <a class="cv-more-link" href="index.html" data-scroll-target="experiencia">View previous experience</a>
+      </section>
+
+      <div class="cv-separator"></div>
+
+      <section>
+        <h2>Technical Projects (Blueprints)</h2>
+        <div class="cv-blueprints">
+          <article>
+            <h3>E2E Automation Blueprint</h3>
+            <p><strong>Technologies:</strong> Selenium, SerenityBDD, Java, Cucumber</p>
+            <p><strong>Features:</strong></p>
+            <ul>
+              <li>Screenplay Pattern</li>
+              <li>Page Object Model</li>
+              <li>Parallel execution</li>
+              <li>CI/CD integration</li>
+            </ul>
+            <p><strong>Results:</strong></p>
+            <ul>
+              <li>Reduced manual effort</li>
+              <li>Critical regression coverage</li>
+            </ul>
+          </article>
+
+          <article>
+            <h3>API Automation Blueprint</h3>
+            <p><strong>Technologies:</strong> Karate, Postman, REST Assured</p>
+            <p><strong>Features:</strong></p>
+            <ul>
+              <li>Contract validation</li>
+              <li>Data-Driven Testing</li>
+              <li>Mocking</li>
+              <li>CI/CD execution</li>
+            </ul>
+            <p><strong>Results:</strong></p>
+            <ul>
+              <li>Validation time reduction</li>
+              <li>Higher integration coverage</li>
+            </ul>
+          </article>
+
+          <article>
+            <h3>Performance Testing Blueprint</h3>
+            <p><strong>Technologies:</strong> K6, JMeter</p>
+            <p><strong>Features:</strong></p>
+            <ul>
+              <li>Load Testing</li>
+              <li>Stress Testing</li>
+              <li>Spike Testing</li>
+              <li>Capacity Testing</li>
+            </ul>
+            <p><strong>Results:</strong></p>
+            <ul>
+              <li>Early bottleneck identification</li>
+              <li>Response-time optimization</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <div class="cv-separator"></div>
+
+      <section class="cv-two-col">
+        <article>
+          <h2>Certifications</h2>
+          <ul>
+            <li>ISTQB Certified Tester Foundation Level - Agile Tester (2014)</li>
+            <li>ISTQB Foundation Level 4.0</li>
+            <li>CSM - Scrum Master</li>
+            <li>K6: Performance and Load Testing (Udemy)</li>
+            <li>DevOps Foundations: CI/CD (Pluralsight)</li>
+          </ul>
+        </article>
+
+        <article>
+          <h2>Education</h2>
+          <p>Information Systems Engineering - Universidad Tecnologica Israel</p>
+          <p>Quito, Ecuador | Oct. 2021 - Sep. 2024</p>
+        </article>
+      </section>
+
+      <div class="cv-separator"></div>
+
+      <section>
+        <h2>Languages</h2>
+        <p class="cv-languages"><strong>Spanish:</strong> Native</p>
+        <p class="cv-languages"><strong>English:</strong> Intermediate</p>
+      </section>
     </section>
   </main>
+
+  <script src="assets/js/pages/cv-resumen-common.js"></script>
 </body>
 </html>
+

@@ -170,3 +170,17 @@ if (document.readyState === 'loading') {
 } else {
   ThemeManager.init();
 }
+
+// Ocultar extensiones .html en la barra de direcciones sin romper la navegación actual.
+(function normalizePageUrl() {
+  if (typeof window === 'undefined' || typeof history === 'undefined') return;
+
+  const { pathname, search, hash, origin } = window.location;
+  if (!pathname.endsWith('.html')) return;
+
+  let cleanPath = pathname.replace(/\/index\.html$/i, '/').replace(/\.html$/i, '');
+  if (!cleanPath) cleanPath = '/';
+
+  const cleanUrl = `${origin}${cleanPath}${search}${hash}`;
+  history.replaceState(null, '', cleanUrl);
+})();

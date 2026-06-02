@@ -1,518 +1,118 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Certificados — Bryan Freire</title>
-  <meta name="description" content="Galería de certificados y cursos de Bryan Alexander Freire Chamorro — QA Engineer." />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Certificados — Bryan Alexander Freire Chamorro" />
-  <meta property="og:description" content="Galería de certificaciones y cursos con vista previa y descarga." />
-  <meta property="og:locale" content="es_EC" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Certificados — Bryan Alexander Freire Chamorro" />
-  <meta name="twitter:description" content="Galería de certificaciones y cursos con vista previa y descarga." />
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Certificaciones - Bryan Freire</title>
+  <meta name="description" content="Catalogo de certificaciones y cursos de Bryan Freire para QA, automatizacion, performance y DevOps." />
+  <meta name="theme-color" content="#040b16" />
   <script src="assets/js/theme.js"></script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "name": "Certificados — Bryan Alexander Freire Chamorro",
-    "about": "Certificaciones y cursos completados con evidencia verificable."
-  }
-  </script>
+  <link rel="stylesheet" href="assets/css/pages/certificados.css">
 </head>
-
 <body>
-  <div class="language-switcher">
-    <button class="lang-btn active" data-lang="es" aria-label="Cambiar a Español">
-      <span data-i18n="lang.spanish">Español</span>
-    </button>
-    <button class="lang-btn" data-lang="en" aria-label="Switch to English">
-      <span data-i18n="lang.english">English</span>
-    </button>
-
+  <div class="language-switcher" aria-label="Selector de idioma y tema">
+    <button class="lang-btn" data-lang="es" aria-label="Cambiar a Espanol">Espanol</button>
+    <button class="lang-btn" data-lang="en" aria-label="Switch to English">English</button>
     <div class="switcher-divider" aria-hidden="true"></div>
-
-    <!-- Tema -->
-    <button class="lang-btn" data-theme-btn="light" aria-label="Tema claro" title="Tema claro">
-      ☀️
-    </button>
-    <button class="lang-btn" data-theme-btn="dark" aria-label="Tema oscuro" title="Tema oscuro">
-      🌙
-    </button>
-    <button class="lang-btn" data-theme-btn="auto" aria-label="Tema automático" title="Tema automático">
-      🖥️
-    </button>
+    <button class="lang-btn" data-theme-btn="light" aria-label="Tema claro" title="Tema claro">Light</button>
+    <button class="lang-btn" data-theme-btn="dark" aria-label="Tema oscuro" title="Tema oscuro">Dark</button>
+    <button class="lang-btn" data-theme-btn="auto" aria-label="Tema automatico" title="Tema automatico">Auto</button>
   </div>
 
-  <main class="container">
-    <header class="header">
-      <div class="identity">
-        <h1 data-i18n="cert.page.title">Certificados</h1>
-        <p class="role" data-i18n="cert.page.subtitle">Evidencias de certificaciones y cursos</p>
-        <ul class="cert-hero-metrics" aria-label="Resumen de credenciales">
-          <li data-i18n="cert.hero.metric1">Portafolio profesional con validación documental</li>
-          <li data-i18n="cert.hero.metric2">Múltiples áreas: QA, DevOps, IA y liderazgo</li>
-          <li data-i18n="cert.hero.metric3">Formato de lectura rápida para recruiters</li>
-        </ul>
-        <div class="hero-actions cert-header-actions" aria-label="Acciones rápidas">
-          <a class="btn btn-outline" href="index.html" data-i18n="cert.footer.back">← Volver al CV</a>
-          <a class="btn btn-primary" href="https://www.linkedin.com/in/bryanalexanderfreire/" target="_blank" rel="noopener noreferrer" data-i18n="hero.cta.linkedin">💬 Contactar por LinkedIn</a>
-        </div>
+  <main class="cert-page">
+    <header class="cert-header">
+      <div>
+        <h1 class="cert-title" data-i18n="title">Certificaciones</h1>
+        <p class="cert-subtitle" data-i18n="subtitle">Certificaciones y cursos que respaldan mi formacion continua en calidad de software, automatizacion, performance y metodologias agiles.</p>
       </div>
-      <p class="last-update"><span data-i18n="header.lastupdate">Última actualización:</span> <time datetime="2026-04-30">30/04/2026</time></p>
+
+      <div class="cert-tabs" id="cert-tabs" aria-label="Filtros de certificaciones">
+        <button class="cert-tab active" data-filter="all" data-i18n="tab.all">Todas</button>
+        <button class="cert-tab" data-filter="certificacion" data-i18n="tab.certs">Certificaciones</button>
+        <button class="cert-tab" data-filter="curso" data-i18n="tab.courses">Cursos</button>
+        <button class="cert-tab" data-filter="metodologia" data-i18n="tab.methods">Metodologias</button>
+        <button class="cert-tab" data-filter="devops" data-i18n="tab.devops">Cloud &amp; DevOps</button>
+        <button class="cert-tab" data-filter="testing" data-i18n="tab.testing">Testing &amp; Calidad</button>
+      </div>
+
+      <div class="cert-actions">
+        <a class="cert-btn-home" href="index.html" data-i18n="btn.home"><- Volver al inicio</a>
+        <a class="cert-btn-download" href="cv-resumen.html" data-i18n="btn.download">Descargar resumen</a>
+      </div>
     </header>
 
-    <!-- FILTROS -->
-    <section class="section">
-      <h2 data-i18n="cert.section.filter">Filtrar por categoría</h2>
-      <div class="cert-toolbar" role="search" aria-label="Búsqueda de certificados">
-        <label for="cert-search" class="sr-only" data-i18n="cert.search.label">Buscar certificado</label>
-        <input id="cert-search" class="cert-search" type="search" data-i18n="cert.search.placeholder" placeholder="Buscar por nombre, emisor o fecha" />
-
-        <label for="cert-sort" class="sr-only" data-i18n="cert.sort.label">Ordenar certificados</label>
-        <select id="cert-sort" class="cert-sort" aria-label="Ordenar certificados">
-          <option value="recent" data-i18n="cert.sort.recent">Más recientes</option>
-          <option value="oldest" data-i18n="cert.sort.oldest">Más antiguos</option>
-          <option value="name" data-i18n="cert.sort.name">Nombre (A-Z)</option>
-        </select>
-      </div>
-      <div class="filters">
-        <button class="filter-btn is-active" data-filter="all"           data-i18n="cert.filter.all">Todos</button>
-        <button class="filter-btn"           data-filter="certificacion" data-i18n="cert.filter.certificacion">Certificaciones</button>
-        <button class="filter-btn"           data-filter="testing"       data-i18n="cert.filter.testing">Testing y Calidad</button>
-        <button class="filter-btn"           data-filter="devops"        data-i18n="cert.filter.devops">DevOps &amp; Cloud</button>
-        <button class="filter-btn"           data-filter="ia"            data-i18n="cert.filter.ia">IA y Desarrollo Web</button>
-        <button class="filter-btn"           data-filter="habilidades"   data-i18n="cert.filter.habilidades">Habilidades</button>
-      </div>
+    <section class="cert-stats" aria-label="Metricas de certificaciones">
+      <article class="cert-stat">
+        <div class="cert-stat-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 3L19 6V11C19 15.5 15.7 19.6 12 21C8.3 19.6 5 15.5 5 11V6L12 3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M9.2 11.8L11.2 13.8L14.8 10.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div>
+          <p class="cert-stat-value" id="stat-certs">0</p>
+          <p class="cert-stat-label" data-i18n="stat.certs">Certificaciones</p>
+        </div>
+      </article>
+      <article class="cert-stat">
+        <div class="cert-stat-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 6.5C4 5.7 4.7 5 5.5 5H18.5C19.3 5 20 5.7 20 6.5V17.5C20 18.3 19.3 19 18.5 19H5.5C4.7 19 4 18.3 4 17.5V6.5Z" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M8 5V19" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M10.8 9H16.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M10.8 13H15.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <p class="cert-stat-value" id="stat-courses">0</p>
+          <p class="cert-stat-label" data-i18n="stat.courses">Cursos completados</p>
+        </div>
+      </article>
+      <article class="cert-stat">
+        <div class="cert-stat-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M12 7.8V12L15.2 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div>
+          <p class="cert-stat-value">180+</p>
+          <p class="cert-stat-label" data-i18n="stat.hours">Horas de formacion</p>
+        </div>
+      </article>
+      <article class="cert-stat">
+        <div class="cert-stat-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 12C20 16.4 16.4 20 12 20C7.6 20 4 16.4 4 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M4 12L6.7 9.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M4 12L8 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M4 12C4 7.6 7.6 4 12 4C16.4 4 20 7.6 20 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" opacity="0.45"/>
+          </svg>
+        </div>
+        <div>
+          <p class="cert-stat-value">2018 - 2025</p>
+          <p class="cert-stat-label" data-i18n="stat.period">Formacion continua</p>
+        </div>
+      </article>
     </section>
 
-    <!-- GALERÍA -->
-    <section class="section">
-      <h2 data-i18n="cert.section.gallery">Galería</h2>
-      <p id="results-count" class="results-count" aria-live="polite" data-i18n="cert.results.default">Mostrando todos los certificados</p>
-
-      <!-- SECCIÓN 1: CERTIFICACIONES (igual a index.html) -->
-      <div class="cert-section-block" data-section="certificacion">
-        <h3 class="cert-section-title" data-i18n="cert.section.certificaciones">Certificaciones</h3>
-        <div class="cert-grid">
-
-          <article class="card" data-type="certificacion">
-            <div class="card-header"><div class="card-icon">📊</div><div class="card-title">Stratio Governance</div></div>
-            <div class="card-body">
-              <h3 class="cert-name">Stratio Generative AI Data Governance</h3>
-              <div class="cert-details"><span><span data-i18n="cert.issued">Emitido</span>: jul. 2025</span><span>• <span data-i18n="cert.issuer">Emisor</span>: StratioBD</span></div>
-              <div class="card-buttons">
-                <button class="btn btn-preview" data-i18n="cert.btn.preview" onclick="openLightbox(0)">👁️ Vista previa</button>
-                <a href="assets/docs/certificados/Stratio Generative AI Data Governance.pdf" class="btn btn-credential" data-i18n="cert.btn.download" download="Stratio_Governance.pdf">📥 Descargar PDF</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" data-type="certificacion">
-            <div class="card-header"><div class="card-icon">📊</div><div class="card-title">Stratio Data Fabric</div></div>
-            <div class="card-body">
-              <h3 class="cert-name">Stratio Generative AI Data Fabric Basics</h3>
-              <div class="cert-details"><span><span data-i18n="cert.issued">Emitido</span>: jul. 2025</span><span>• <span data-i18n="cert.issuer">Emisor</span>: StratioBD</span></div>
-              <div class="card-buttons">
-                <button class="btn btn-preview" data-i18n="cert.btn.preview" onclick="openLightbox(1)">👁️ Vista previa</button>
-                <a href="assets/docs/certificados/Stratio Generative AI Data Fabric Basics.pdf" class="btn btn-credential" data-i18n="cert.btn.download" download="Stratio_Data_Fabric.pdf">📥 Descargar PDF</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" data-type="certificacion">
-            <div class="card-header"><div class="card-icon">📊</div><div class="card-title">Stratio Processing</div></div>
-            <div class="card-body">
-              <h3 class="cert-name">Stratio Generative AI Data Processing</h3>
-              <div class="cert-details"><span><span data-i18n="cert.issued">Emitido</span>: jul. 2025</span><span>• <span data-i18n="cert.issuer">Emisor</span>: StratioBD</span></div>
-              <div class="card-buttons">
-                <button class="btn btn-preview" data-i18n="cert.btn.preview" onclick="openLightbox(2)">👁️ Vista previa</button>
-                <a href="assets/docs/certificados/Stratio Generative AI Data Procesing.pdf" class="btn btn-credential" data-i18n="cert.btn.download" download="Stratio_Data_Processing.pdf">📥 Descargar PDF</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" data-type="certificacion">
-            <div class="card-header"><div class="card-icon">🎓</div><div class="card-title">ISTQB® Agile Tester</div></div>
-            <div class="card-body">
-              <h3 class="cert-name">ISTQB® Certified Tester, Foundation Level - Agile Tester (2014)</h3>
-              <div class="cert-details"><span><span data-i18n="cert.issued">Emitido</span>: abr. 2025</span><span>• <span data-i18n="cert.issuer">Emisor</span>: ISTQB®</span></div>
-              <div class="card-buttons">
-                <button class="btn btn-preview" data-i18n="cert.btn.preview" onclick="openLightbox(3)">👁️ Vista previa</button>
-                <a href="assets/docs/certificados/ISTQB® Certified Tester, Foundation Level - Agile Tester (2014).pdf" class="btn btn-credential" data-i18n="cert.btn.download" download="ISTQB_Agile_Tester_2014.pdf">📥 Descargar PDF</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" data-type="certificacion">
-            <div class="card-header"><div class="card-icon">🎓</div><div class="card-title">CSM®</div></div>
-            <div class="card-body">
-              <h3 class="cert-name">CSM - SCRUM MASTER</h3>
-              <div class="cert-details"><span><span data-i18n="cert.issued">Emitido</span>: nov. 2024</span><span>• <span data-i18n="cert.issuer">Emisor</span>: Scrum Alliance, Inc.</span></div>
-              <div class="card-buttons">
-                <button class="btn btn-preview" data-i18n="cert.btn.preview" onclick="openLightbox(4)">👁️ Vista previa</button>
-                <a href="assets/docs/certificados/CSM - SCRUM MASTER.pdf" class="btn btn-credential" data-i18n="cert.btn.download" download="CSM_SCRUM_MASTER.pdf">📥 Descargar PDF</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" data-type="certificacion">
-            <div class="card-header"><div class="card-icon">🎓</div><div class="card-title">ISTQB® FL 4.0</div></div>
-            <div class="card-body">
-              <h3 class="cert-name">ISTQB® Foundation Level 4.0</h3>
-              <div class="cert-details"><span><span data-i18n="cert.issued">Emitido</span>: jun. 2024</span><span>• <span data-i18n="cert.issuer">Emisor</span>: ISTQB®</span></div>
-              <div class="card-buttons">
-                <button class="btn btn-preview" data-i18n="cert.btn.preview" onclick="openLightbox(5)">👁️ Vista previa</button>
-                <a href="assets/docs/certificados/ISTQB® Foundation Level 4.0.pdf" class="btn btn-credential" data-i18n="cert.btn.download" download="ISTQB_Foundation_Level_4.0.pdf">📥 Descargar PDF</a>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-
-      <!-- SECCIÓN 2: TESTING Y CALIDAD (igual a index.html) -->
-      <div class="cert-section-block" data-section="testing">
-        <h3 class="cert-section-title" data-i18n="cert.section.testing">Testing y Calidad</h3>
-        <div class="cert-grid">
-
-          <article class="card" data-type="testing">
-            <div class="card-header"><div class="card-icon">🧪</div><div class="card-title">CT-TAE</div></div>
-            <div class="card-body">
-              <h3 class="cert-name">ISTQB® Certified Tester – Test Automation Engineer (CT-TAE)</h3>
-              <div class="cert-details"><span><span data-i18n="cert.status">Estado</span>: <span data-i18n="date.incourse">En curso</span></span><span>• <span data-i18n="cert.issuer">Emisor</span>: ISTQB®</span></div>
-              <div class="card-buttons">
-                <span class="cert-pending" data-i18n="cert.pending">Certificado pendiente de digitalización</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" data-type="testing">
-            <div class="card-header"><div class="card-icon">✅</div><div class="card-title">Serenity QA</div></div>
-            <div class="card-body">
-              <h3 class="cert-name">¡Curso de QA Automation con Serenity - De novato a experto!</h3>
-              <div class="cert-details"><span><span data-i18n="cert.issued">Emitido</span>: abr. 2025</span><span>• <span data-i18n="cert.issuer">Emisor</span>: Udemy</span></div>
-              <div class="card-buttons">
-                <button class="btn btn-preview" data-i18n="cert.btn.preview" onclick="openLightbox(6)">👁️ Vista previa</button>
-                <a href="assets/docs/certificados/Curso de QA Automation con Serenity - De novato a experto!.pdf" class="btn btn-credential" data-i18n="cert.btn.download" download="QA_Automation_Serenity.pdf">📥 Descargar PDF</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" data-type="testing">
-            <div class="card-header"><div class="card-icon">✅</div><div class="card-title">Pruebas ágiles</div></div>
-            <div class="card-body">
-              <h3 class="cert-name">Fundamentos de pruebas ágiles</h3>
-              <div class="cert-details"><span><span data-i18n="cert.issued">Emitido</span>: mar. 2025</span><span>• <span data-i18n="cert.issuer">Emisor</span>: Full Advanced</span></div>
-              <div class="card-buttons">
-                <button class="btn btn-preview" data-i18n="cert.btn.preview" onclick="openLightbox(7)">👁️ Vista previa</button>
-                <a href="assets/docs/certificados/Fundamentos de pruebas Agiles.pdf" class="btn btn-credential" data-i18n="cert.btn.download" download="Fundamentos_Pruebas_Agiles.pdf">📥 Descargar PDF</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" data-type="testing">
-            <div class="card-header"><div class="card-icon">✅</div><div class="card-title">K6</div></div>
-            <div class="card-body">
-              <h3 class="cert-name">K6: Pruebas de rendimiento y carga para principiantes</h3>
-              <div class="cert-details"><span><span data-i18n="cert.issued">Emitido</span>: mar. 2025</span><span>• <span data-i18n="cert.issuer">Emisor</span>: Udemy</span></div>
-              <div class="card-buttons">
-                <button class="btn btn-preview" data-i18n="cert.btn.preview" onclick="openLightbox(8)">👁️ Vista previa</button>
-                <a href="assets/docs/certificados/K6 Pruebas de performance para principiantes.pdf" class="btn btn-credential" data-i18n="cert.btn.download" download="K6_Performance.pdf">📥 Descargar PDF</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" data-type="testing">
-            <div class="card-header"><div class="card-icon">✅</div><div class="card-title">Karate DSL</div></div>
-            <div class="card-body">
-              <h3 class="cert-name">Karate DSL: API Automation and Performance from Zero to Hero</h3>
-              <div class="cert-details"><span><span data-i18n="cert.issued">Emitido</span>: mar. 2025</span><span>• <span data-i18n="cert.issuer">Emisor</span>: Udemy</span></div>
-              <div class="card-buttons">
-                <button class="btn btn-preview" data-i18n="cert.btn.preview" onclick="openLightbox(9)">👁️ Vista previa</button>
-                <a href="assets/docs/certificados/Karate DSL Api Automation and performance from zero to hero.pdf" class="btn btn-credential" data-i18n="cert.btn.download" download="Karate_DSL.pdf">📥 Descargar PDF</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" data-type="testing">
-            <div class="card-header"><div class="card-icon">✅</div><div class="card-title">Dynatrace</div></div>
-            <div class="card-body">
-              <h3 class="cert-name">Dynatrace Fundamentals</h3>
-              <div class="cert-details"><span><span data-i18n="cert.issued">Emitido</span>: abr. 2025</span><span>• <span data-i18n="cert.issuer">Emisor</span>: Pluralsight</span></div>
-              <div class="card-buttons">
-                <button class="btn btn-preview" data-i18n="cert.btn.preview" onclick="openLightbox(10)">👁️ Vista previa</button>
-                <a href="assets/docs/certificados/Dynatrace Fundamentals.pdf" class="btn btn-credential" data-i18n="cert.btn.download" download="Dynatrace_Fundamentals.pdf">📥 Descargar PDF</a>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-
-      <!-- SECCIÓN 3: DEVOPS, CLOUD Y OBSERVABILIDAD (igual a index.html) -->
-      <div class="cert-section-block" data-section="devops">
-        <h3 class="cert-section-title" data-i18n="cert.section.devops">DevOps, Cloud y Observabilidad</h3>
-        <div class="cert-grid">
-
-          <article class="card" data-type="devops">
-            <div class="card-header"><div class="card-icon">☁️</div><div class="card-title">Docker Core</div></div>
-            <div class="card-body">
-              <h3 class="cert-name">Developing Docker Apps: Core Principles</h3>
-              <div class="cert-details"><span><span data-i18n="cert.issued">Emitido</span>: abr. 2025</span><span>• <span data-i18n="cert.issuer">Emisor</span>: Pluralsight</span></div>
-              <div class="card-buttons">
-                <button class="btn btn-preview" data-i18n="cert.btn.preview" onclick="openLightbox(11)">👁️ Vista previa</button>
-                <a href="assets/docs/certificados/Developing Docker Apps Core.pdf" class="btn btn-credential" data-i18n="cert.btn.download" download="Developing_Docker_Apps_Core.pdf">📥 Descargar PDF</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" data-type="devops">
-            <div class="card-header"><div class="card-icon">☁️</div><div class="card-title">CI/CD Foundations</div></div>
-            <div class="card-body">
-              <h3 class="cert-name">DevOps Foundations: Continuous Integration and Continuous Delivery</h3>
-              <div class="cert-details"><span><span data-i18n="cert.issued">Emitido</span>: abr. 2025</span><span>• <span data-i18n="cert.issuer">Emisor</span>: Pluralsight</span></div>
-              <div class="card-buttons">
-                <button class="btn btn-preview" data-i18n="cert.btn.preview" onclick="openLightbox(12)">👁️ Vista previa</button>
-                <a href="assets/docs/certificados/DevOps Foundations Continuous Integration and Continuous Delivery.pdf" class="btn btn-credential" data-i18n="cert.btn.download" download="DevOps_Foundations_CICD.pdf">📥 Descargar PDF</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" data-type="devops">
-            <div class="card-header"><div class="card-icon">☁️</div><div class="card-title">Git Fundamentals</div></div>
-            <div class="card-body">
-              <h3 class="cert-name">Git Fundamentals</h3>
-              <div class="cert-details"><span><span data-i18n="cert.issued">Emitido</span>: abr. 2025</span><span>• <span data-i18n="cert.issuer">Emisor</span>: Pluralsight</span></div>
-              <div class="card-buttons">
-                <button class="btn btn-preview" data-i18n="cert.btn.preview" onclick="openLightbox(13)">👁️ Vista previa</button>
-                <a href="assets/docs/certificados/Git Fundamentals.pdf" class="btn btn-credential" data-i18n="cert.btn.download" download="Git_Fundamentals.pdf">📥 Descargar PDF</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" data-type="devops">
-            <div class="card-header"><div class="card-icon">☁️</div><div class="card-title">Observability</div></div>
-            <div class="card-body">
-              <h3 class="cert-name">Observability: Technologies and Implementation</h3>
-              <div class="cert-details"><span><span data-i18n="cert.issued">Emitido</span>: mar. 2025</span><span>• <span data-i18n="cert.issuer">Emisor</span>: Pluralsight</span></div>
-              <div class="card-buttons">
-                <button class="btn btn-preview" data-i18n="cert.btn.preview" onclick="openLightbox(14)">👁️ Vista previa</button>
-                <a href="assets/docs/certificados/Observability Technologies and implementation.pdf" class="btn btn-credential" data-i18n="cert.btn.download" download="Observability_Technologies.pdf">📥 Descargar PDF</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" data-type="devops">
-            <div class="card-header"><div class="card-icon">☁️</div><div class="card-title">SRE</div></div>
-            <div class="card-body">
-              <h3 class="cert-name">Site Reliability Engineering (SRE): The Big Picture</h3>
-              <div class="cert-details"><span><span data-i18n="cert.issued">Emitido</span>: mar. 2025</span><span>• <span data-i18n="cert.issuer">Emisor</span>: Pluralsight</span></div>
-              <div class="card-buttons">
-                <button class="btn btn-preview" data-i18n="cert.btn.preview" onclick="openLightbox(15)">👁️ Vista previa</button>
-                <a href="assets/docs/certificados/Site reliability Engineering The big picture.pdf" class="btn btn-credential" data-i18n="cert.btn.download" download="SRE_Big_Picture.pdf">📥 Descargar PDF</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" data-type="devops">
-            <div class="card-header"><div class="card-icon">☁️</div><div class="card-title">DevOps TOTAL</div></div>
-            <div class="card-body">
-              <h3 class="cert-name">DevOps TOTAL Docker, Kubernetes, Jenkins, AWS, Git &amp; Más!</h3>
-              <div class="cert-details"><span><span data-i18n="cert.issued">Emitido</span>: mar. 2025</span><span>• <span data-i18n="cert.issuer">Emisor</span>: Udemy</span></div>
-              <div class="card-buttons">
-                <button class="btn btn-preview" data-i18n="cert.btn.preview" onclick="openLightbox(16)">👁️ Vista previa</button>
-                <a href="assets/docs/certificados/DevOps TOTAL Docker, Kubernetes, Jenkins, AWS, Git & Más!.pdf" class="btn btn-credential" data-i18n="cert.btn.download" download="DevOps_TOTAL.pdf">📥 Descargar PDF</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" data-type="devops">
-            <div class="card-header"><div class="card-icon">☁️</div><div class="card-title">Azure DevOps</div></div>
-            <div class="card-body">
-              <h3 class="cert-name">DevOps y cloud con Azure DevOps, App Service Pipelines y Git</h3>
-              <div class="cert-details"><span><span data-i18n="cert.issued">Emitido</span>: mar. 2025</span><span>• <span data-i18n="cert.issuer">Emisor</span>: Udemy</span></div>
-              <div class="card-buttons">
-                <button class="btn btn-preview" data-i18n="cert.btn.preview" onclick="openLightbox(17)">👁️ Vista previa</button>
-                <a href="assets/docs/certificados/Devops y cloud con azure devops, app service pipelines y git.pdf" class="btn btn-credential" data-i18n="cert.btn.download" download="Azure_DevOps_Cloud.pdf">📥 Descargar PDF</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" data-type="devops">
-            <div class="card-header"><div class="card-icon">☁️</div><div class="card-title">Ultimate Docker</div></div>
-            <div class="card-body">
-              <h3 class="cert-name">Ultimate Docker: guía de cero hasta despliegues</h3>
-              <div class="cert-details"><span><span data-i18n="cert.issued">Emitido</span>: mar. 2025</span><span>• <span data-i18n="cert.issuer">Emisor</span>: Udemy</span></div>
-              <div class="card-buttons">
-                <button class="btn btn-preview" data-i18n="cert.btn.preview" onclick="openLightbox(18)">👁️ Vista previa</button>
-                <a href="assets/docs/certificados/Ultimate Docker  guía de cero hasta despliegues.pdf" class="btn btn-credential" data-i18n="cert.btn.download" download="Ultimate_Docker.pdf">📥 Descargar PDF</a>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-
-      <!-- SECCIÓN 4: IA, PRODUCTIVIDAD Y DESARROLLO WEB (igual a index.html) -->
-      <div class="cert-section-block" data-section="ia">
-        <h3 class="cert-section-title" data-i18n="cert.section.ia">IA, Productividad y Desarrollo Web</h3>
-        <div class="cert-grid">
-
-          <article class="card" data-type="ia">
-            <div class="card-header"><div class="card-icon">🤖</div><div class="card-title">GitHub Copilot</div></div>
-            <div class="card-body">
-              <h3 class="cert-name">Aceleración del desarrollo de aplicaciones mediante GitHub Copilot</h3>
-              <div class="cert-details"><span><span data-i18n="cert.issued">Emitido</span>: feb. 2025</span><span>• <span data-i18n="cert.issuer">Emisor</span>: Microsoft</span></div>
-              <div class="card-buttons">
-                <button class="btn btn-preview" data-i18n="cert.btn.preview" onclick="openLightbox(19)">👁️ Vista previa</button>
-                <a href="assets/docs/certificados/Aceleración del desarrollo de aplicaciones mediante GitHub Copilot.pdf" class="btn btn-credential" data-i18n="cert.btn.download" download="GitHub_Copilot_Acceleration.pdf">📥 Descargar PDF</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" data-type="ia">
-            <div class="card-header"><div class="card-icon">🤖</div><div class="card-title">Copilot Basics</div></div>
-            <div class="card-body">
-              <h3 class="cert-name">Aspectos básicos de GitHub Copilot: descripción del programador de pares de inteligencia artificial</h3>
-              <div class="cert-details"><span><span data-i18n="cert.issued">Emitido</span>: feb. 2025</span><span>• <span data-i18n="cert.issuer">Emisor</span>: Microsoft</span></div>
-              <div class="card-buttons">
-                <button class="btn btn-preview" data-i18n="cert.btn.preview" onclick="openLightbox(20)">👁️ Vista previa</button>
-                <a href="assets/docs/certificados/Aspectos básicos de GitHub Copilot (descripción del programador de pares de inteligencia artificial).pdf" class="btn btn-credential" data-i18n="cert.btn.download" download="GitHub_Copilot_Basics.pdf">📥 Descargar PDF</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" data-type="ia">
-            <div class="card-header"><div class="card-icon">🌐</div><div class="card-title">HTML &amp; CSS (1/2)</div></div>
-            <div class="card-body">
-              <h3 class="cert-name">Curso de introducción al desarrollo web: HTML y CSS (1/2)</h3>
-              <div class="cert-details"><span><span data-i18n="cert.issued">Emitido</span>: feb. 2025</span><span>• <span data-i18n="cert.issuer">Emisor</span>: Google</span></div>
-              <div class="card-buttons">
-                <button class="btn btn-preview" data-i18n="cert.btn.preview" onclick="openLightbox(21)">👁️ Vista previa</button>
-                <a href="assets/docs/certificados/Curso de introducción al desarrollo web HTML y CSS 1-2.pdf" class="btn btn-credential" data-i18n="cert.btn.download" download="HTML_CSS_1_2.pdf">📥 Descargar PDF</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" data-type="ia">
-            <div class="card-header"><div class="card-icon">🌐</div><div class="card-title">HTML &amp; CSS (2/2)</div></div>
-            <div class="card-body">
-              <h3 class="cert-name">Curso de introducción al desarrollo web: HTML y CSS (2/2)</h3>
-              <div class="cert-details"><span><span data-i18n="cert.issued">Emitido</span>: feb. 2025</span><span>• <span data-i18n="cert.issuer">Emisor</span>: Google</span></div>
-              <div class="card-buttons">
-                <button class="btn btn-preview" data-i18n="cert.btn.preview" onclick="openLightbox(22)">👁️ Vista previa</button>
-                <a href="assets/docs/certificados/Curso de introducción al desarrollo web HTML y CSS 2-2.pdf" class="btn btn-credential" data-i18n="cert.btn.download" download="HTML_CSS_2_2.pdf">📥 Descargar PDF</a>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-
-      <!-- SECCIÓN 5: HABILIDADES PROFESIONALES (igual a index.html) -->
-      <div class="cert-section-block" data-section="habilidades">
-        <h3 class="cert-section-title" data-i18n="cert.section.habilidades">Habilidades profesionales</h3>
-        <div class="cert-grid">
-
-          <article class="card" data-type="habilidades">
-            <div class="card-header"><div class="card-icon">🧠</div><div class="card-title">Design Thinking</div></div>
-            <div class="card-body">
-              <h3 class="cert-name">Curso Completo en Design Thinking</h3>
-              <div class="cert-details"><span><span data-i18n="cert.issued">Emitido</span>: feb. 2025</span><span>• <span data-i18n="cert.issuer">Emisor</span>: Udemy</span></div>
-              <div class="card-buttons">
-                <button class="btn btn-preview" data-i18n="cert.btn.preview" onclick="openLightbox(27)">👁️ Vista previa</button>
-                <a href="assets/docs/certificados/Curso Completo en Design Thinking.pdf" class="btn btn-credential" data-i18n="cert.btn.download" download="Curso_Completo_Design_Thinking.pdf">📥 Descargar PDF</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" data-type="habilidades">
-            <div class="card-header"><div class="card-icon">🧠</div><div class="card-title">Decidir y priorizar</div></div>
-            <div class="card-body">
-              <h3 class="cert-name">Decidir y priorizar: para lograr tus metas</h3>
-              <div class="cert-details"><span><span data-i18n="cert.issued">Emitido</span>: mar. 2025</span><span>• <span data-i18n="cert.issuer">Emisor</span>: Udemy</span></div>
-              <div class="card-buttons">
-                <button class="btn btn-preview" data-i18n="cert.btn.preview" onclick="openLightbox(23)">👁️ Vista previa</button>
-                <a href="assets/docs/certificados/Decidir y Priorizar- Para lograr tus metas.pdf" class="btn btn-credential" data-i18n="cert.btn.download" download="Decidir_y_Priorizar.pdf">📥 Descargar PDF</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" data-type="habilidades">
-            <div class="card-header"><div class="card-icon">🧠</div><div class="card-title">Inteligencia emocional</div></div>
-            <div class="card-body">
-              <h3 class="cert-name">Inteligencia emocional para la atención al cliente</h3>
-              <div class="cert-details"><span><span data-i18n="cert.issued">Emitido</span>: mar. 2025</span><span>• <span data-i18n="cert.issuer">Emisor</span>: Udemy</span></div>
-              <div class="card-buttons">
-                <button class="btn btn-preview" data-i18n="cert.btn.preview" onclick="openLightbox(24)">👁️ Vista previa</button>
-                <a href="assets/docs/certificados/Inteligencia Emocional para la Atención al Cliente.pdf" class="btn btn-credential" data-i18n="cert.btn.download" download="Inteligencia_Emocional_Cliente.pdf">📥 Descargar PDF</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" data-type="habilidades">
-            <div class="card-header"><div class="card-icon">🧠</div><div class="card-title">Servicio al cliente</div></div>
-            <div class="card-body">
-              <h3 class="cert-name">Servicio al cliente: Cómo manejar clientes difíciles</h3>
-              <div class="cert-details"><span><span data-i18n="cert.issued">Emitido</span>: mar. 2025</span><span>• <span data-i18n="cert.issuer">Emisor</span>: Udemy</span></div>
-              <div class="card-buttons">
-                <button class="btn btn-preview" data-i18n="cert.btn.preview" onclick="openLightbox(25)">👁️ Vista previa</button>
-                <a href="assets/docs/certificados/Servicio al cliente- Como manejar clientes difíciles.pdf" class="btn btn-credential" data-i18n="cert.btn.download" download="Servicio_Cliente_Dificiles.pdf">📥 Descargar PDF</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" data-type="habilidades">
-            <div class="card-header"><div class="card-icon">🧠</div><div class="card-title">Liderazgo</div></div>
-            <div class="card-body">
-              <h3 class="cert-name">Liderazgo y gestión de equipos</h3>
-              <div class="cert-details"><span><span data-i18n="cert.issued">Emitido</span>: mar. 2025</span><span>• <span data-i18n="cert.issuer">Emisor</span>: Udemy</span></div>
-              <div class="card-buttons">
-                <button class="btn btn-preview" data-i18n="cert.btn.preview" onclick="openLightbox(26)">👁️ Vista previa</button>
-                <a href="assets/docs/certificados/Liderazgo y Gestión de equipos.pdf" class="btn btn-credential" data-i18n="cert.btn.download" download="Liderazgo_Gestion_Equipos.pdf">📥 Descargar PDF</a>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-
+    <section data-section="certificacion">
+      <h2 class="cert-section-title" data-i18n="section.certs">Certificaciones Profesionales</h2>
+      <div class="cert-grid" id="cert-grid"></div>
     </section>
 
-    <footer class="footer">
-      <p><a href="index.html" class="btn-link" data-i18n="cert.footer.back">← Volver al CV</a></p>
-      <p>© <span id="year">2026</span> Bryan Alexander Freire Chamorro - <span data-i18n="footer.text">CV para uso
-          profesional</span>.</p>
+    <section data-section="curso">
+      <h2 class="cert-section-title" data-i18n="section.courses">Cursos y Especializaciones</h2>
+      <div class="cert-grid" id="course-grid"></div>
+    </section>
+
+    <footer class="cert-footer">
+      <p class="cert-footer-copy" data-i18n="foot.copy">Todas las certificaciones son verificables y respaldan mi compromiso con la mejora continua. Hago aprendizaje constante para mantenerme actualizado con las mejores practicas y tecnologias del mercado.</p>
+      <a class="cert-btn-linkedin" href="https://www.linkedin.com/in/bryanalexanderfreire/details/certifications/" target="_blank" rel="noopener noreferrer" data-i18n="foot.link">Ver todas las certificaciones en LinkedIn -></a>
     </footer>
   </main>
 
-  <!-- MODAL LIGHTBOX -->
-  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-    <span class="close-btn" onclick="closeLightbox()">&times;</span>
-    <span class="prev-btn" onclick="changeImage(-1); event.stopPropagation();">&#10094;</span>
-    <span class="next-btn" onclick="changeImage(1); event.stopPropagation();">&#10095;</span>
-    <div class="lightbox-content" onclick="event.stopPropagation();">
-      <div id="lightbox-media" class="lightbox-media" aria-live="polite"></div>
-      <div class="lightbox-caption">
-        <h3 id="lightbox-title"></h3>
-        <p id="lightbox-meta"></p>
-        <p class="lightbox-actions">
-          <a id="lightbox-source-link" class="btn-link" href="#" target="_blank" rel="noopener noreferrer" data-i18n="cert.btn.source">Abrir certificado fuente</a>
-          <span class="lightbox-separator" aria-hidden="true">•</span>
-          <a id="lightbox-verified-link" class="btn-link" href="#" target="_blank" rel="noopener noreferrer" data-i18n="cert.btn.verified" hidden>🔗 Ver credencial verificada</a>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <script src="js/i18n.js"></script>
-  <script src="js/certificados.js"></script>
+  <script src="assets/js/pages/certificados-page.js"></script>
 </body>
-
 </html>
+

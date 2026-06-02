@@ -12,14 +12,24 @@ Proyecto de portafolio/CV construido con HTML, CSS y JavaScript vanilla.
 ├── cv-resumen-en.html
 ├── assets/
 │   ├── css/
-│   │   └── styles.css
+│   │   ├── styles.css
+│   │   ├── xp-pro.css
+│   │   └── pages/
+│   │       ├── certificados.css
+│   │       └── cv-resumen.css
 │   ├── docs/
 │   │   └── certificados/
 │   └── js/
-│       └── theme.js
-├── js/
-│   ├── i18n.js
-│   └── certificados.js
+│       ├── theme.js
+│       ├── xp-pro.js
+│       ├── data/
+│       │   └── xp-data.js
+│       └── pages/
+│           ├── index-page.js
+│           ├── certificados-page.js
+│           ├── cv-resumen-common.js
+│           ├── cv-resumen-es.js
+│           └── cv-resumen-en.js
 └── README.md
 ```
 
@@ -32,10 +42,18 @@ El proyecto fue depurado para dejar unicamente el runtime activo:
 - [cv-resumen.html](cv-resumen.html)
 - [cv-resumen-en.html](cv-resumen-en.html)
 - [assets/css/styles.css](assets/css/styles.css)
+- [assets/css/xp-pro.css](assets/css/xp-pro.css)
+- [assets/css/pages/certificados.css](assets/css/pages/certificados.css)
+- [assets/css/pages/cv-resumen.css](assets/css/pages/cv-resumen.css)
 - [assets/docs/certificados](assets/docs/certificados)
 - [assets/js/theme.js](assets/js/theme.js)
-- [js/i18n.js](js/i18n.js)
-- [js/certificados.js](js/certificados.js)
+- [assets/js/xp-pro.js](assets/js/xp-pro.js)
+- [assets/js/data/xp-data.js](assets/js/data/xp-data.js)
+- [assets/js/pages/index-page.js](assets/js/pages/index-page.js)
+- [assets/js/pages/certificados-page.js](assets/js/pages/certificados-page.js)
+- [assets/js/pages/cv-resumen-common.js](assets/js/pages/cv-resumen-common.js)
+- [assets/js/pages/cv-resumen-es.js](assets/js/pages/cv-resumen-es.js)
+- [assets/js/pages/cv-resumen-en.js](assets/js/pages/cv-resumen-en.js)
 
 ## Uso
 
@@ -48,9 +66,11 @@ El proyecto fue depurado para dejar unicamente el runtime activo:
 
 - Edita contenido del CV directamente en [index.html](index.html)
 - Edita resúmenes en [cv-resumen.html](cv-resumen.html) (español) y [cv-resumen-en.html](cv-resumen-en.html) (inglés)
-- Edita traducciones en [js/i18n.js](js/i18n.js)
-- Edita la galeria en [certificados.html](certificados.html)
-- Ajusta estilos en [assets/css/styles.css](assets/css/styles.css)
+- Edita experiencias en [assets/js/data/xp-data.js](assets/js/data/xp-data.js)
+- Edita lógica de landing en [assets/js/pages/index-page.js](assets/js/pages/index-page.js)
+- Edita la galeria en [assets/js/pages/certificados-page.js](assets/js/pages/certificados-page.js)
+- Ajusta estilos globales en [assets/css/styles.css](assets/css/styles.css) y [assets/css/xp-pro.css](assets/css/xp-pro.css)
+- Ajusta estilos de páginas en [assets/css/pages/certificados.css](assets/css/pages/certificados.css) y [assets/css/pages/cv-resumen.css](assets/css/pages/cv-resumen.css)
 
 ## Tecnologias
 

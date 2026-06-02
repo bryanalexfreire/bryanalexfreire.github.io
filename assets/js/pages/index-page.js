@@ -7,12 +7,14 @@
           if (!navbar || !navbarToggle) return;
           navbar.classList.remove('is-open');
           navbarToggle.setAttribute('aria-expanded', 'false');
+          navbarToggle.setAttribute('aria-label', 'Abrir menu');
         }
 
         function toggleMobileMenu() {
           if (!navbar || !navbarToggle) return;
           const isOpen = navbar.classList.toggle('is-open');
           navbarToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+          navbarToggle.setAttribute('aria-label', isOpen ? 'Cerrar menu' : 'Abrir menu');
         }
 
         if (navbarToggle) {

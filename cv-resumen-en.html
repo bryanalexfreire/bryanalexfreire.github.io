@@ -7,8 +7,54 @@
   <meta name="description" content="ATS CV optimized for recruitment systems and human readability." />
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <script src="assets/js/pages/cv-resumen-en.js"></script>
-  <link rel="stylesheet" href="assets/css/pages/cv-resumen.css">
-</head>
+  <link rel="stylesheet" href="assets/css/pages/cv-resumen.css">  <style media="print">
+    @page {
+      margin: 1.5cm;
+      size: A4;
+    }
+    
+    * {
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+    
+    body {
+      background: white !important;
+      color: #000 !important;
+      font: 11pt Arial, Helvetica, sans-serif;
+      line-height: 1.4;
+    }
+    
+    .cv-actions {
+      display: none !important;
+    }
+    
+    .cv-separator {
+      border-color: #ccc !important;
+    }
+    
+    a {
+      color: #000 !important;
+      text-decoration: underline;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      page-break-after: avoid;
+      page-break-inside: avoid;
+    }
+    
+    article, section {
+      page-break-inside: avoid;
+    }
+    
+    ul, ol {
+      page-break-inside: avoid;
+    }
+    
+    .cv-more-link {
+      display: none !important;
+    }
+  </style></head>
 <body>
   <div class="cv-actions">
     <button class="cv-btn" onclick="window.print()">Download ATS CV</button>
@@ -36,7 +82,7 @@
       <section>
         <h2>Professional Summary</h2>
         <p>
-          Senior QA Automation Engineer with more than 4 years of experience in E2E automation, API Testing, Performance
+          QA Engineer with more than 4 years of experience in E2E automation, API Testing, Performance
           Testing, and quality strategies for banking and fintech. Experienced implementing automation frameworks with
           Selenium, SerenityBDD, Karate, and K6, integrated into CI/CD pipelines through Azure DevOps. Specialized in
           risk-based validation, production defect reduction, and regression cycle optimization.
@@ -67,7 +113,7 @@
             <span>Jan. 2026 - Present</span>
           </div>
           <div class="cv-job-role-row">
-            <span>Senior QA Automation Engineer</span>
+            <span>QA Engineer</span>
             <span>Quito, Ecuador</span>
           </div>
           <ul>
@@ -165,7 +211,7 @@
         <article>
           <h2>Certifications</h2>
           <ul>
-            <li>ISTQB Certified Tester Foundation Level - Agile Tester (2014)</li>
+            <li>ISTQB Certified Tester Foundation Level - Agile Tester (2025)</li>
             <li>ISTQB Foundation Level 4.0</li>
             <li>CSM - Scrum Master</li>
             <li>K6: Performance and Load Testing (Udemy)</li>
@@ -185,7 +231,7 @@
       <section>
         <h2>Languages</h2>
         <p class="cv-languages"><strong>Spanish:</strong> Native</p>
-        <p class="cv-languages"><strong>English:</strong> Intermediate</p>
+        <p class="cv-languages"><strong>English:</strong> B1 — strong written technical communication</p>
       </section>
     </section>
   </main>

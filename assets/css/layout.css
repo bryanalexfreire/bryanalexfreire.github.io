@@ -1,0 +1,316 @@
+/**
+ * LAYOUT
+ * Estilos de layout, grid, flexbox y espaciado
+ */
+
+/* ============================================
+   MAIN CONTAINER
+   ============================================ */
+main {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-8xl);
+}
+
+/* ============================================
+   SECTION BLOCKS
+   ============================================ */
+section.block {
+  padding: var(--spacing-11xl) 0;
+  border-top: 1px solid var(--border);
+  scroll-margin-top: 90px;
+}
+
+section.block:first-of-type {
+  border-top: none;
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+.hero {
+  padding: var(--spacing-12xl) 0 var(--spacing-10xl);
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: var(--spacing-9xl);
+  align-items: start;
+}
+
+.hero-main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-5xl);
+}
+
+/* ============================================
+   EYEBROW (Label pequeño)
+   ============================================ */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  color: var(--accent);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: var(--fw-semibold);
+  margin-bottom: var(--spacing-xl);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+}
+
+.eyebrow::before {
+  content: "●";
+  font-size: 8px;
+  flex-shrink: 0;
+}
+
+/* ============================================
+   HEADINGS
+   ============================================ */
+h1 {
+  font-size: var(--fs-hero);
+  font-weight: var(--fw-black);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin-bottom: var(--spacing-3xl);
+}
+
+h2 {
+  font-size: var(--fs-5xl);
+  font-weight: var(--fw-semibold);
+}
+
+h2.section-title {
+  font-size: var(--fs-display);
+  font-weight: var(--fw-semibold);
+  margin-bottom: var(--spacing-xl);
+}
+
+h3 {
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-semibold);
+}
+
+h4 {
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  margin-bottom: var(--spacing-lg);
+  font-weight: var(--fw-semibold);
+}
+
+h5 {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+  margin-bottom: var(--spacing-3xl);
+}
+
+/* ============================================
+   SECTION DESCRIPTION
+   ============================================ */
+.section-sub {
+  color: var(--text-muted);
+  font-size: var(--fs-md);
+  margin-bottom: var(--spacing-8xl);
+  max-width: 600px;
+}
+
+/* ============================================
+   SUBTITLE (EN HERO)
+   ============================================ */
+.subtitle {
+  font-size: var(--fs-lg);
+  color: var(--text-muted);
+  max-width: 620px;
+  margin-bottom: var(--spacing-6xl);
+  line-height: 1.65;
+}
+
+/* ============================================
+   META TEXT
+   ============================================ */
+.hero-meta {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--text-muted);
+  margin-bottom: var(--spacing-6xl);
+}
+
+/* ============================================
+   FLEX UTILITIES
+   ============================================ */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-gap-sm { gap: var(--spacing-sm); }
+.flex-gap-md { gap: var(--spacing-md); }
+.flex-gap-lg { gap: var(--spacing-lg); }
+.flex-gap-xl { gap: var(--spacing-xl); }
+.flex-gap-2xl { gap: var(--spacing-2xl); }
+
+/* ============================================
+   GRID UTILITIES
+   ============================================ */
+.grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-6xl);
+}
+
+.grid-3col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-3xl);
+}
+
+.grid-4col {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+.grid-4col > * {
+  background: var(--surface);
+}
+
+.grid-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-3xl);
+}
+
+/* ============================================
+   STATS ROW (4 columnas con grid)
+   ============================================ */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  margin-bottom: var(--spacing-xl);
+}
+
+.stats-row .stat {
+  background: var(--surface);
+  padding: 16px 14px;
+}
+
+/* ============================================
+   SPACING UTILITIES
+   ============================================ */
+.mb-xs { margin-bottom: var(--spacing-xs); }
+.mb-sm { margin-bottom: var(--spacing-sm); }
+.mb-md { margin-bottom: var(--spacing-md); }
+.mb-lg { margin-bottom: var(--spacing-lg); }
+.mb-xl { margin-bottom: var(--spacing-xl); }
+.mb-2xl { margin-bottom: var(--spacing-2xl); }
+.mb-3xl { margin-bottom: var(--spacing-3xl); }
+.mb-6xl { margin-bottom: var(--spacing-6xl); }
+.mb-11xl { margin-bottom: var(--spacing-11xl); }
+
+.mt-xs { margin-top: var(--spacing-xs); }
+.mt-sm { margin-top: var(--spacing-sm); }
+.mt-md { margin-top: var(--spacing-md); }
+.mt-lg { margin-top: var(--spacing-lg); }
+.mt-xl { margin-top: var(--spacing-xl); }
+.mt-2xl { margin-top: var(--spacing-2xl); }
+.mt-3xl { margin-top: var(--spacing-3xl); }
+.mt-6xl { margin-top: var(--spacing-6xl); }
+.mt-11xl { margin-top: var(--spacing-11xl); }
+
+.p-xs { padding: var(--spacing-xs); }
+.p-sm { padding: var(--spacing-sm); }
+.p-md { padding: var(--spacing-md); }
+.p-lg { padding: var(--spacing-lg); }
+.p-xl { padding: var(--spacing-xl); }
+.p-2xl { padding: var(--spacing-2xl); }
+.p-3xl { padding: var(--spacing-3xl); }
+.p-6xl { padding: var(--spacing-6xl); }
+.p-8xl { padding: var(--spacing-8xl); }
+
+/* ============================================
+   FOOTER LAYOUT
+   ============================================ */
+footer {
+  padding: var(--spacing-11xl) 0 var(--spacing-10xl);
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+footer h2 {
+  font-size: var(--fs-5xl);
+  margin-bottom: var(--spacing-3xl);
+}
+
+footer p {
+  color: var(--text-muted);
+  margin-bottom: var(--spacing-6xl);
+}
+
+/* ============================================
+   TEXT UTILITIES
+   ============================================ */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
+
+.text-muted { color: var(--text-muted); }
+.text-accent { color: var(--accent); }
+.text-error { color: var(--error); }
+.text-success { color: var(--success); }
+
+.font-mono { font-family: var(--font-mono); }
+.font-display { font-family: var(--font-display); }
+.font-body { font-family: var(--font-body); }
+
+.font-bold { font-weight: var(--fw-bold); }
+.font-semibold { font-weight: var(--fw-semibold); }
+.font-medium { font-weight: var(--fw-medium); }
+
+.uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; }
+.capitalize { text-transform: capitalize; }
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

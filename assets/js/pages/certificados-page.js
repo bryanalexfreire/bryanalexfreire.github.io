@@ -2,9 +2,9 @@
       { title: 'Stratio Generative AI Data Governance', issuer: 'StratioBD', year: '2025', type: 'certificacion metodologia', kind: 'certificacion', logo: 'S', desc: 'Gobernanza y gestion de datos aplicada IA generativa.', file: 'assets/docs/certificados/Stratio Generative AI Data Governance.pdf' },
       { title: 'Stratio Generative AI Data Fabric Basics', issuer: 'StratioBD', year: '2025', type: 'certificacion devops', kind: 'certificacion', logo: 'S', desc: 'Fundamentos de Data Fabric e integracion inteligente de datos.', file: 'assets/docs/certificados/Stratio Generative AI Data Fabric Basics.pdf' },
       { title: 'Stratio Generative AI Data Processing', issuer: 'StratioBD', year: '2025', type: 'certificacion devops', kind: 'certificacion', logo: 'S', desc: 'Procesamiento avanzado de datos con IA generativa.', file: 'assets/docs/certificados/Stratio Generative AI Data Procesing.pdf' },
-      { title: 'ISTQB Certified Tester Foundation Level - Agile', issuer: 'ISTQB', year: '2025', type: 'certificacion testing metodologia', kind: 'certificacion', logo: 'ISTQB', desc: 'Fundamentos de pruebas agiles y ciclo de calidad.', file: 'assets/docs/certificados/ISTQB® Certified Tester, Foundation Level - Agile Tester (2014).pdf' },
-      { title: 'CSM - Scrum Master', issuer: 'Scrum Alliance', year: '2024', type: 'certificacion metodologia', kind: 'certificacion', logo: 'CSM', desc: 'Liderazgo agil para equipos y gestion de entregas.', file: 'assets/docs/certificados/CSM - SCRUM MASTER.pdf' },
-      { title: 'ISTQB Foundation Level 4.0', issuer: 'ISTQB', year: '2024', type: 'certificacion testing', kind: 'certificacion', logo: 'ISTQB', desc: 'Version actualizada de fundamentos de pruebas de software.', file: 'assets/docs/certificados/ISTQB® Foundation Level 4.0.pdf' },
+      { title: 'ISTQB Certified Tester Foundation Level - Agile', issuer: 'ISTQB', year: '2025', type: 'certificacion testing metodologia', kind: 'certificacion', isCoreSkill: true, logo: 'ISTQB', desc: 'Fundamentos de pruebas agiles y ciclo de calidad.', file: 'assets/docs/certificados/ISTQB® Certified Tester, Foundation Level - Agile Tester (2014).pdf' },
+      { title: 'CSM - Scrum Master', issuer: 'Scrum Alliance', year: '2024', type: 'certificacion metodologia', kind: 'certificacion', isCoreSkill: true, logo: 'CSM', desc: 'Liderazgo agil para equipos y gestion de entregas.', file: 'assets/docs/certificados/CSM - SCRUM MASTER.pdf' },
+      { title: 'ISTQB Foundation Level 4.0', issuer: 'ISTQB', year: '2024', type: 'certificacion testing', kind: 'certificacion', isCoreSkill: true, logo: 'ISTQB', desc: 'Version actualizada de fundamentos de pruebas de software.', file: 'assets/docs/certificados/ISTQB® Foundation Level 4.0.pdf' },
       { title: 'Curso de QA Automation con Serenity', issuer: 'Udemy', year: '2025', type: 'curso testing', kind: 'curso', logo: 'U', desc: 'Automatizacion E2E con SerenityBDD, Cucumber y buenas practicas.', file: 'assets/docs/certificados/Curso de QA Automation con Serenity - De novato a experto!.pdf' },
       { title: 'Fundamentos de pruebas Agiles', issuer: 'Full Advanced', year: '2025', type: 'curso testing metodologia', kind: 'curso', logo: 'FA', desc: 'Principios, tecnicas y estrategias de testing en metodologias agiles.', file: 'assets/docs/certificados/Fundamentos de pruebas Agiles.pdf' },
       { title: 'K6 Pruebas de performance para principiantes', issuer: 'Udemy', year: '2025', type: 'curso testing', kind: 'curso', logo: 'U', desc: 'Introduccion a performance testing con K6 y escenarios de carga.', file: 'assets/docs/certificados/K6 Pruebas de performance para principiantes.pdf' },
@@ -23,10 +23,10 @@
       { title: 'Aspectos basicos de GitHub Copilot', issuer: 'Microsoft Learn', year: '2025', type: 'curso devops', kind: 'curso', logo: 'AI', desc: 'Uso de GitHub Copilot para acelerar productividad en codigo.', file: 'assets/docs/certificados/Aspectos básicos de GitHub Copilot (descripción del programador de pares de inteligencia artificial).pdf' },
       { title: 'Aceleracion del desarrollo con GitHub Copilot', issuer: 'Microsoft Learn', year: '2025', type: 'curso devops', kind: 'curso', logo: 'AI', desc: 'Estrategias para mejorar velocidad de desarrollo asistido.', file: 'assets/docs/certificados/Aceleración del desarrollo de aplicaciones mediante GitHub Copilot.pdf' },
       { title: 'Curso Completo en Design Thinking', issuer: 'Udemy', year: '2025', type: 'curso metodologia', kind: 'curso', logo: 'U', desc: 'Resolucion de problemas y diseno centrado en usuario.', file: 'assets/docs/certificados/Curso Completo en Design Thinking.pdf' },
-      { title: 'Liderazgo y Gestion de equipos', issuer: 'Udemy', year: '2025', type: 'curso metodologia', kind: 'curso', logo: 'U', desc: 'Habilidades de liderazgo para equipos colaborativos.', file: 'assets/docs/certificados/Liderazgo y Gestión de equipos.pdf' },
-      { title: 'Decidir y Priorizar para lograr tus metas', issuer: 'Udemy', year: '2025', type: 'curso metodologia', kind: 'curso', logo: 'U', desc: 'Toma de decisiones y priorizacion orientada a resultados.', file: 'assets/docs/certificados/Decidir y Priorizar- Para lograr tus metas.pdf' },
-      { title: 'Servicio al cliente Como manejar clientes dificiles', issuer: 'Udemy', year: '2025', type: 'curso metodologia', kind: 'curso', logo: 'U', desc: 'Manejo de situaciones complejas de atencion al cliente.', file: 'assets/docs/certificados/Servicio al cliente- Como manejar clientes difíciles.pdf' },
-      { title: 'Inteligencia Emocional para la Atencion al Cliente', issuer: 'Udemy', year: '2025', type: 'curso metodologia', kind: 'curso', logo: 'U', desc: 'Comunicacion empatica y relacion efectiva con usuarios.', file: 'assets/docs/certificados/Inteligencia Emocional para la Atención al Cliente.pdf' }
+      { title: 'Liderazgo y Gestion de equipos', issuer: 'Udemy', year: '2025', type: 'curso metodologia', kind: 'curso', isLifeSkill: true, logo: 'U', desc: 'Habilidades de liderazgo para equipos colaborativos.', file: 'assets/docs/certificados/Liderazgo y Gestión de equipos.pdf' },
+      { title: 'Decidir y Priorizar para lograr tus metas', issuer: 'Udemy', year: '2025', type: 'curso metodologia', kind: 'curso', isLifeSkill: true, logo: 'U', desc: 'Toma de decisiones y priorizacion orientada a resultados.', file: 'assets/docs/certificados/Decidir y Priorizar- Para lograr tus metas.pdf' },
+      { title: 'Servicio al cliente Como manejar clientes dificiles', issuer: 'Udemy', year: '2025', type: 'curso metodologia', kind: 'curso', isLifeSkill: true, logo: 'U', desc: 'Manejo de situaciones complejas de atencion al cliente.', file: 'assets/docs/certificados/Servicio al cliente- Como manejar clientes difíciles.pdf' },
+      { title: 'Inteligencia Emocional para la Atencion al Cliente', issuer: 'Udemy', year: '2025', type: 'curso metodologia', kind: 'curso', isLifeSkill: true, logo: 'U', desc: 'Comunicacion empatica y relacion efectiva con usuarios.', file: 'assets/docs/certificados/Inteligencia Emocional para la Atención al Cliente.pdf' }
     ];
 
     (function () {
@@ -50,6 +50,7 @@
           'stat.period': 'Formacion continua',
           'section.certs': 'Certificaciones Profesionales',
           'section.courses': 'Cursos y Especializaciones',
+          'section.lifeskills': 'Habilidades Complementarias',
           'foot.copy': 'Todas las certificaciones son verificables y respaldan mi compromiso con la mejora continua. Hago aprendizaje constante para mantenerme actualizado con las mejores practicas y tecnologias del mercado.',
           'foot.link': 'Ver todas las certificaciones en LinkedIn ->',
           credential: 'Ver credencial ->'
@@ -73,6 +74,7 @@
           'stat.period': 'Continuous learning',
           'section.certs': 'Professional Certifications',
           'section.courses': 'Courses and Specializations',
+          'section.lifeskills': 'Complementary Skills',
           'foot.copy': 'All certifications are verifiable and support my commitment to continuous improvement. I keep learning to stay current with best practices and market technologies.',
           'foot.link': 'View all certifications on LinkedIn ->',
           credential: 'View credential ->'
@@ -85,6 +87,7 @@
       const langButtons = Array.from(document.querySelectorAll('.lang-btn[data-lang]'));
       const certGrid = document.getElementById('cert-grid');
       const courseGrid = document.getElementById('course-grid');
+      const lifeskillGrid = document.getElementById('lifeskill-grid');
       const sections = Array.from(document.querySelectorAll('section[data-section]'));
 
       function applyTranslations() {
@@ -120,10 +123,15 @@
         const card = document.createElement('article');
         card.className = 'cert-card';
         card.setAttribute('data-type', item.type);
+        card.setAttribute('data-kind', item.kind || 'curso');
+        if (item.isCoreSkill) card.setAttribute('data-core', 'true');
+        if (item.isLifeSkill) card.setAttribute('data-lifeskill', 'true');
+        const badgeHTML = item.isCoreSkill ? '<span class="cert-card-badge" aria-label="Certificacion clave">⭐</span>' : '';
         card.innerHTML = `
           <div class="cert-card-top">
             <span class="cert-card-logo">${item.logo}</span>
             <span class="cert-card-year">${item.year}</span>
+            ${badgeHTML}
           </div>
           <h3>${titleText}</h3>
           <p class="cert-card-issuer">${item.issuer}</p>
@@ -213,13 +221,16 @@
       }
 
       const certItems = certificateItems.filter((item) => item.kind === 'certificacion');
-      const courseItems = certificateItems.filter((item) => item.kind === 'curso');
+      const courseItems = certificateItems.filter((item) => item.kind === 'curso' && !item.isLifeSkill);
+      const lifeskillItems = certificateItems.filter((item) => item.isLifeSkill);
 
       function renderCards() {
         certGrid.innerHTML = '';
         courseGrid.innerHTML = '';
+        lifeskillGrid.innerHTML = '';
         certItems.forEach((item) => certGrid.appendChild(buildCard(item)));
         courseItems.forEach((item) => courseGrid.appendChild(buildCard(item)));
+        lifeskillItems.forEach((item) => lifeskillGrid.appendChild(buildCard(item)));
       }
 
       renderCards();
@@ -277,6 +288,6 @@
       setActiveLang();
       applyTranslations();
       updateStats();
-      applyFilter('all');
+      applyFilter('testing');
     })();
 

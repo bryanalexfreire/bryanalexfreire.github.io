@@ -1,0 +1,484 @@
+/**
+ * RESPONSIVE DESIGN
+ * Media queries para dispositivos móviles, tablets y desktop
+ */
+
+/* ============================================
+   TABLET & SMALL DESKTOP (max-width: 1024px)
+   ============================================ */
+@media (max-width: 1024px) {
+  main {
+    padding: 0 var(--spacing-6xl);
+  }
+}
+
+/* ============================================
+   TABLET (max-width: 800px)
+   ============================================ */
+@media (max-width: 800px) {
+  /* Hero Layout */
+  .hero {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-6xl);
+  }
+
+  .hero-main {
+    gap: var(--spacing-3xl);
+  }
+
+  h1 {
+    font-size: clamp(36px, 6vw, 56px);
+  }
+
+  /* Experience Section */
+  .exp-cols {
+    grid-template-columns: 1fr;
+  }
+
+  /* Education Section */
+  .edu-card {
+    grid-template-columns: 1fr;
+  }
+
+  /* Grid Layouts */
+  .grid-2col {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-3col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Skills Grid */
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  /* Hide Main Nav on Tablet */
+  .main-nav {
+    display: none;
+  }
+
+  /* Section Padding */
+  section.block {
+    padding: var(--spacing-8xl) 0;
+  }
+
+  /* Header Controls */
+  header {
+    padding: 12px var(--spacing-6xl);
+  }
+}
+
+/* ============================================
+   MOBILE (max-width: 640px)
+   ============================================ */
+@media (max-width: 640px) {
+  /* Main Container */
+  main {
+    padding: 0 var(--spacing-3xl);
+  }
+
+  header {
+    padding: 12px var(--spacing-3xl);
+    gap: var(--spacing-md);
+  }
+
+  /* Headings */
+  h1 {
+    font-size: clamp(28px, 5vw, 40px);
+  }
+
+  h2 {
+    font-size: var(--fs-3xl);
+  }
+
+  h2.section-title {
+    font-size: clamp(20px, 4vw, 24px);
+  }
+
+  h3 {
+    font-size: var(--fs-lg);
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: var(--spacing-8xl) 0 var(--spacing-6xl);
+  }
+
+  .subtitle {
+    font-size: var(--fs-md);
+  }
+
+  /* Stats Row */
+  .stats-row,
+  .cert-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat .num {
+    font-size: var(--fs-3xl);
+  }
+
+  /* Arch Grid */
+  .arch-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .arch-card {
+    padding: 16px;
+  }
+
+  /* Experience */
+  .exp-featured {
+    padding: 16px;
+  }
+
+  .exp-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+  }
+
+  .exp-role {
+    font-size: var(--fs-3xl);
+  }
+
+  .exp-cols {
+    gap: var(--spacing-3xl);
+  }
+
+  .exp-projects {
+    grid-template-columns: 1fr;
+  }
+
+  .mini-proj {
+    padding: 10px;
+  }
+
+  /* Compact Experience Grid */
+  .exp-compact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .exp-compact {
+    padding: 14px;
+  }
+
+  /* Skills Grid */
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .skill-cat {
+    padding: 12px;
+  }
+
+  .skill-cat h3 {
+    font-size: var(--fs-sm);
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .skill-cat .tags {
+    gap: 4px;
+  }
+
+  /* Certifications Grid */
+  .cert-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .cert-card {
+    padding: 12px;
+  }
+
+  .cert-card .c-title {
+    font-size: var(--fs-sm);
+  }
+
+  /* Education Card */
+  .edu-card {
+    padding: 16px;
+    gap: var(--spacing-3xl);
+  }
+
+  /* Contact Links */
+  .contact-links {
+    gap: var(--spacing-xl);
+    flex-direction: column;
+  }
+
+  .contact-links a {
+    width: 100%;
+    text-align: center;
+    font-size: var(--fs-sm);
+  }
+
+  /* Section Padding */
+  section.block {
+    padding: var(--spacing-8xl) 0 var(--spacing-6xl);
+  }
+
+  .hero {
+    padding: var(--spacing-8xl) 0 var(--spacing-3xl);
+  }
+
+  /* Spacing Reductions */
+  .hero-meta {
+    font-size: var(--fs-sm);
+    margin-bottom: var(--spacing-3xl);
+  }
+
+  .specialties {
+    padding: 16px;
+  }
+
+  /* Typography */
+  .arch-title {
+    font-size: var(--fs-2xl);
+  }
+
+  .arch-desc {
+    font-size: var(--fs-sm);
+  }
+
+  /* Controls Nav - Wrap if needed */
+  nav.controls {
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+  }
+
+  .pill-btn,
+  .cv-btn {
+    font-size: var(--fs-xs);
+    padding: 6px 10px;
+  }
+
+  .cv-btn {
+    padding: 7px 12px;
+  }
+
+  /* Footer */
+  footer {
+    padding: var(--spacing-8xl) 0 var(--spacing-6xl);
+  }
+
+  footer h2 {
+    font-size: var(--fs-3xl);
+  }
+
+  footer p {
+    font-size: var(--fs-md);
+  }
+}
+
+/* ============================================
+   SMALL MOBILE (max-width: 480px)
+   ============================================ */
+@media (max-width: 480px) {
+  /* Main Container */
+  main {
+    padding: 0 var(--spacing-3xl);
+  }
+
+  header {
+    padding: 10px var(--spacing-3xl);
+    gap: var(--spacing-md);
+  }
+
+  /* Headings */
+  h1 {
+    font-size: clamp(24px, 5vw, 32px);
+    line-height: 1.1;
+  }
+
+  h2.section-title {
+    font-size: clamp(18px, 4vw, 20px);
+  }
+
+  /* Typography Size */
+  body {
+    font-size: 14px;
+  }
+
+  .subtitle {
+    font-size: var(--fs-sm);
+    line-height: 1.5;
+  }
+
+  .section-sub {
+    font-size: var(--fs-sm);
+  }
+
+  /* Stats */
+  .stat .num {
+    font-size: var(--fs-2xl);
+  }
+
+  .stat .label {
+    font-size: 9px;
+  }
+
+  /* Cards */
+  .arch-card,
+  .exp-featured,
+  .exp-compact,
+  .skill-cat,
+  .cert-card,
+  .edu-card {
+    padding: 12px;
+  }
+
+  /* Spacing */
+  section.block {
+    padding: var(--spacing-6xl) 0 var(--spacing-3xl);
+  }
+
+  .hero {
+    padding: var(--spacing-6xl) 0 var(--spacing-3xl);
+  }
+
+  /* Remove Section Top Border (Spacing) */
+  section.block {
+    border-top: none;
+  }
+
+  section.block:not(:first-of-type)::before {
+    content: '';
+    display: block;
+    height: 1px;
+    background: var(--border);
+    margin-bottom: var(--spacing-6xl);
+  }
+
+  /* Flex Utilities */
+  .flex-gap-xl {
+    gap: var(--spacing-md);
+  }
+
+  /* Grid Utilities */
+  .grid-4col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-auto {
+    grid-template-columns: 1fr;
+  }
+
+  /* Navigation */
+  .logo {
+    font-size: 14px;
+  }
+
+  .pill-btn {
+    padding: 5px 10px;
+    font-size: var(--fs-xs);
+    gap: 4px;
+  }
+
+  .cv-btn {
+    padding: 6px 12px;
+    font-size: var(--fs-xs);
+  }
+
+  /* Links */
+  .hero-links {
+    gap: 6px;
+  }
+
+  .hero-links a {
+    font-size: var(--fs-xs);
+    padding: 6px 12px;
+  }
+
+  /* Contact Links */
+  .contact-links {
+    gap: var(--spacing-md);
+  }
+
+  .contact-links a {
+    font-size: var(--fs-xs);
+    padding: 8px 12px;
+  }
+}
+
+/* ============================================
+   EXTRA SMALL (max-width: 360px)
+   ============================================ */
+@media (max-width: 360px) {
+  main {
+    padding: 0 var(--spacing-xl);
+  }
+
+  header {
+    padding: 8px var(--spacing-xl);
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2.section-title {
+    font-size: 16px;
+  }
+
+  .stat .num {
+    font-size: var(--fs-2xl);
+  }
+
+  .arch-card,
+  .exp-featured,
+  .exp-compact,
+  .skill-cat,
+  .cert-card,
+  .edu-card {
+    padding: 10px;
+  }
+
+  section.block {
+    padding: var(--spacing-6xl) 0 var(--spacing-2xl);
+  }
+}
+
+/* ============================================
+   LANDSCAPE MODE
+   ============================================ */
+@media (max-height: 600px) and (orientation: landscape) {
+  .hero {
+    padding: var(--spacing-6xl) 0 var(--spacing-3xl);
+  }
+
+  h1 {
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .specialties {
+    padding: 14px;
+  }
+
+  .spec-item {
+    padding: 6px 0;
+    font-size: var(--fs-sm);
+  }
+
+  header {
+    padding: 8px 16px;
+  }
+
+  section.block {
+    padding: var(--spacing-6xl) 0 var(--spacing-3xl);
+  }
+}
+
+/* ============================================
+   HIGH DPI / RETINA DISPLAYS
+   ============================================ */
+@media (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi) {
+  /* Líneas más delgadas en pantallas retina */
+  body {
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+}

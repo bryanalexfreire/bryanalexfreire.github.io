@@ -10,6 +10,8 @@
         dateEn: 'Jan. 2026 - Present',
         location: 'Quito, Ecuador',
         locationEn: 'Quito, Ecuador',
+        modality: 'On-site',
+        modalityEn: 'On-site',
         status: '★ Posición actual',
         statusEn: '★ Current position',
         kpis: [
@@ -79,6 +81,8 @@
         dateEn: 'Sep. 2023 - Jan. 2026',
         location: 'Quito, Ecuador',
         locationEn: 'Quito, Ecuador',
+        modality: 'Hybrid',
+        modalityEn: 'Hybrid',
         status: '',
         kpis: [
           { color: 'blue', icon: '📈', value: '+28%', label: 'Cobertura de requerimientos', labelEn: 'Requirements coverage' },
@@ -144,6 +148,8 @@
         dateEn: 'Mar. 2023 - Jun. 2023',
         location: 'Quito, Ecuador',
         locationEn: 'Quito, Ecuador',
+        modality: 'On-site',
+        modalityEn: 'On-site',
         status: '',
         kpis: [
           { color: 'green', icon: '✔️', value: '+25%', label: 'Claridad de criterios de aceptación' },
@@ -194,49 +200,34 @@
         dateEn: 'Dec. 2022 - Mar. 2023',
         location: 'Quito, Ecuador',
         locationEn: 'Quito, Ecuador',
+        modality: 'On-site',
+        modalityEn: 'On-site',
         status: '',
         kpis: [
           { color: 'green', icon: '✔️', value: '-22%', label: 'Incidencias productivas' },
           { color: 'blue', icon: '🛡️', value: '+30%', label: 'Estabilidad cross-platform' },
           { color: 'purple', icon: '⏱️', value: '+20%', label: 'Velocidad de liberación' }
         ],
-        about: 'Participación en pruebas automatizadas y de rendimiento para aplicaciones web empresariales.',
-        aboutEn: 'Participated in automated and performance testing for enterprise web applications.',
+        about: 'Apoyo en iniciativas de calidad de software, ejecutando pruebas funcionales y dando seguimiento a la trazabilidad de defectos en un entorno ágil.',
+        aboutEn: 'Supported software quality initiatives, executing functional tests and tracking defect traceability in an agile environment.',
         responsibilities: [
-          'Diseño de pruebas automatizadas.',
-          'Ejecución de pruebas de carga.',
-          'Validación cross-browser.',
-          'Reportería de calidad.'
+          'Ejecución de pruebas funcionales sobre módulos priorizados del producto.',
+          'Documentación y seguimiento de defectos en herramienta de gestión (Jira).',
+          'Colaboración con el equipo de desarrollo para validar correcciones antes de release.'
         ],
         responsibilitiesEn: [
-          'Automated test design.',
-          'Load test execution.',
-          'Cross-browser validation.',
-          'Quality reporting.'
+          'Executed functional tests on prioritized product modules.',
+          'Documented and tracked defects in issue tracking system (Jira).',
+          'Collaborated with development team to validate fixes before release.'
         ],
-        projects: [
-          {
-            title: 'Web Automation Framework',
-            desc: '<b>Tipo:</b> E2E<br>Automatización funcional para aplicaciones web.<br><b>Resultados:</b> menos incidencias productivas y mayor cobertura funcional.',
-            descEn: '<b>Type:</b> E2E<br>Functional automation for web applications.<br><b>Results:</b> fewer production incidents and higher functional coverage.',
-            evid: 'Ver evidencia →'
-            ,evidEn: 'View evidence →'
-          },
-          {
-            title: 'Performance Validation Suite',
-            desc: '<b>Tipo:</b> PERF<br>Pruebas de carga y estrés.<br><b>Resultados:</b> optimización de estabilidad y detección de cuellos de botella.',
-            descEn: '<b>Type:</b> PERF<br>Load and stress testing.<br><b>Results:</b> stability optimization and bottleneck detection.',
-            evid: 'Ver evidencia →'
-            ,evidEn: 'View evidence →'
-          }
-        ],
-        tools: ['Selenium', 'K6', 'Java', 'ChromeDriver', 'Testing Funcional', 'Performance Testing'],
-        toolsEn: ['Selenium', 'K6', 'Java', 'ChromeDriver', 'Functional Testing', 'Performance Testing'],
+        projects: [],
+        tools: ['Jira', 'Testing Funcional', 'Seguimiento de defectos', 'Entorno Ágil'],
+        toolsEn: ['Jira', 'Functional Testing', 'Defect tracking', 'Agile environment'],
         achievements: [
-          { color: 'green', value: '-22%', label: 'incidencias productivas', labelEn: 'production incidents' },
-          { color: 'blue', value: '+30%', label: 'estabilidad cross-platform', labelEn: 'cross-platform stability' },
-          { color: 'purple', value: '+20%', label: 'velocidad de liberación', labelEn: 'release speed' },
-          { color: 'green', value: '-18%', label: 'defectos repetitivos', labelEn: 'repetitive defects' }
+          { color: 'green', value: '[+XX%]', label: 'cobertura de casos de prueba ejecutados', labelEn: 'test case coverage executed' },
+          { color: 'blue', value: '[-XX%]', label: 'tiempo de ciclo de pruebas y defectos escapados', labelEn: 'test cycle time and escaped defects' },
+          { color: 'purple', value: '[+XX%]', label: 'claridad en trazabilidad de defectos', labelEn: 'defect traceability clarity' },
+          { color: 'green', value: '[+XX%]', label: 'agilidad en ciclos de prueba', labelEn: 'test cycle agility' }
         ]
       },
       {
@@ -249,6 +240,8 @@
         dateEn: 'Jun. 2022 - Dec. 2022',
         location: 'Quito, Ecuador',
         locationEn: 'Quito, Ecuador',
+        modality: 'Hybrid',
+        modalityEn: 'Hybrid',
         status: '',
         kpis: [
           { color: 'green', icon: '✔️', value: '+25%', label: 'Cobertura de escenarios críticos' },
@@ -295,6 +288,8 @@
         dateEn: 'Jan. 2022 - Jun. 2022',
         location: 'Quito, Ecuador',
         locationEn: 'Quito, Ecuador',
+        modality: 'On-site',
+        modalityEn: 'On-site',
         status: '',
         kpis: [
           { color: 'green', icon: '✔️', value: '+20%', label: 'Mejora en atención de incidencias' },
@@ -333,6 +328,8 @@
         dateEn: 'Mar. 2018 - Aug. 2018',
         location: 'Orellana, Ecuador',
         locationEn: 'Orellana, Ecuador',
+        modality: 'On-site',
+        modalityEn: 'On-site',
         status: '',
         kpis: [
           { color: 'green', icon: '✔️', value: '+25%', label: 'Mejora en tiempos de respuesta' },

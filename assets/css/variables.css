@@ -1,0 +1,143 @@
+/**
+ * CSS Custom Properties (Variables)
+ * Sistema de colores, tipografía y espaciado
+ * 
+ * DARK THEME (por defecto)
+ * LIGHT THEME (con [data-theme="light"])
+ */
+
+/* ============================================
+   DARK THEME (DEFAULT)
+   ============================================ */
+:root {
+  /* Colors - Dark */
+  --bg: #0B0E14;
+  --surface: #131720;
+  --surface-2: #1A1F2B;
+  --border: #232838;
+  
+  /* Text Colors - Dark */
+  --text: #E8EAED;
+  --text-muted: #8B93A5;
+  
+  /* Accent Colors - Dark */
+  --accent: #3DDC84;
+  --accent-dim: #2A5F42;
+  --amber: #F5A623;
+  --red: #E5484D;
+  
+  /* Semantics - Dark */
+  --success: #3DDC84;
+  --warning: #F5A623;
+  --error: #E5484D;
+  --info: #6FB3E8;
+  
+  /* Typography */
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  /* Font Sizes */
+  --fs-xs: 10.5px;
+  --fs-sm: 11.5px;
+  --fs-base: 13.5px;
+  --fs-md: 14px;
+  --fs-lg: 16px;
+  --fs-xl: 18px;
+  --fs-2xl: 19px;
+  --fs-3xl: 21px;
+  --fs-4xl: 24px;
+  --fs-5xl: 28px;
+  --fs-display: clamp(24px, 4vw, 32px);
+  --fs-hero: clamp(48px, 8vw, 72px);
+  
+  /* Font Weights */
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-black: 800;
+  
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 6px;
+  --spacing-md: 8px;
+  --spacing-lg: 10px;
+  --spacing-xl: 12px;
+  --spacing-2xl: 14px;
+  --spacing-3xl: 16px;
+  --spacing-4xl: 18px;
+  --spacing-5xl: 20px;
+  --spacing-6xl: 24px;
+  --spacing-7xl: 28px;
+  --spacing-8xl: 32px;
+  --spacing-9xl: 40px;
+  --spacing-10xl: 56px;
+  --spacing-11xl: 64px;
+  --spacing-12xl: 88px;
+  
+  /* Border Radius */
+  --radius-sm: 5px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 10px;
+  --radius-2xl: 12px;
+  --radius-pill: 20px;
+  
+  /* Transitions */
+  --transition-fast: 0.1s linear;
+  --transition-base: 0.2s ease;
+  --transition-slow: 0.3s ease;
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  
+  /* Z-Index */
+  --z-base: 1;
+  --z-dropdown: 10;
+  --z-sticky: 20;
+  --z-fixed: 30;
+  --z-modal: 40;
+  --z-popover: 50;
+  --z-tooltip: 60;
+}
+
+/* ============================================
+   LIGHT THEME
+   ============================================ */
+[data-theme="light"] {
+  /* Colors - Light */
+  --bg: #FAFAF7;
+  --surface: #FFFFFF;
+  --surface-2: #F1F1EC;
+  --border: #E2E1D8;
+  
+  /* Text Colors - Light */
+  --text: #1A1D23;
+  --text-muted: #5C6270;
+  
+  /* Accent Colors - Light */
+  --accent: #1E9E5C;
+  --accent-dim: #D7F0E1;
+  --amber: #B9740A;
+  --red: #C4353A;
+  
+  /* Semantics - Light */
+  --success: #1E9E5C;
+  --warning: #B9740A;
+  --error: #C4353A;
+  --info: #2470A8;
+}
+
+/* ============================================
+   REDUCED MOTION
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast: 0s;
+    --transition-base: 0s;
+    --transition-slow: 0s;
+  }
+}

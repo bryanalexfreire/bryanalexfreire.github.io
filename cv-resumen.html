@@ -8,6 +8,54 @@
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <script src="assets/js/pages/cv-resumen-es.js"></script>
   <link rel="stylesheet" href="assets/css/pages/cv-resumen.css">
+  <style media="print">
+    @page {
+      margin: 1.5cm;
+      size: A4;
+    }
+    
+    * {
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+    
+    body {
+      background: white !important;
+      color: #000 !important;
+      font: 11pt Arial, Helvetica, sans-serif;
+      line-height: 1.4;
+    }
+    
+    .cv-actions {
+      display: none !important;
+    }
+    
+    .cv-separator {
+      border-color: #ccc !important;
+    }
+    
+    a {
+      color: #000 !important;
+      text-decoration: underline;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      page-break-after: avoid;
+      page-break-inside: avoid;
+    }
+    
+    article, section {
+      page-break-inside: avoid;
+    }
+    
+    ul, ol {
+      page-break-inside: avoid;
+    }
+    
+    .cv-more-link {
+      display: none !important;
+    }
+  </style>
 </head>
 <body>
   <div class="cv-actions">
@@ -36,7 +84,7 @@
       <section>
         <h2>Resumen Profesional</h2>
         <p>
-          Senior QA Automation Engineer con mas de 4 años de experiencia en automatizacion E2E, API Testing, Performance
+          QA Engineer con mas de 4 años de experiencia en automatizacion E2E, API Testing, Performance
           Testing y estrategias de calidad para banca y fintech. Experiencia implementando marcos de automatizacion con
           Selenium, SerenityBDD, Karate y K6, integrados a pipelines CI/CD mediante Azure DevOps. Especializado en validacion
           basada en riesgo, reduccion de defectos productivos y optimizacion de ciclos de regresion.
@@ -67,7 +115,7 @@
             <span>Ene. 2026 - Presente</span>
           </div>
           <div class="cv-job-role-row">
-            <span>Senior QA Automation Engineer</span>
+            <span>QA Engineer</span>
             <span>Quito, Ecuador</span>
           </div>
           <ul>
@@ -163,7 +211,7 @@
         <article>
           <h2>Certificaciones</h2>
           <ul>
-            <li>ISTQB Certified Tester Foundation Level - Agile Tester (2014)</li>
+            <li>ISTQB Certified Tester Foundation Level - Agile Tester (2025)</li>
             <li>ISTQB Foundation Level 4.0</li>
             <li>CSM - Scrum Master</li>
             <li>K6: Pruebas de rendimiento y carga (Udemy)</li>
@@ -183,7 +231,7 @@
       <section>
         <h2>Idiomas</h2>
         <p class="cv-languages"><strong>Espanol:</strong> Nativo</p>
-        <p class="cv-languages"><strong>Ingles:</strong> Intermedio</p>
+        <p class="cv-languages"><strong>Ingles:</strong> B1 — comunicacion tecnica escrita fluida</p>
       </section>
     </section>
   </main>

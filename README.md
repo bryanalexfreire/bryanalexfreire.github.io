@@ -7,8 +7,9 @@ Portafolio profesional de **QA Engineer** construido con HTML5, CSS3 modular y J
 ```
 .
 ├── index.html                    # Página principal SPA (única página activa)
-├── Bryan-Freire-CV.pdf          # Curriculum Vitae en PDF (descargable)
-├── generate_cv_pdf.py           # Script para generar PDF del CV
+├── Bryan-Freire-CV-es.pdf       # Curriculum Vitae en PDF - Español (descargable)
+├── Bryan-Freire-CV-en.pdf       # Curriculum Vitae en PDF - English (descargable)
+├── generate_cv_pdf_bilingual.py # Script para generar PDFs bilingües del CV
 ├── sitemap.xml                  # Mapa del sitio para SEO
 ├── robots.txt                   # Directivas para crawlers
 ├── .htaccess                    # Configuración Apache (caché, compresión, seguridad)
@@ -91,7 +92,7 @@ python -m http.server 8000
 ### Interacción
 - **Cambiar idioma**: Click en botón "EN" / "ES"
 - **Cambiar tema**: Click en botón "☀️ / 🌙"
-- **Descargar CV**: Click en "↓ CV" (descarga Bryan-Freire-CV.pdf)
+- **Descargar CV**: Click en "↓ CV" (descarga automáticamente según idioma: Bryan-Freire-CV-es.pdf o Bryan-Freire-CV-en.pdf)
 - **Ver certificados**: Click en botones 👁 (ver) o ⬇ (descargar) en sección Credentials
 - **Navegar secciones**: Usar nav superior o hacer scroll
 
@@ -107,10 +108,12 @@ python -m http.server 8000
 - **Habilidades**: Arrays de categorías en sección `#skills`
 - **Certificaciones**: Listadas en sección `#credentials` con PDFs en assets/docs/certificados/
 
-### Generar nuevo PDF del CV
+### Generar PDFs del CV (Bilingües)
 ```bash
-python generate_cv_pdf.py
-# Genera: Bryan-Freire-CV.pdf
+python generate_cv_pdf_bilingual.py
+# Genera:
+# - Bryan-Freire-CV-es.pdf (Español)
+# - Bryan-Freire-CV-en.pdf (English)
 ```
 
 ### Agregar nuevos certificados
@@ -155,13 +158,15 @@ python generate_cv_pdf.py
 - assets/css/* (7 archivos)
 - assets/docs/certificados/* (31 PDFs)
 - assets/img/profile-og.png, profile.png
-- Bryan-Freire-CV.pdf
-- generate_cv_pdf.py
+- Bryan-Freire-CV-es.pdf (Español)
+- Bryan-Freire-CV-en.pdf (English)
+- generate_cv_pdf_bilingual.py
 
 ### ❌ Archivos Eliminados (Limpieza de Proyecto)
 - ~~certificados.html~~ → Funcionalidad migrada a modal en index.html
-- ~~cv-resumen.html~~ → Reemplazado por Bryan-Freire-CV.pdf
-- ~~cv-resumen-en.html~~ → Reemplazado por Bryan-Freire-CV.pdf
+- ~~cv-resumen.html~~ → Reemplazado por PDFs bilingües (Bryan-Freire-CV-es.pdf, Bryan-Freire-CV-en.pdf)
+- ~~cv-resumen-en.html~~ → Reemplazado por PDFs bilingües (Bryan-Freire-CV-es.pdf, Bryan-Freire-CV-en.pdf)
+- ~~Bryan-Freire-CV.pdf~~ → Reemplazado por versiones bilingües
 - ~~assets/js/theme.js~~ → Código inline en index.html
 - ~~assets/js/xp-pro.js~~ → No utilizado
 - ~~assets/js/pages/* (5 archivos)~~ → Código heredado

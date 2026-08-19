@@ -1059,8 +1059,9 @@
 
   function downloadCV() {
     const link = document.createElement('a');
-    link.href = 'Bryan-Freire-CV.pdf';
-    link.download = 'Bryan-Freire-CV.pdf';
+    const filename = currentLang === 'es' ? 'Bryan-Freire-CV-es.pdf' : 'Bryan-Freire-CV-en.pdf';
+    link.href = filename;
+    link.download = filename;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

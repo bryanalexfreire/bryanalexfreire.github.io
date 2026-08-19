@@ -464,11 +464,11 @@
 
   "resumen_carpetas": {
     "raíz_proyecto": {
-      "total_archivos": 7,
+      "total_archivos": 8,
       "archivos": {
-        "vitales": ["index.html", "Bryan-Freire-CV.pdf"],
+        "vitales": ["index.html", "Bryan-Freire-CV-es.pdf", "Bryan-Freire-CV-en.pdf"],
         "necesarios": ["robots.txt", "sitemap.xml", "README.md"],
-        "utilidades": ["generate_cv_pdf.py"],
+        "utilidades": ["generate_cv_pdf_bilingual.py"],
         "inútiles": ["certificados.html", "cv-resumen.html", "cv-resumen-en.html", "test.pdf"]
       }
     },

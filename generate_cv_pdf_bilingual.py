@@ -37,161 +37,225 @@ class NumberedCanvas(canvas.Canvas):
 CONTENT = {
     'es': {
         'title': "BRYAN ALEXANDER FREIRE CHAMORRO",
-        'subtitle': "Ingeniero de Calidad | Automatización de Pruebas | Estrategia de Testing",
+        'subtitle': "Ingeniero de Calidad | Automatización QA | Testing de APIs y Performance",
         'contact_email': "bryanalexfreire@gmail.com | +593 984 291 545 | Quito, Ecuador",
         'contact_social': "linkedin.com/in/bryanalexanderfreire | github.com/bryanalexfreire",
         'portfolio': "Portafolio: https://bryanalexfreire.github.io/",
-        'professional_summary': "Ingeniero de Calidad con 4+ años diseñando estrategias de testing end-to-end: desde pruebas manuales hasta suites de automatización integradas en CI/CD. Especialista en BDD, frameworks de automatización (Selenium, SerenityBDD, Karate) y testing de performance. Enfoque en calidad mediante exploración, documentación en vivo y prevención de defectos.",
+        'professional_summary': "Ingeniero de Calidad especializado en QA Automation, API Testing y Performance Testing en banca y fintech. Diseño estrategias de Risk-Based Testing integradas a CI/CD para acelerar entregas con calidad. Logré reducir 35% defectos post-release y optimizar ciclos validación APIs de 60 a 15 minutos. Enfocado en liderazgo técnico, colaboración cross-functional y resultados medibles de negocio.",
         'section_experience': "EXPERIENCIA PROFESIONAL",
         'section_skills': "HABILIDADES TÉCNICAS",
-        'section_certs': "CERTIFICACIONES Y DESARROLLO PROFESIONAL",
+        'section_soft_skills': "HABILIDADES BLANDAS",
+        'section_certs': "CERTIFICACIONES Y FORMACIONES",
         'section_education': "EDUCACIÓN",
         'section_languages': "IDIOMAS",
         'experience': [
             {
-                'position': "Ingeniero QA | Banco Pichincha S.A.",
-                'company': "Quito, Ecuador | Enero 2026 - Presente",
+                'position': "QA Engineer — Banco Pichincha S.A.",
+                'company': "Ene. 2026 – Presente | Quito, Ecuador",
                 'achievements': [
-                    "Liderazgo QA de productos bancarios (Cuentas, Inversiones, Core Migrations): implementación E2E/APIs/Mobile que reducen ciclos de regresión 75%",
-                    "Gestión de equipo transversal (~5 QAs). Normalización de 30 casos retenciones → 13 certificados (100% cobertura)",
-                    "Automatización BDD con Cucumber/Selenium. Contract testing integrado en CI/CD. Documentación viva para flujos críticos"
+                    "Lideré QA de productos bancarios (Cuentas, Inversiones, Core Migrations, Normativa) reduciendo ciclos regresión 75% con implementación E2E/APIs/Mobile/Performance",
+                    "Optimizé ejecución: E2E 60→20 min, APIs 60→15 min, Mobile 30→15 min; acelerando feedback técnico 50% y feedback en tiempo real",
+                    "Integré controles calidad CI/CD Azure DevOps/Git, disminuyendo defectos post-release 35% mediante Risk-Based Testing",
+                    "Gestioné equipo transversal ~5 QAs. Normalicé 30 casos retenciones → 13 certificados (100% cobertura, BDD con Cucumber)",
+                    "Implementé Contract Testing e integración CI/CD. Documentación viva y dashboards operacionales para validaciones críticas",
+                    "Mentoricé equipo en automatización BDD, Karate DSL, testing performance; fortaleciendo autonomía técnica 30%"
                 ]
             },
             {
-                'position': "QA Specialist | Halliburton (Contractor)",
-                'company': "Quito, Ecuador | Septiembre 2023 - Enero 2026",
+                'position': "QA Engineer — NTT DATA",
+                'company': "Ago. 2025 – Ene. 2026 | Quito, Ecuador",
                 'achievements': [
-                    "Automatización y testing funcional en proyectos cloud. Diseño de suites E2E con Selenium/Cucumber. Reducción 40% ciclos testing",
-                    "Integración CI/CD con Jenkins. Análisis cobertura SonarQube. Reportes automáticos. Testing performance con k6"
+                    "Diseñé estrategias pruebas funcionales, automatizadas y performance SerenityBDD/Karate/K6, incrementando cobertura 28%",
+                    "Automaticé escenarios críticos negocio APIs y flujos E2E, reduciendo tiempos regresión 35%",
+                    "Estandaricé planificación, estimación y gestión riesgos Scrum/Kanban, mejorando predictibilidad 20%",
+                    "Coordiné validaciones desarrollo y operaciones Jira/X-Ray, disminuyendo incidencias integración 25%"
                 ]
             },
             {
-                'position': "QA Analyst | NTT Data Europe & Latam",
-                'company': "Quito, Ecuador | Marzo 2023 - Junio 2023",
+                'position': "QA Intern — Bayteq",
+                'company': "Mar. 2023 – Jun. 2023 | Quito, Ecuador",
                 'achievements': [
-                    "Fundamentos testing: casos manuales, ejecución navegadores, reportes defectos. Aprendizaje metodología ISTQB",
-                    "Regresión funcional aplicaciones web. Stack: Jira, Postman, navegadores modernos"
+                    "Apoyé análisis requerimientos y planificación pruebas Jira, elevando claridad criterios aceptación 25%",
+                    "Ejecuté pruebas funcionales módulos priorizados, mejorando resolución primer ciclo 20%",
+                    "Colaboré sesiones readiness QA/desarrollo, reduciendo retrabajos 15%",
+                    "Consolidé reportes avance y defectos, mejorando visibilidad estado calidad 30%"
                 ]
             },
             {
-                'position': "QA Analyst | Bayteq",
-                'company': "Quito, Ecuador | Noviembre 2021 - Febrero 2022",
+                'position': "Analista QA — Perseject",
+                'company': "Dic. 2022 – Mar. 2023 | Quito, Ecuador",
                 'achievements': [
-                    "Testing funcional y regresión plataformas e-commerce. Documentación casos prueba y defectos con pasos reproducibles",
-                    "Validación flujos críticos. Niveles severidad y trazabilidad requisitos"
+                    "Diseñé y ejecuté pruebas automatizadas/performance web apps Selenium/K6, reduciendo incidencias producción 22%",
+                    "Validé compatibilidad cross-browser y cross-device, incrementando estabilidad 30%",
+                    "Documenté resultados indicadores severidad y prioridad, acelerando decisiones liberación 20%",
+                    "Propuse mejoras preventivas calidad, disminuyendo defectos repetitivos 18%"
                 ]
             },
             {
-                'position': "QA Tester | Zurich Insurance",
-                'company': "Quito, Ecuador | Junio 2021 - Octubre 2021",
+                'position': "Pasante QA — Zurich Insurance",
+                'company': "Jun. 2022 – Dic. 2022 | Quito, Ecuador",
                 'achievements': [
-                    "Validación workflows procesamiento siniestros y gestión pólizas. Cumplimiento requisitos regulatorios financieros",
-                    "Testing en sistemas legacy. Aseguración compatibilidad normativa"
+                    "Diseñé y ejecuté pruebas automatizadas/performance aplicaciones seguros, mejorando cobertura escenarios 25%",
+                    "Preparé y optimicé datos prueba casos complejos, reduciendo inconsistencias 20%",
+                    "Validé cumplimiento requisitos matrices trazabilidad, elevando visibilidad cobertura 30%",
+                    "Colaboré equipos internacionales revisiones calidad, disminuyendo reprocesos 15%"
+                ]
+            },
+            {
+                'position': "IT Intern — Banco Guayaquil",
+                'company': "Ene. 2022 – Jun. 2022 | Quito, Ecuador",
+                'achievements': [
+                    "Brindé soporte técnico operativo sistemas bancarios, mejorando tiempos atención incidencias 20%",
+                    "Ejecuté mantenimiento preventivo/correctivo equipos, reduciendo interrupciones operativas 18%",
+                    "Gestioné tickets priorización por impacto, incrementando cumplimiento SLA 15%",
+                    "Elaboré reportes control operativo, optimizando toma decisiones 20%"
                 ]
             }
         ],
         'skills': [
-            ("<b>Automatización de Pruebas:</b>", "Selenium WebDriver, SerenityBDD, Cucumber, Karate, Appium"),
-            ("<b>Testing de APIs:</b>", "Postman, REST, GraphQL, Contract Testing, WireMock"),
-            ("<b>Performance & Carga:</b>", "k6, Grafana, LoadRunner, Apache JMeter, Baselines de Performance"),
-            ("<b>CI/CD & DevOps:</b>", "Jenkins, Azure DevOps, Git, GitLab CI, Docker basics"),
-            ("<b>Programación:</b>", "Java, JavaScript/Node.js, SQL, Gherkin/BDD"),
-            ("<b>Bases de Datos:</b>", "PostgreSQL, Oracle, MySQL, SQL Server"),
-            ("<b>Gestión Testing:</b>", "TestRail, Azure Test Plans, Jira, Confluence"),
-            ("<b>Metodologías:</b>", "Agile/Scrum, Testing basado en Riesgos, BDD, Estrategia Automatización"),
+            ("Automatización y Frameworks:", "Selenium, SerenityBDD, Karate DSL, Cucumber, TestNG, Pytest, Screenplay, BDD"),
+            ("Lenguajes y desarrollo:", "Java, JavaScript, Python, SQL"),
+            ("Pruebas de rendimiento:", "K6, JMeter"),
+            ("APIs y Backend:", "REST APIs, Postman, Validación API, Contract Testing"),
+            ("Bases de Datos:", "PostgreSQL, Redis"),
+            ("DevOps y CI/CD:", "Azure DevOps, Git, Maven, Gradle, SonarCloud"),
+            ("Gestión de Calidad:", "Jira, X-Ray, Zephyr, Confluence"),
+            ("Metodologías:", "Scrum, Kanban, TDD, ATDD, DDT, KDT, Testing Basado en Riesgo, Shift Left Testing, Shift Right Testing"),
+        ],
+        'soft_skills': [
+            "Technical Leadership",
+            "Stakeholder Management",
+            "Risk-Based Decision Making"
         ],
         'certifications': [
-            "ISTQB Certified Tester Foundation Level 4.0 (Testing Avanzado)",
-            "ISTQB Certified Tester, Foundation Level - Agile Tester (QA enfocado en Agile)",
-            "K6 Certificado: Performance Testing & Load Testing",
-            "Certified Scrum Master (CSM) - Prácticas Agile",
-            "DevOps Foundations: CI/CD - Infraestructura & Automatización",
-            "Entrenamiento Especializado: Docker Fundamentals, Azure Cloud Services, Design Thinking, Liderazgo en Tecnología",
-            "22+ Cursos Desarrollo Profesional: Selenium Avanzado, Karate API Testing, k6 Performance Engineering, Database Testing, Test Strategy & Planning",
+            "ISTQB® Agile Tester",
+            "ISTQB® Foundation Level 4.0",
+            "Karate DSL: API Automation and Performance",
+            "K6 Performance Testing",
+            "DevOps Foundations: CI/CD",
+            "Site Reliability Engineering Fundamentals",
+            "Stratio Generative AI: Data Governance",
+            "Stratio Generative AI: Data Fabric Basics",
+            "Stratio Generative AI: Data Processing",
+            "GitHub Copilot Fundamentals",
+            "Certified ScrumMaster (CSM®)"
         ],
-        'education_degree': "<b>Ingeniería en Sistemas de Información</b>",
-        'education_focus': "Áreas de Enfoque: Aseguración de Calidad de Software, Automatización de Testing, DevOps & Infraestructura Cloud",
-        'education_graduation': "Graduación: 2024",
-        'languages': "Español (Nativo) | Inglés (Dominio Profesional)",
+        'education': [
+            {"institution": "Universidad Tecnológica Israel, Quito, Ecuador", "degree": "Ingeniería en sistemas de información", "dates": "Oct. 2021 – Sep. 2024"},
+            {"institution": "Kruger Instituto Xponencial, Quito, Ecuador", "degree": "Full Stack Bootcamp", "dates": "Jul. 2024 – Nov. 2024"}
+        ],
+        'languages': "Español (nativo) | Inglés (B1 – competencia laboral)"
     },
     'en': {
         'title': "BRYAN ALEXANDER FREIRE CHAMORRO",
-        'subtitle': "QA Engineer | Test Automation | Testing Strategy",
+        'subtitle': "QA Engineer | Test Automation | API & Performance Testing",
         'contact_email': "bryanalexfreire@gmail.com | +593 984 291 545 | Quito, Ecuador",
         'contact_social': "linkedin.com/in/bryanalexanderfreire | github.com/bryanalexfreire",
         'portfolio': "Portfolio: https://bryanalexfreire.github.io/",
-        'professional_summary': "Software Quality Engineer with 4+ years designing end-to-end testing strategies: from manual exploration to CI/CD-integrated automation suites. Specialist in BDD, automation frameworks (Selenium, SerenityBDD, Karate), and performance testing. Focus on quality through exploration, living documentation, and defect prevention.",
+        'professional_summary': "Software Quality Engineer specialized in QA Automation, API Testing, and Performance Testing in banking and fintech. Design Risk-Based Testing strategies integrated with CI/CD to accelerate delivery with quality. Achieved 35% reduction in post-release defects and optimized API validation cycles from 60 to 15 minutes. Focused on technical leadership, cross-functional collaboration, and measurable business results.",
         'section_experience': "PROFESSIONAL EXPERIENCE",
         'section_skills': "TECHNICAL SKILLS",
-        'section_certs': "CERTIFICATIONS & PROFESSIONAL DEVELOPMENT",
+        'section_soft_skills': "SOFT SKILLS",
+        'section_certs': "CERTIFICATIONS AND TRAINING",
         'section_education': "EDUCATION",
         'section_languages': "LANGUAGES",
         'experience': [
             {
-                'position': "QA Engineer | Banco Pichincha S.A.",
-                'company': "Quito, Ecuador | January 2026 - Present",
+                'position': "QA Engineer — Banco Pichincha S.A.",
+                'company': "Jan. 2026 – Present | Quito, Ecuador",
                 'achievements': [
-                    "QA leadership for banking products (Accounts, Investments, Core Migrations): E2E/APIs/Mobile implementation reducing regression cycles 75%",
-                    "Cross-functional team management (~5 QAs). Normalization of 30 retention cases → 13 certified (100% coverage)",
-                    "BDD automation with Cucumber/Selenium. Contract testing integrated in CI/CD. Living documentation for critical flows"
+                    "Led QA for banking products (Accounts, Investments, Core Migrations, Regulatory Compliance) reducing regression cycles 75% with E2E/APIs/Mobile/Performance implementation",
+                    "Optimized execution: E2E 60→20 min, APIs 60→15 min, Mobile 30→15 min; accelerating technical feedback 50% with real-time validation dashboards",
+                    "Integrated quality controls in CI/CD Azure DevOps/Git pipelines, decreasing post-release defects 35% through Risk-Based Testing strategy",
+                    "Managed cross-functional team ~5 QAs. Normalized 30 retention cases → 13 certified (100% coverage, BDD with Cucumber)",
+                    "Implemented Contract Testing and CI/CD integration. Living documentation and operational dashboards for critical validations",
+                    "Mentored team in BDD automation, Karate DSL, performance testing; strengthening technical autonomy 30%"
                 ]
             },
             {
-                'position': "QA Specialist | Halliburton (Contractor)",
-                'company': "Quito, Ecuador | September 2023 - January 2026",
+                'position': "QA Engineer — NTT DATA",
+                'company': "Aug. 2025 – Jan. 2026 | Quito, Ecuador",
                 'achievements': [
-                    "Cloud project automation and functional testing. E2E test suite design with Selenium/Cucumber. 40% reduction in testing cycles",
-                    "CI/CD integration with Jenkins. SonarQube coverage analysis. Automated reporting. Performance testing with k6"
+                    "Designed functional, automated, and performance testing strategies with SerenityBDD/Karate/K6, increasing coverage 28%",
+                    "Automated critical business scenarios in APIs and E2E flows, reducing regression time per release 35%",
+                    "Standardized planning, estimation, and risk management in Scrum/Kanban, improving delivery predictability 20%",
+                    "Coordinated validations with development and operations via Jira/X-Ray, decreasing integration incidents 25%"
                 ]
             },
             {
-                'position': "QA Analyst | NTT Data Europe & Latam",
-                'company': "Quito, Ecuador | March 2023 - June 2023",
+                'position': "QA Intern — Bayteq",
+                'company': "Mar. 2023 – Jun. 2023 | Quito, Ecuador",
                 'achievements': [
-                    "Testing fundamentals: manual test cases, browser execution, defect reporting. ISTQB methodology learning",
-                    "Functional regression for web applications. Stack: Jira, Postman, modern browsers"
+                    "Supported requirements analysis and test planning with Jira, improving acceptance criteria clarity 25%",
+                    "Executed functional tests on prioritized modules, improving first-cycle resolution 20%",
+                    "Collaborated in QA and development readiness sessions, reducing pre-testing rework 15%",
+                    "Consolidated progress and defect reports, improving quality status visibility 30%"
                 ]
             },
             {
-                'position': "QA Analyst | Bayteq",
-                'company': "Quito, Ecuador | November 2021 - February 2022",
+                'position': "QA Analyst — Perseject",
+                'company': "Dec. 2022 – Mar. 2023 | Quito, Ecuador",
                 'achievements': [
-                    "Functional and regression testing for e-commerce platforms. Test case and defect documentation with clear reproduction steps",
-                    "Critical flow validation. Severity levels and requirements traceability"
+                    "Designed and executed automated and performance tests for web apps with Selenium and K6, reducing production incidents 22%",
+                    "Validated cross-browser and cross-device compatibility, increasing functional stability 30%",
+                    "Documented results with severity and priority indicators, accelerating release decisions 20%",
+                    "Proposed preventive quality improvements, decreasing repetitive defects 18%"
                 ]
             },
             {
-                'position': "QA Tester | Zurich Insurance",
-                'company': "Quito, Ecuador | June 2021 - October 2021",
+                'position': "QA Intern — Zurich Insurance",
+                'company': "Jun. 2022 – Dec. 2022 | Quito, Ecuador",
                 'achievements': [
-                    "Insurance claim processing workflows and policy management system validation. Compliance with financial regulatory requirements",
-                    "Legacy system testing. Regulatory compatibility assurance"
+                    "Designed and executed automated and performance tests for insurance applications, improving scenario coverage 25%",
+                    "Prepared and optimized test data for complex cases, reducing execution inconsistencies 20%",
+                    "Validated functional and non-functional requirements with traceability matrices, improving coverage visibility 30%",
+                    "Collaborated with international teams in quality reviews, decreasing validation rework 15%"
+                ]
+            },
+            {
+                'position': "IT Intern — Banco Guayaquil",
+                'company': "Jan. 2022 – Jun. 2022 | Quito, Ecuador",
+                'achievements': [
+                    "Provided operational technical support for banking system users, improving incident response times 20%",
+                    "Executed preventive and corrective equipment maintenance, reducing operational interruptions 18%",
+                    "Managed tickets with impact-based prioritization, increasing SLA compliance 15%",
+                    "Prepared operational control reports, optimizing area decision-making 20%"
                 ]
             }
         ],
         'skills': [
-            ("<b>Test Automation:</b>", "Selenium WebDriver, SerenityBDD, Cucumber, Karate, Appium"),
-            ("<b>API Testing:</b>", "Postman, REST, GraphQL, Contract Testing, WireMock"),
-            ("<b>Performance & Load:</b>", "k6, Grafana, LoadRunner, Apache JMeter, Performance Baselines"),
-            ("<b>CI/CD & DevOps:</b>", "Jenkins, Azure DevOps, Git, GitLab CI, Docker basics"),
-            ("<b>Programming:</b>", "Java, JavaScript/Node.js, SQL, Gherkin/BDD"),
-            ("<b>Databases:</b>", "PostgreSQL, Oracle, MySQL, SQL Server"),
-            ("<b>Test Management:</b>", "TestRail, Azure Test Plans, Jira, Confluence"),
-            ("<b>Methodologies:</b>", "Agile/Scrum, Risk-Based Testing, BDD, Test Automation Strategy"),
+            ("Test Automation and Frameworks:", "Selenium, SerenityBDD, Karate DSL, Cucumber, TestNG, Pytest, Screenplay, BDD"),
+            ("Languages and Development:", "Java, JavaScript, Python, SQL"),
+            ("Performance Testing:", "K6, JMeter"),
+            ("APIs and Backend:", "REST APIs, Postman, API Validation, Contract Testing"),
+            ("Databases:", "PostgreSQL, Redis"),
+            ("DevOps and CI/CD:", "Azure DevOps, Git, Maven, Gradle, SonarCloud"),
+            ("Quality Management:", "Jira, X-Ray, Zephyr, Confluence"),
+            ("Methodologies:", "Scrum, Kanban, TDD, ATDD, DDT, KDT, Risk-Based Testing, Shift Left Testing, Shift Right Testing"),
+        ],
+        'soft_skills': [
+            "Technical Leadership",
+            "Stakeholder Management",
+            "Risk-Based Decision Making"
         ],
         'certifications': [
-            "ISTQB Certified Tester Foundation Level 4.0 (Advanced Testing)",
-            "ISTQB Certified Tester, Foundation Level - Agile Tester (Agile-focused QA)",
-            "K6 Certified: Performance Testing & Load Testing",
-            "Certified Scrum Master (CSM) - Agile Team Practices",
-            "DevOps Foundations: CI/CD - Infrastructure & Automation",
-            "Specialized Training: Docker Fundamentals, Azure Cloud Services, Design Thinking, Leadership in Technology",
-            "22+ Professional Development Courses: Selenium Advanced, Karate API Testing, k6 Performance Engineering, Database Testing, Test Strategy & Planning",
+            "ISTQB® Agile Tester",
+            "ISTQB® Foundation Level 4.0",
+            "Karate DSL: API Automation and Performance",
+            "K6 Performance Testing",
+            "DevOps Foundations: CI/CD",
+            "Site Reliability Engineering Fundamentals",
+            "Stratio Generative AI: Data Governance",
+            "Stratio Generative AI: Data Fabric Basics",
+            "Stratio Generative AI: Data Processing",
+            "GitHub Copilot Fundamentals",
+            "Certified ScrumMaster (CSM®)"
         ],
-        'education_degree': "<b>Bachelor's Degree in Information Systems Engineering</b>",
-        'education_focus': "Focus Areas: Software Quality Assurance, Test Automation, DevOps & Cloud Infrastructure",
-        'education_graduation': "Graduation: 2024",
-        'languages': "Spanish (Native) | English (Professional Proficiency)",
+        'education': [
+            {"institution": "Universidad Tecnológica Israel, Quito, Ecuador", "degree": "Engineering in Information Systems", "dates": "Oct. 2021 – Sep. 2024"},
+            {"institution": "Kruger Instituto Xponencial, Quito, Ecuador", "degree": "Full Stack Bootcamp", "dates": "Jul. 2024 – Nov. 2024"}
+        ],
+        'languages': "Spanish (native) | English (B1 – professional proficiency)"
     }
 }
 
@@ -325,8 +389,22 @@ def generate_cv_pdf(language='es'):
     elements.append(Spacer(1, 0.02*inch))
 
     # Professional Summary
+    elements.append(Paragraph("<b>Perfil Profesional</b>" if language == 'es' else "<b>Professional Profile</b>", styles['body']))
     elements.append(Paragraph(content['professional_summary'], styles['body']))
-    elements.append(Spacer(1, 0.015*inch))
+    elements.append(Spacer(1, 0.01*inch))
+
+    # Competencias Clave / Key Competencies
+    elements.append(Paragraph("<b>Competencias Clave</b>" if language == 'es' else "<b>Key Competencies</b>", styles['body']))
+    key_comps = [
+        "QA Automation (Karate, SerenityBDD, Cucumber, Selenium)",
+        "API Testing (REST, Postman, SQL Validation, Contract Testing)",
+        "Performance Testing (K6, JMeter)",
+        "CI/CD Quality Validation (Azure DevOps, Git)",
+        "Risk-Based Testing | Test Strategy Design | Technical Leadership"
+    ]
+    for comp in key_comps:
+        elements.append(Paragraph(f"• {comp}", styles['bullet']))
+    elements.append(Spacer(1, 0.01*inch))
 
     # Experience
     elements.append(Paragraph(content['section_experience'], styles['section']))
@@ -336,29 +414,37 @@ def generate_cv_pdf(language='es'):
         for achievement in job['achievements']:
             elements.append(Paragraph(f"• {achievement}", styles['bullet']))
         if i < len(content['experience']) - 1:
-            elements.append(Spacer(1, 0.01*inch))
-    elements.append(Spacer(1, 0.015*inch))
+            elements.append(Spacer(1, 0.005*inch))
+    elements.append(Spacer(1, 0.01*inch))
+
+    # PAGE BREAK
+    elements.append(PageBreak())
 
     # Technical Skills
     elements.append(Paragraph(content['section_skills'], styles['section']))
     for skill_cat, skill_list in content['skills']:
-        elements.append(Paragraph(f"{skill_cat} {skill_list}", styles['body']))
-    elements.append(Spacer(1, 0.015*inch))
+        elements.append(Paragraph(f"<b>{skill_cat}</b> {skill_list}", styles['body']))
+    elements.append(Spacer(1, 0.01*inch))
+
+    # Soft Skills
+    elements.append(Paragraph(content['section_soft_skills'], styles['section']))
+    for skill in content['soft_skills']:
+        elements.append(Paragraph(f"• {skill}", styles['bullet']))
+    elements.append(Spacer(1, 0.01*inch))
 
     # Certifications
     elements.append(Paragraph(content['section_certs'], styles['section']))
     for cert in content['certifications']:
         elements.append(Paragraph(f"• {cert}", styles['bullet']))
-
-    # Page break
-    elements.append(PageBreak())
+    elements.append(Spacer(1, 0.01*inch))
 
     # Education
     elements.append(Paragraph(content['section_education'], styles['section']))
-    elements.append(Paragraph(content['education_degree'], styles['body']))
-    elements.append(Paragraph(content['education_focus'], styles['bullet']))
-    elements.append(Paragraph(content['education_graduation'], styles['bullet']))
-    elements.append(Spacer(1, 0.02*inch))
+    for edu in content['education']:
+        elements.append(Paragraph(f"<b>{edu['institution']}</b>", styles['body']))
+        elements.append(Paragraph(edu['degree'], styles['bullet']))
+        elements.append(Paragraph(edu['dates'], styles['bullet']))
+    elements.append(Spacer(1, 0.01*inch))
 
     # Languages
     elements.append(Paragraph(content['section_languages'], styles['section']))

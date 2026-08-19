@@ -219,6 +219,121 @@ h5 {
 }
 
 /* ============================================
+   STATS TABLE (Tabla visual mejorada)
+   ============================================ */
+.stats-table-container {
+  overflow-x: auto;
+  margin-bottom: var(--spacing-xl);
+}
+
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.stats-table tbody tr {
+  border: 1px solid var(--border);
+}
+
+.stats-table td {
+  border-right: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+  padding: 18px 12px;
+  text-align: center;
+  background: var(--surface);
+}
+
+.stats-table td:last-child {
+  border-right: none;
+}
+
+.stats-table td:first-child {
+  border-left: none;
+}
+
+.stats-table .stat-metric {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--amber);
+  padding: 20px 12px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.stats-table .stat-metric:hover {
+  color: var(--accent);
+  background: var(--surface-2);
+}
+
+.stats-table .stat-metric:hover::after {
+  content: attr(data-context);
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent);
+  color: var(--bg);
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 600;
+  white-space: nowrap;
+  z-index: var(--z-dropdown);
+  pointer-events: none;
+  animation: slideDown 0.2s ease-out;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateX(-50%) translateY(-4px); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+.stats-table .stat-label {
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 14px 12px;
+  font-size: 11px;
+}
+
+.stats-table .stat-desc {
+  color: var(--text-muted);
+  font-size: 11px;
+  padding: 12px 8px;
+  line-height: 1.4;
+  position: relative;
+  transition: all 0.2s;
+  cursor: help;
+}
+
+.stats-table .stat-desc:hover {
+  color: var(--text);
+  background: var(--surface-2);
+}
+
+.stats-table .stat-desc:hover::after {
+  content: attr(data-detail);
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--amber);
+  color: var(--bg);
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 600;
+  white-space: nowrap;
+  z-index: var(--z-dropdown);
+  pointer-events: none;
+  animation: slideDown 0.2s ease-out;
+}
+
+/* ============================================
    SPACING UTILITIES
    ============================================ */
 .mb-xs { margin-bottom: var(--spacing-xs); }

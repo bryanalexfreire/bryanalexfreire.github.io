@@ -443,6 +443,38 @@
 }
 
 /* ============================================
+   PROBLEM SOLVE SECTION (RESPONSIVE)
+   ============================================ */
+@media (max-width: 1024px) {
+  #problem-solve {
+    padding: 32px;
+  }
+
+  .pipeline-diagram {
+    min-width: 500px;
+  }
+}
+
+@media (max-width: 640px) {
+  #problem-solve {
+    padding: 20px;
+  }
+
+  .pipeline-container {
+    padding: 12px 0;
+  }
+
+  .pipeline-diagram {
+    min-width: 400px;
+  }
+
+  .pipeline-node .node-text,
+  .pipeline-node .node-text-center {
+    font-size: 11px;
+  }
+}
+
+/* ============================================
    LANDSCAPE MODE
    ============================================ */
 @media (max-height: 600px) and (orientation: landscape) {

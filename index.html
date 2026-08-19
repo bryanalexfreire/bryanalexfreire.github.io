@@ -52,7 +52,7 @@
   <main>
     <section class="hero" id="hero">
       <div class="hero-main">
-        <div class="eyebrow" data-i18n="eyebrow">QA ENGINEER · FUNCTIONAL & AUTOMATIZACIÓN</div>
+        <div class="eyebrow" data-i18n="eyebrow">QA ENGINEER · FUNCIONAL & AUTOMATIZACIÓN</div>
         <h1 data-i18n="hero_title">Bryan Freire construye<br>confianza en el software,<br>un test a la vez.</h1>
         <p class="subtitle" data-i18n="hero_sub">Ingeniero de Calidad de Software con 4+ años diseñando estrategias de calidad end-to-end: desde exploración manual hasta suites de automatización que corren en cada pull request.</p>
         <div class="hero-meta" data-i18n="hero_meta">Quito, Ecuador · bryanalexfreire@gmail.com · +593 984 291 545</div>
@@ -73,11 +73,123 @@
     </section>
 
     <section style="padding-bottom: 56px;">
-      <div class="stats-row">
-        <div class="stat"><div class="num">+30%</div><div class="label" data-i18n="hstat1">COBERTURA FUNCIONAL Y REGRESIÓN</div></div>
-        <div class="stat"><div class="num">-50%</div><div class="label" data-i18n="hstat2">TIEMPO DE FEEDBACK TÉCNICO</div></div>
-        <div class="stat"><div class="num">-35%</div><div class="label" data-i18n="hstat3">DEFECTOS POST-RELEASE</div></div>
-        <div class="stat"><div class="num">+30%</div><div class="label" data-i18n="hstat4">PRODUCTIVIDAD DEL EQUIPO</div></div>
+      <div class="stats-table-container">
+        <table class="stats-table">
+          <tbody>
+            <tr>
+              <td class="stat-metric" data-context="API Automation">+30%</td>
+              <td class="stat-metric" data-context="CI/CD Integration">-50%</td>
+              <td class="stat-metric" data-context="QA Strategy">-35%</td>
+              <td class="stat-metric" data-context="Team Autonomy">+30%</td>
+            </tr>
+            <tr>
+              <td class="stat-label" data-i18n="stat_cov">COVERAGE</td>
+              <td class="stat-label" data-i18n="stat_fb">FEEDBACK</td>
+              <td class="stat-label" data-i18n="stat_def">DEFECTS</td>
+              <td class="stat-label" data-i18n="stat_prod">PRODUCTIVITY</td>
+            </tr>
+            <tr>
+              <td class="stat-desc" data-i18n="stat_cov_desc" data-detail="E2E, API & Manual">Functional + Regression</td>
+              <td class="stat-desc" data-i18n="stat_fb_desc" data-detail="Real-time Prioritization">60 min → 30 min</td>
+              <td class="stat-desc" data-i18n="stat_def_desc" data-detail="Defect Prevention">Post-release</td>
+              <td class="stat-desc" data-i18n="stat_prod_desc" data-detail="Tool & Process">Team autonomy</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="block" id="problem-solve">
+      <div class="file-label">strategy.ts</div>
+      <h2 class="section-title" data-i18n="problem_title">¿Qué Problema Resuelvo?</h2>
+      <div class="section-sub" data-i18n="problem_sub">Pipeline de automatización que transforma el riesgo en velocidad de entrega.</div>
+      
+      <div class="pipeline-container">
+        <svg class="pipeline-diagram" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid meet">
+          <!-- Línea principal horizontal -->
+          <line x1="50" y1="300" x2="950" y2="300" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+          
+          <!-- SOFTWARE DELIVERY (inicio) -->
+          <g class="pipeline-node" data-stage="1">
+            <rect x="20" y="270" width="120" height="60" rx="8" class="node-box"/>
+            <text x="80" y="305" class="node-text">SOFTWARE</text>
+            <text x="80" y="325" class="node-text">DELIVERY</text>
+          </g>
+          <path d="M 150 300 L 180 300" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+          
+          <!-- RISK -->
+          <g class="pipeline-node" data-stage="2">
+            <circle cx="230" cy="300" r="40" class="node-circle"/>
+            <text x="230" y="310" class="node-text-center">RISK</text>
+          </g>
+          <path d="M 270 300 L 300 300" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+          
+          <!-- TEST STRATEGY (vertical down) -->
+          <g class="pipeline-node" data-stage="3">
+            <path d="M 350 300 L 350 380" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+            <rect x="300" y="390" width="100" height="60" rx="8" class="node-box"/>
+            <text x="350" y="420" class="node-text-center">TEST</text>
+            <text x="350" y="440" class="node-text-center">STRATEGY</text>
+          </g>
+          
+          <!-- Three branches (E2E, API, PERFORMANCE) -->
+          <g class="pipeline-node" data-stage="4">
+            <!-- E2E -->
+            <path d="M 280 450 L 250 500" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+            <rect x="200" y="510" width="80" height="50" rx="8" class="node-box arch-e2e"/>
+            <text x="240" y="540" class="node-text-center">E2E</text>
+            
+            <!-- API -->
+            <path d="M 350 450 L 350 500" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+            <rect x="310" y="510" width="80" height="50" rx="8" class="node-box arch-api"/>
+            <text x="350" y="540" class="node-text-center">API</text>
+            
+            <!-- PERFORMANCE -->
+            <path d="M 420 450 L 450 500" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+            <rect x="420" y="510" width="80" height="50" rx="8" class="node-box arch-perf"/>
+            <text x="460" y="540" class="node-text-center">PERF</text>
+          </g>
+          
+          <!-- Convergence lines -->
+          <path d="M 240 560 L 350 590" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+          <path d="M 350 560 L 350 590" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+          <path d="M 460 560 L 350 590" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+          
+          <!-- AUTOMATION -->
+          <g class="pipeline-node" data-stage="5">
+            <circle cx="350" cy="300" r="40" class="node-circle"/>
+            <text x="350" y="310" class="node-text-center">AUTOMATION</text>
+          </g>
+          <path d="M 390 300 L 420 300" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+          
+          <!-- CI/CD -->
+          <g class="pipeline-node" data-stage="6">
+            <rect x="420" y="270" width="100" height="60" rx="8" class="node-box"/>
+            <text x="470" y="305" class="node-text-center">CI/CD</text>
+          </g>
+          <path d="M 530 300 L 560 300" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+          
+          <!-- FAST FEEDBACK -->
+          <g class="pipeline-node" data-stage="7">
+            <circle cx="610" cy="300" r="40" class="node-circle"/>
+            <text x="610" y="305" class="node-text-center">FAST</text>
+            <text x="610" y="320" class="node-text-center">FEEDBACK</text>
+          </g>
+          <path d="M 650 300 L 680 300" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+          
+          <!-- IMPACT (final) -->
+          <g class="pipeline-node" data-stage="8">
+            <rect x="680" y="270" width="100" height="60" rx="8" class="node-box impact"/>
+            <text x="730" y="305" class="node-text-center">IMPACT</text>
+          </g>
+          
+          <!-- Arrow marker definition -->
+          <defs>
+            <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+              <polygon points="0 0, 10 3, 0 6" fill="currentColor" opacity="0.6"/>
+            </marker>
+          </defs>
+        </svg>
       </div>
     </section>
 
@@ -374,6 +486,8 @@
       see_projects:"Ver proyectos",
       spec_title:"Especialidades", spec0:"Functional & Manual Testing", spec1:"QA Automation (E2E, API)", spec2:"Performance Testing", spec3:"Quality Engineering", spec4:"CI/CD & DevOps", spec5:"Agile & Testing Strategy",
       hstat1:"COBERTURA FUNCIONAL Y REGRESIÓN", hstat2:"TIEMPO DE FEEDBACK TÉCNICO", hstat3:"DEFECTOS POST-RELEASE", hstat4:"PRODUCTIVIDAD DEL EQUIPO",
+      stat_cov:"COVERAGE", stat_fb:"FEEDBACK", stat_def:"DEFECTS", stat_prod:"PRODUCTIVITY",
+      stat_cov_desc:"Functional + Regression", stat_fb_desc:"60 min → 30 min", stat_def_desc:"Post-release", stat_prod_desc:"Team autonomy",
       arch_title:"Arquetipos de Automatización", arch_sub:"Enfoques y soluciones implementadas en diferentes tipos de pruebas automatizadas.",
       arch0_title:"Functional Testing", arch0_desc:"Diseño y ejecución de pruebas funcionales y exploratorias con base en estándares ISTQB.",
       arch0_l1:"Diseño de casos con técnicas de caja negra (valores límite, partición de equivalencias)", arch0_l2:"Pruebas exploratorias y basadas en riesgo", arch0_l3:"Gestión de casos y trazabilidad con Jira/X-ray", arch0_l4:"Certificado ISTQB Foundation Level 4.0", arch0_l5:"Certificado ISTQB CTFL Agile Tester", arch0_l6:"Estrategia de testing ágil en Scrum/Kanban",
@@ -420,6 +534,8 @@
       see_projects:"View projects",
       spec_title:"Specialties", spec0:"Functional & Manual Testing", spec1:"QA Automation (E2E, API)", spec2:"Performance Testing", spec3:"Quality Engineering", spec4:"CI/CD & DevOps", spec5:"Agile & Testing Strategy",
       hstat1:"FUNCTIONAL & REGRESSION COVERAGE", hstat2:"TECHNICAL FEEDBACK TIME", hstat3:"POST-RELEASE DEFECTS", hstat4:"TEAM PRODUCTIVITY",
+      stat_cov:"COVERAGE", stat_fb:"FEEDBACK", stat_def:"DEFECTS", stat_prod:"PRODUCTIVITY",
+      stat_cov_desc:"Functional + Regression", stat_fb_desc:"60 min → 30 min", stat_def_desc:"Post-release", stat_prod_desc:"Team autonomy",
       arch_title:"Automation Archetypes", arch_sub:"Approaches and solutions implemented across different types of automated testing.",
       arch0_title:"Functional Testing", arch0_desc:"Design and execution of functional and exploratory testing based on ISTQB standards.",
       arch0_l1:"Test case design with black-box techniques (boundary values, equivalence partitioning)", arch0_l2:"Exploratory and risk-based testing", arch0_l3:"Test case management and traceability with Jira/X-ray", arch0_l4:"ISTQB Foundation Level 4.0 certified", arch0_l5:"ISTQB CTFL Agile Tester certified", arch0_l6:"Agile testing strategy in Scrum/Kanban",

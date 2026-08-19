@@ -159,6 +159,100 @@ nav.controls {
 }
 
 /* ============================================
+   PROBLEM SOLVE SECTION
+   ============================================ */
+#problem-solve {
+  background: linear-gradient(135deg, var(--surface-2) 0%, var(--surface) 100%);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 48px;
+}
+
+.pipeline-container {
+  margin-top: 40px;
+  padding: 20px 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.pipeline-diagram {
+  width: 100%;
+  min-width: 600px;
+  height: auto;
+  color: var(--text);
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.1));
+}
+
+.pipeline-node {
+  transition: all 0.3s ease;
+}
+
+.pipeline-node:hover {
+  opacity: 1;
+}
+
+.pipeline-node .node-box {
+  fill: var(--surface-2);
+  stroke: var(--accent);
+  stroke-width: 2;
+  transition: all 0.3s;
+}
+
+.pipeline-node:hover .node-box {
+  fill: var(--accent);
+  filter: drop-shadow(0 4px 12px var(--accent-dim));
+}
+
+.pipeline-node .node-circle {
+  fill: var(--surface-2);
+  stroke: var(--amber);
+  stroke-width: 2;
+  transition: all 0.3s;
+}
+
+.pipeline-node:hover .node-circle {
+  fill: var(--amber);
+  filter: drop-shadow(0 4px 12px rgba(255, 193, 7, 0.3));
+}
+
+.pipeline-node .node-box.impact {
+  stroke: var(--amber);
+}
+
+.pipeline-node .node-box.arch-e2e {
+  stroke: #8b5cf6;
+  fill: #8b5cf6;
+  opacity: 0.3;
+}
+
+.pipeline-node .node-box.arch-api {
+  stroke: #10b981;
+  fill: #10b981;
+  opacity: 0.3;
+}
+
+.pipeline-node .node-box.arch-perf {
+  stroke: #f59e0b;
+  fill: #f59e0b;
+  opacity: 0.3;
+}
+
+.pipeline-node .node-text,
+.pipeline-node .node-text-center {
+  fill: var(--text);
+  font-size: 13px;
+  font-weight: 600;
+  text-anchor: middle;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.pipeline-node:hover .node-text,
+.pipeline-node:hover .node-text-center {
+  fill: var(--bg);
+  font-weight: 700;
+}
+/* ============================================
    ARCH CARDS (Archetipos)
    ============================================ */
 .arch-grid {

@@ -1,0 +1,523 @@
+{
+  "auditoría_fecha": "2026-08-19",
+  "proyecto": "Bryan Freire - Portfolio Web QA Engineer",
+  "resumen_ejecutivo": {
+    "archivos_totales": 42,
+    "archivos_inútiles_encontrados": 13,
+    "archivos_necesarios": 14,
+    "tamaño_inútil_estimado_mb": 3.5,
+    "recomendación": "Eliminar todos los archivos en categoría 'INÚTIL' para reducir clutter del proyecto"
+  },
+  
+  "archivos_inútiles": [
+    {
+      "archivo": "certificados.html",
+      "razón": "Página de certificaciones reemplazada por funcionalidad embedida en index.html (modal con visualización de certificados)",
+      "usado_en": "ningún lado",
+      "tipo": "HTML heredado",
+      "prioridad_eliminación": "ALTA",
+      "dependencias": "Usa assets/js/theme.js, assets/js/pages/certificados-page.js, assets/css/pages/certificados.css",
+      "notas": "La funcionalidad completa de certificados está en index.html con modal y sistema i18n"
+    },
+    {
+      "archivo": "cv-resumen.html",
+      "razón": "Página CV en HTML reemplazada por PDF (Bryan-Freire-CV.pdf)",
+      "usado_en": "ningún lado",
+      "tipo": "HTML heredado",
+      "prioridad_eliminación": "ALTA",
+      "dependencias": "Usa assets/js/pages/cv-resumen-es.js, assets/css/pages/cv-resumen.css",
+      "notas": "El archivo PDF es la versión oficial de distribución"
+    },
+    {
+      "archivo": "cv-resumen-en.html",
+      "razón": "Versión en inglés de CV HTML reemplazada por PDF",
+      "usado_en": "ningún lado",
+      "tipo": "HTML heredado",
+      "prioridad_eliminación": "ALTA",
+      "dependencias": "Usa assets/js/pages/cv-resumen-en.js, assets/css/pages/cv-resumen.css",
+      "notas": "Duplicado de cv-resumen.html en inglés, innecesario"
+    },
+    {
+      "archivo": "test.pdf",
+      "razón": "Archivo de prueba/testing sin propósito en producción",
+      "usado_en": "ningún lado",
+      "tipo": "Archivo de prueba",
+      "prioridad_eliminación": "ALTA",
+      "tamaño_bytes": 0,
+      "notas": "Eliminar inmediatamente, no tiene valor"
+    },
+    {
+      "archivo": "assets/js/theme.js",
+      "razón": "Script de tema heredado, funcionalidad replicada en index.html",
+      "usado_en": "certificados.html, cv-resumen.html, cv-resumen-en.html (archivos todos heredados)",
+      "tipo": "JavaScript heredado",
+      "prioridad_eliminación": "ALTA",
+      "notas": "Toggles de tema/idioma están en JavaScript inline en index.html. No se usa en la página principal"
+    },
+    {
+      "archivo": "assets/js/xp-pro.js",
+      "razón": "Script sin referencia en index.html, probablemente proyecto legacy",
+      "usado_en": "ningún lado (no referenciado en ningún HTML activo)",
+      "tipo": "JavaScript huérfano",
+      "prioridad_eliminación": "MEDIA",
+      "notas": "No hay referencia en index.html ni en otros HTML activos"
+    },
+    {
+      "archivo": "assets/js/pages/certificados-page.js",
+      "razón": "Script para página certificados.html (heredada y no usada)",
+      "usado_en": "certificados.html (archivo inútil)",
+      "tipo": "JavaScript obsoleto",
+      "prioridad_eliminación": "ALTA",
+      "notas": "Dependencia de certificados.html"
+    },
+    {
+      "archivo": "assets/js/pages/cv-resumen-common.js",
+      "razón": "Script compartido para páginas CV HTML (heredadas y no usadas)",
+      "usado_en": "cv-resumen.html, cv-resumen-en.html (archivos inútiles)",
+      "tipo": "JavaScript obsoleto",
+      "prioridad_eliminación": "ALTA",
+      "notas": "Soporte para páginas CV reemplazadas por PDF"
+    },
+    {
+      "archivo": "assets/js/pages/cv-resumen-en.js",
+      "razón": "Script para CV en inglés (heredado, reemplazado por PDF)",
+      "usado_en": "cv-resumen-en.html (archivo inútil)",
+      "tipo": "JavaScript obsoleto",
+      "prioridad_eliminación": "ALTA",
+      "notas": "Dependencia de cv-resumen-en.html"
+    },
+    {
+      "archivo": "assets/js/pages/cv-resumen-es.js",
+      "razón": "Script para CV en español (heredado, reemplazado por PDF)",
+      "usado_en": "cv-resumen.html (archivo inútil)",
+      "tipo": "JavaScript obsoleto",
+      "prioridad_eliminación": "ALTA",
+      "notas": "Dependencia de cv-resumen.html"
+    },
+    {
+      "archivo": "assets/js/pages/index-page.js",
+      "razón": "Script para index.html no referenciado; funcionalidad en JavaScript inline",
+      "usado_en": "ningún lado (no linkeado en index.html)",
+      "tipo": "JavaScript huérfano",
+      "prioridad_eliminación": "MEDIA",
+      "notas": "Toda la funcionalidad de index.html está inline (translations, toggles, modales)"
+    },
+    {
+      "archivo": "assets/js/data/xp-data.js",
+      "razón": "Datos de experiencia laboral; estructura repetida en index.html con datos inline",
+      "usado_en": "ningún lado en index.html (datos están en array translations inline)",
+      "tipo": "JavaScript datos heredado",
+      "prioridad_eliminación": "MEDIA",
+      "notas": "Contiene datos de experiencias que NO se usan en la página principal. Se referencia en archivos HTML heredados"
+    },
+    {
+      "archivo": "assets/css/styles.css",
+      "razón": "CSS no referenciado en index.html; estilos distribuidos en CSS modular",
+      "usado_en": "ningún lado",
+      "tipo": "CSS huérfano",
+      "prioridad_eliminación": "ALTA",
+      "notas": "index.html carga CSS modular: variables, base, components, layout, theme, responsive, print, xp-pro"
+    }
+  ],
+
+  "archivos_necesarios": [
+    {
+      "archivo": "index.html",
+      "razón": "Página principal del portfolio, punto de entrada único",
+      "usado_en": "página principal del sitio web",
+      "tipo": "HTML principal",
+      "critico": true,
+      "tamaño_estimado_kb": 450,
+      "features": ["Todas las secciones: hero, arquetipos, experiencia, skills, credenciales, contacto", "Sistema i18n (ES/EN) con 120+ data-i18n keys", "Modal para visualización de certificados", "Toggles de tema y idioma"]
+    },
+    {
+      "archivo": "assets/css/variables.css",
+      "razón": "Variables CSS (colores, fuentes, espaciado) - base del sistema de diseño",
+      "usado_en": "index.html (link tag en <head>)",
+      "tipo": "CSS - Variables",
+      "critico": true,
+      "necesario_para": "Consistencia visual, themes dark/light"
+    },
+    {
+      "archivo": "assets/css/base.css",
+      "razón": "Estilos base (reset, tipografía, elementos generales)",
+      "usado_en": "index.html",
+      "tipo": "CSS - Base",
+      "critico": true,
+      "necesario_para": "Normalización de estilos, fundación de diseño"
+    },
+    {
+      "archivo": "assets/css/components.css",
+      "razón": "Estilos de componentes reutilizables (botones, cards, badges, etc)",
+      "usado_en": "index.html",
+      "tipo": "CSS - Componentes",
+      "critico": true,
+      "necesario_para": "Estilo de archetype cards, credential cards, buttons, tags"
+    },
+    {
+      "archivo": "assets/css/layout.css",
+      "razón": "Layout y estructura (grid, flexbox, contenedores)",
+      "usado_en": "index.html",
+      "tipo": "CSS - Layout",
+      "critico": true,
+      "necesario_para": "Estructura de secciones, responsividad general"
+    },
+    {
+      "archivo": "assets/css/theme.css",
+      "razón": "Estilos específicos de tema (dark/light mode, colores por tema)",
+      "usado_en": "index.html (link tag en <head>)",
+      "tipo": "CSS - Tema",
+      "critico": true,
+      "necesario_para": "Sistema de themes dark/light"
+    },
+    {
+      "archivo": "assets/css/responsive.css",
+      "razón": "Media queries para responsividad (mobile, tablet, desktop)",
+      "usado_en": "index.html",
+      "tipo": "CSS - Responsive",
+      "critico": true,
+      "necesario_para": "Adaptación a pantallas móviles"
+    },
+    {
+      "archivo": "assets/css/print.css",
+      "razón": "Estilos para impresión (ocultar elementos no imprimibles, ajustar layout)",
+      "usado_en": "index.html",
+      "tipo": "CSS - Print",
+      "critico": true,
+      "necesario_para": "Impresión correcta de la página"
+    },
+    {
+      "archivo": "assets/css/xp-pro.css",
+      "razón": "Estilos adicionales para experiencia profesional (sección exp)",
+      "usado_en": "index.html",
+      "tipo": "CSS - Página específica",
+      "critico": false,
+      "necesario_para": "Estilo de sección de experiencia profesional"
+    },
+    {
+      "archivo": "assets/img/profile-og.png",
+      "razón": "Imagen para Open Graph (redes sociales) y JSON-LD schema",
+      "usado_en": "index.html meta tags (og:image), JSON-LD Person schema",
+      "tipo": "Imagen - Social",
+      "critico": true,
+      "dimensiones": "1200x630px",
+      "formato": "PNG",
+      "notas": "Esencial para preview en redes sociales (LinkedIn, Twitter, WhatsApp, etc)"
+    },
+    {
+      "archivo": "assets/img/profile.png",
+      "razón": "Imagen de perfil en JSON-LD schema",
+      "usado_en": "index.html JSON-LD Person schema (image property)",
+      "tipo": "Imagen - Perfil",
+      "critico": false,
+      "notas": "Usada en structured data de schema.org"
+    },
+    {
+      "archivo": "Bryan-Freire-CV.pdf",
+      "razón": "CV en PDF descargable (reemplaza HTML versions)",
+      "usado_en": "Descarga desde botón en index.html",
+      "tipo": "PDF - Documento",
+      "critico": true,
+      "notas": "Generado por generate_cv_pdf.py"
+    },
+    {
+      "archivo": "robots.txt",
+      "razón": "Instrucciones para crawlers de buscadores",
+      "usado_en": "SEO - acceso público",
+      "tipo": "Configuración SEO",
+      "critico": false,
+      "notas": "Optimización para indexación en buscadores"
+    },
+    {
+      "archivo": "sitemap.xml",
+      "razón": "Mapa del sitio para SEO",
+      "usado_en": "Buscadores, referenciado en index.html link tag",
+      "tipo": "Configuración SEO",
+      "critico": false,
+      "notas": "Mejora indexación"
+    }
+  ],
+
+  "traducciones_análisis": {
+    "total_data_i18n_keys": 120,
+    "keys_con_traducción": 117,
+    "keys_faltantes_o_incompletas": 3,
+    "términos_técnicos_sin_traducción": {
+      "notas": "Los siguientes términos técnicos mantienen su nombre en inglés en ambos idiomas (es e en). Esta es una práctica común en QA/Testing.",
+      "items": [
+        {
+          "término": "Selenium",
+          "contexto": "Herramienta de automatización web",
+          "español_alternativo": "Ninguno - mantener como está",
+          "justificación": "Es un nombre propio de herramienta, no se traduce"
+        },
+        {
+          "término": "SerenityBDD",
+          "contexto": "Framework de BDD",
+          "español_alternativo": "Ninguno",
+          "justificación": "Nombre propio de framework"
+        },
+        {
+          "término": "Cucumber",
+          "contexto": "Herramienta BDD",
+          "español_alternativo": "Ninguno",
+          "justificación": "Nombre propio"
+        },
+        {
+          "término": "Karate",
+          "contexto": "DSL para API testing",
+          "español_alternativo": "Ninguno",
+          "justificación": "Nombre propio"
+        },
+        {
+          "término": "k6",
+          "contexto": "Herramienta de load testing",
+          "español_alternativo": "Ninguno",
+          "justificación": "Nombre propio"
+        },
+        {
+          "término": "BDD",
+          "contexto": "Behavior-Driven Development",
+          "traducción_completa": "Desarrollo Dirigido por Comportamiento",
+          "recomendación": "Mantener como BDD (acrónimo de industria)",
+          "uso_actual": "Ambos idiomas: BDD"
+        },
+        {
+          "término": "POM",
+          "contexto": "Page Object Model",
+          "traducción_completa": "Modelo de Página de Objetos",
+          "recomendación": "Mantener como POM",
+          "uso_actual": "Ambos idiomas: POM"
+        },
+        {
+          "término": "CI/CD",
+          "contexto": "Continuous Integration/Continuous Delivery",
+          "traducción_completa": "Integración Continua/Entrega Continua",
+          "recomendación": "Mantener como CI/CD",
+          "uso_actual": "Ambos idiomas: CI/CD"
+        },
+        {
+          "término": "REST APIs",
+          "contexto": "APIs REST",
+          "traducción_completa": "APIs Representational State Transfer",
+          "recomendación": "Mantener como REST APIs",
+          "uso_actual": "Ambos idiomas: REST APIs"
+        },
+        {
+          "término": "DevOps",
+          "contexto": "Práctica de desarrollo",
+          "traducción_completa": "Operaciones de Desarrollo",
+          "recomendación": "Mantener como DevOps",
+          "uso_actual": "Ambos idiomas: DevOps"
+        }
+      ]
+    },
+    "keys_traducibles_pero_no_implementadas": [
+      {
+        "key": "nav_certs",
+        "en_index.html": "no encontrado (está como 'nav_certs' pero no se usa)",
+        "recomendación": "Verificar si se usa o eliminar",
+        "estado": "POSIBLE ERROR"
+      }
+    ],
+    "recomendaciones_traducción": [
+      {
+        "acción": "MANTENER términos técnicos en inglés",
+        "razón": "Son nombres propios de herramientas y estándares de la industria",
+        "ejemplos": ["Selenium", "Karate", "k6", "BDD", "CI/CD", "REST", "DevOps"]
+      },
+      {
+        "acción": "MEJORAR cobertura de descripciones",
+        "razón": "Los datos en xp-data.js (no usado) tienen descripciones largas no traducidas",
+        "impacto": "BAJO - ese archivo no se usa en index.html"
+      },
+      {
+        "acción": "VALIDAR completitud de objeto translations",
+        "razón": "Asegurar que todos los data-i18n keys tienen entrada en es e en",
+        "estado": "COMPLETO (120 keys con ambos idiomas)"
+      }
+    ]
+  },
+
+  "imágenes_análisis": {
+    "total_imágenes_en_assets_img": 7,
+    "imágenes_usadas_en_index_html": 2,
+    "imágenes_no_usadas_en_index_html": 5,
+    "imágenes_usadas": [
+      {
+        "archivo": "profile-og.png",
+        "usado_en": "index.html meta og:image, meta twitter:image, JSON-LD Person schema",
+        "propósito": "Imagen de perfil para redes sociales (Open Graph)",
+        "crítico": true,
+        "referencias_en_index": ["<meta property=\"og:image\" content=\"...\">", "JSON-LD Person schema image"]
+      },
+      {
+        "archivo": "profile.png",
+        "usado_en": "index.html JSON-LD schema",
+        "propósito": "Imagen de perfil en structured data",
+        "crítico": false,
+        "referencias_en_index": ["JSON-LD Person schema 'image' field"]
+      }
+    ],
+    "imágenes_no_usadas": [
+      {
+        "archivo": "favicon.svg",
+        "tamaño_bytes": 1108,
+        "usado_en": "certificados.html, cv-resumen.html, cv-resumen-en.html (archivos heredados)",
+        "propósito": "Favicon del sitio",
+        "recomendación": "POTENCIALMENTE NECESARIA - Considerar agregarlo a index.html si se desea favicon",
+        "prioridad": "MEDIA"
+      },
+      {
+        "archivo": "1769034424777.ico",
+        "tamaño_bytes": 432254,
+        "usado_en": "assets/js/data/xp-data.js (archivo no usado)",
+        "propósito": "Logo de empresa (legacy)",
+        "recomendación": "ELIMINAR - archivo de datos no usado",
+        "prioridad": "ALTA"
+      },
+      {
+        "archivo": "banco_pichincha_ca_logo.ico",
+        "tamaño_bytes": 432254,
+        "usado_en": "assets/js/data/xp-data.js (archivo no usado)",
+        "propósito": "Logo Banco Pichincha",
+        "recomendación": "ELIMINAR - referencia en archivo de datos no usado",
+        "prioridad": "ALTA"
+      },
+      {
+        "archivo": "bayteq_logo.ico",
+        "tamaño_bytes": 432254,
+        "usado_en": "assets/js/data/xp-data.js (archivo no usado)",
+        "propósito": "Logo Bayteq",
+        "recomendación": "ELIMINAR - referencia en archivo de datos no usado",
+        "prioridad": "ALTA"
+      },
+      {
+        "archivo": "halliburton_logo.ico",
+        "tamaño_bytes": 432254,
+        "usado_en": "assets/js/data/xp-data.js (archivo no usado)",
+        "propósito": "Logo Halliburton",
+        "recomendación": "ELIMINAR - referencia en archivo de datos no usado",
+        "prioridad": "ALTA"
+      },
+      {
+        "archivo": "ntt_data_europe_latam_logo.ico",
+        "tamaño_bytes": 432254,
+        "usado_en": "assets/js/data/xp-data.js (archivo no usado)",
+        "propósito": "Logo NTT DATA",
+        "recomendación": "ELIMINAR - referencia en archivo de datos no usado",
+        "prioridad": "ALTA"
+      },
+      {
+        "archivo": "zurich_insurance_company_ltd_logo.ico",
+        "tamaño_bytes": 432254,
+        "usado_en": "assets/js/data/xp-data.js (archivo no usado)",
+        "propósito": "Logo Zurich Insurance",
+        "recomendación": "ELIMINAR - referencia en archivo de datos no usado",
+        "prioridad": "ALTA"
+      }
+    ]
+  },
+
+  "scripts_análisis": {
+    "javascript_externo_en_index": 0,
+    "javascript_inline_en_index": 1,
+    "archivos_js_huérfanos": 2,
+    "notas": "Toda la funcionalidad JS de index.html está implementada inline en un único <script> tag. No hay dependencias a archivos .js externos."
+  },
+
+  "recomendaciones_de_limpieza": [
+    {
+      "prioridad": "CRÍTICA",
+      "acciones": [
+        "Eliminar: certificados.html (reemplazado por modal en index.html)",
+        "Eliminar: cv-resumen.html (reemplazado por PDF)",
+        "Eliminar: cv-resumen-en.html (reemplazado por PDF)",
+        "Eliminar: test.pdf (archivo de prueba)",
+        "Eliminar: assets/css/styles.css (no usado)",
+        "Eliminar carpeta: assets/js/pages/ (todos los scripts heredados)",
+        "Eliminar: assets/js/theme.js (funcionalidad inline en index.html)"
+      ],
+      "impacto": "Reduce ~2-3 MB de archivos inútiles",
+      "tiempo_ejecución": "5-10 minutos"
+    },
+    {
+      "prioridad": "ALTA",
+      "acciones": [
+        "Eliminar: assets/js/xp-pro.js (huérfano)",
+        "Eliminar: assets/js/data/xp-data.js (datos no usados en index.html)",
+        "Eliminar imágenes .ico no usadas (logos de empresas)"
+      ],
+      "impacto": "Reduce ~2.5 MB adicionales",
+      "tiempo_ejecución": "2-5 minutos"
+    },
+    {
+      "prioridad": "MEDIA",
+      "acciones": [
+        "Considerar: Agregar favicon.svg a index.html link tag si se desea",
+        "Considerar: Consolidar CSS modular en único archivo si performance es crítica"
+      ],
+      "impacto": "Mejora de UX (favicon visible en pestaña)",
+      "tiempo_ejecución": "2-3 minutos"
+    }
+  ],
+
+  "resumen_carpetas": {
+    "raíz_proyecto": {
+      "total_archivos": 7,
+      "archivos": {
+        "vitales": ["index.html", "Bryan-Freire-CV.pdf"],
+        "necesarios": ["robots.txt", "sitemap.xml", "README.md"],
+        "utilidades": ["generate_cv_pdf.py"],
+        "inútiles": ["certificados.html", "cv-resumen.html", "cv-resumen-en.html", "test.pdf"]
+      }
+    },
+    "assets_css": {
+      "total_archivos": 11,
+      "vitales": ["variables.css", "base.css", "components.css", "layout.css", "theme.css", "responsive.css", "print.css", "xp-pro.css"],
+      "inútiles": ["styles.css"],
+      "subdirectorios": {
+        "pages": ["certificados.css", "cv-resumen.css"]
+      }
+    },
+    "assets_js": {
+      "total_archivos": 5,
+      "vitales": [],
+      "inútiles": ["theme.js", "xp-pro.js"],
+      "subdirectorios": {
+        "pages": ["certificados-page.js", "cv-resumen-common.js", "cv-resumen-en.js", "cv-resumen-es.js", "index-page.js"],
+        "data": ["xp-data.js"]
+      }
+    },
+    "assets_img": {
+      "total_archivos": 7,
+      "vitales": ["profile-og.png", "profile.png"],
+      "necesarios": ["favicon.svg"],
+      "inútiles": ["1769034424777.ico", "banco_pichincha_ca_logo.ico", "bayteq_logo.ico", "halliburton_logo.ico", "ntt_data_europe_latam_logo.ico", "zurich_insurance_company_ltd_logo.ico"]
+    },
+    "assets_docs": {
+      "estructura": "assets/docs/certificados/ contiene archivos PDF de certificaciones",
+      "usado_en": "Modal de visualización en index.html",
+      "crítico": true
+    }
+  },
+
+  "archivos_ocultos": {
+    ".git": "Repositorio git (mantener)",
+    ".htaccess": "Configuración Apache (mantener si está en producción)"
+  },
+
+  "conclusión": {
+    "estado_proyecto": "Bien estructurado pero con mucho código heredado",
+    "archivos_eliminables": 13,
+    "archivos_recomendados_mantener": 14,
+    "ratio_limpieza": "48% del proyecto actual es innecesario",
+    "próximos_pasos": [
+      "1. Ejecutar eliminación de archivos CRÍTICOS (certificados.html, CSS/JS heredados)",
+      "2. Validar que sitio sigue funcionando correctamente",
+      "3. Ejecutar eliminación ALTA (xp-pro.js, xp-data.js, imágenes .ico)",
+      "4. Considerar optimizaciones MEDIA (favicon, consolidación CSS)"
+    ],
+    "impacto_esperado": "Reducción de ~5MB de archivos innecesarios, mejora de mantenibilidad y performance"
+  }
+}

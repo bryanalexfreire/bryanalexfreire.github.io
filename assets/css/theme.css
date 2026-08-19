@@ -115,6 +115,18 @@ nav.controls {
 }
 
 /* ============================================
+   HERO CTAs (Primary & Secondary)
+   ============================================ */
+.hero-ctas {
+  display: flex;
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-2xl);
+  margin-bottom: var(--spacing-3xl);
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* ============================================
    HERO LINKS
    ============================================ */
 .hero-links {
@@ -200,7 +212,7 @@ nav.controls {
 
 .pipeline-node:hover .node-box {
   fill: var(--accent);
-  filter: drop-shadow(0 4px 12px var(--accent-dim));
+  stroke-width: 2.5;
 }
 
 .pipeline-node .node-circle {
@@ -212,7 +224,7 @@ nav.controls {
 
 .pipeline-node:hover .node-circle {
   fill: var(--amber);
-  filter: drop-shadow(0 4px 12px rgba(255, 193, 7, 0.3));
+  stroke-width: 2.5;
 }
 
 .pipeline-node .node-box.impact {
@@ -270,12 +282,12 @@ nav.controls {
   flex-direction: column;
   gap: 14px;
   
-  transition: border-color var(--transition-base),
-              box-shadow var(--transition-base);
+  transition: all var(--transition-base);
 }
 
 .arch-card:hover {
   border-color: var(--accent);
+  background: var(--surface-2);
 }
 
 .arch-type {
@@ -328,40 +340,69 @@ nav.controls {
   font-family: var(--font-display);
   font-size: 19px;
   font-weight: var(--fw-semibold);
+  margin: 0;
 }
 
-.arch-desc {
-  font-size: var(--fs-base);
+.arch-card:hover .arch-title {
+  color: var(--accent);
+}
+
+/* When / I use / To achieve structure */
+.arch-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.arch-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  height: 18px;
+}
+
+.arch-content {
+  font-size: 14px;
+  line-height: 1.5;
   color: var(--text-muted);
+  font-style: italic;
+  padding-left: 12px;
+  border-left: 3px solid var(--accent-dim);
 }
 
-.arch-tags {
+.arch-card:hover .arch-content {
+  color: var(--text);
+  border-left-color: var(--accent);
+}
+
+.arch-tools {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--spacing-lg);
+  gap: 8px;
+  padding-left: 12px;
 }
 
-.arch-list {
-  list-style: none;
-  flex: 1;
-}
-
-.arch-list li {
-  position: relative;
-  padding-left: 18px;
-  margin-bottom: var(--spacing-xl);
-  font-size: 12.5px;
+.arch-tool {
+  display: inline-block;
+  background: var(--surface-2);
   color: var(--text);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  transition: all 0.2s;
+  white-space: nowrap;
 }
 
-.arch-list li::before {
-  content: "✓";
-  position: absolute;
-  left: 0;
+.arch-card:hover .arch-tool {
+  background: var(--accent-dim);
+  border-color: var(--accent);
   color: var(--accent);
-  font-family: var(--font-mono);
-  font-weight: var(--fw-bold);
-  font-size: var(--fs-sm);
 }
 
 .arch-github-btn {
@@ -448,6 +489,199 @@ nav.controls {
   font-size: var(--fs-md);
   color: var(--text-muted);
   margin-bottom: var(--spacing-5xl);
+  line-height: 1.6;
+}
+
+/* Experience Section Structure */
+.exp-section {
+  margin-bottom: var(--spacing-5xl);
+}
+
+.exp-subsection-title {
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  margin-bottom: var(--spacing-lg);
+  font-weight: var(--fw-semibold);
+}
+
+/* Context Section */
+.exp-context {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.ctx-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ctx-label {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+}
+
+.ctx-value {
+  font-size: var(--fs-base);
+  color: var(--text-muted);
+  line-height: 1.5;
+  padding-left: 12px;
+  border-left: 3px solid var(--accent-dim);
+}
+
+/* Initiatives Section */
+.exp-initiatives {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.initiative {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+  transition: all 0.3s ease;
+}
+
+.initiative:hover {
+  border-color: var(--accent);
+  background: var(--bg);
+}
+
+.init-name {
+  font-size: var(--fs-base);
+  font-weight: var(--fw-bold);
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.init-metric {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.init-time {
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+}
+
+.init-time-new {
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  color: var(--accent);
+  font-weight: var(--fw-bold);
+}
+
+.init-reduction {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  background: var(--accent-dim);
+  color: var(--accent);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: var(--fw-bold);
+}
+
+.init-desc {
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* Tooling Section */
+.exp-tooling {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.tool-item {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+  transition: all 0.3s ease;
+}
+
+.tool-item:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 12px var(--accent-dim);
+}
+
+.tool-name {
+  font-size: var(--fs-base);
+  font-weight: var(--fw-bold);
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.tool-impact {
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  color: var(--accent);
+  margin-bottom: 8px;
+  font-weight: var(--fw-bold);
+}
+
+.tool-desc {
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* Metrics Section */
+.exp-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.metric-group {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+}
+
+.metric-label {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.metric-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--fs-sm);
+  padding: 8px 0;
+  align-items: center;
+}
+
+.metric-type {
+  color: var(--text);
+  font-weight: var(--fw-medium);
+}
+
+.metric-value {
+  color: var(--amber);
+  font-weight: var(--fw-bold);
+  font-family: var(--font-mono);
 }
 
 .exp-cols {
@@ -563,6 +797,15 @@ nav.controls {
   margin-bottom: var(--spacing-lg);
 }
 
+.exp-compact-desc {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text);
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--border);
+}
+
 .desc-pending {
   font-size: 12.5px;
   color: var(--text-muted);
@@ -614,8 +857,25 @@ nav.controls {
 }
 
 /* ============================================
-   CERTIFICATIONS
+   CREDENTIALS (Certifications + Education)
    ============================================ */
+.cred-subsection {
+  margin-bottom: var(--spacing-7xl);
+}
+
+.cred-subsection:last-child {
+  margin-bottom: 0;
+}
+
+.cred-subsection-title {
+  font-size: 16px;
+  font-weight: var(--fw-semibold);
+  color: var(--text);
+  margin-bottom: var(--spacing-5xl);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 2px solid var(--border);
+}
+
 .cert-stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -703,6 +963,114 @@ nav.controls {
   color: var(--text-muted);
   margin: 22px 0 12px;
   font-weight: var(--fw-semibold);
+}
+
+/* ============================================
+   CERTIFICATE ACTIONS & MODAL
+   ============================================ */
+.cert-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+
+.cert-btn {
+  flex: 1;
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all var(--transition-base);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert-btn:hover {
+  border-color: var(--accent);
+  background: rgba(61, 220, 132, 0.1);
+  color: var(--accent);
+}
+
+.cert-view {
+  color: var(--text);
+}
+
+.cert-download {
+  color: var(--text);
+}
+
+/* Certificate Modal */
+.cert-modal {
+  display: none;
+  position: fixed;
+  z-index: 50;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: auto;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.cert-modal.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert-modal-content {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-2xl);
+  width: 90%;
+  max-width: 900px;
+  max-height: 85vh;
+  overflow: auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.cert-modal-close {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 16px;
+  transition: color var(--transition-base);
+}
+
+.cert-modal-close:hover {
+  color: var(--accent);
+}
+
+.cert-modal-body {
+  flex: 1;
+  padding: 0 20px 20px;
+  overflow: auto;
+}
+
+.cert-modal-footer {
+  border-top: 1px solid var(--border);
+  padding: 12px 20px;
+  background: rgba(61, 220, 132, 0.03);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 /* ============================================

@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bryanalexfreire.com/sitemap.xml
+
+# Crawl delay for bots
+Crawl-delay: 1
+
+# Disallow access to certain paths
+Disallow: /assets/
+Disallow: /*.txt$
+
+# Allow specific assets to be crawled
+Allow: /assets/css/
+Allow: /assets/img/
+Allow: /assets/docs/

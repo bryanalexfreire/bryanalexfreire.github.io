@@ -39,34 +39,61 @@
 }
 
 /* ============================================
-   CV BUTTON (Primary)
+   PRIMARY CTA BUTTON (Hero Section)
    ============================================ */
-.cv-btn {
-  font-family: var(--font-mono);
-  font-size: var(--fs-sm);
+.btn-primary {
+  font-family: var(--font-grotesk);
+  font-size: var(--fs-md);
   background: var(--accent);
   color: var(--bg);
   border: none;
-  padding: 8px 16px;
-  border-radius: var(--radius-pill);
+  padding: 12px 24px;
+  border-radius: var(--radius-lg);
   cursor: pointer;
   font-weight: var(--fw-semibold);
   white-space: nowrap;
+  text-decoration: none;
+  display: inline-block;
   
-  transition: opacity var(--transition-base);
+  transition: all var(--transition-base);
 }
 
-.cv-btn:hover {
+.btn-primary:hover {
   opacity: 0.88;
+  border-bottom: 2px solid var(--accent);
 }
 
-.cv-btn:active {
+.btn-primary:active {
   opacity: 0.75;
 }
 
-.cv-btn:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
+/* ============================================
+   SECONDARY CTA BUTTON (Hero Section)
+   ============================================ */
+.btn-secondary {
+  font-family: var(--font-grotesk);
+  font-size: var(--fs-md);
+  background: transparent;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+  padding: 10px 22px;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  font-weight: var(--fw-semibold);
+  white-space: nowrap;
+  text-decoration: none;
+  display: inline-block;
+  
+  transition: all var(--transition-base);
+}
+
+.btn-secondary:hover {
+  background: var(--accent-dim);
+  border-color: var(--accent);
+}
+
+.btn-secondary:active {
+  opacity: 0.88;
 }
 
 /* ============================================

@@ -1,7 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
+⚠️ SCRIPT DESACTIVADO - Los CVs se utilizan como archivos estáticos
 Generate Professional CV PDF in Spanish and English - Bryan Alexander Freire Chamorro
+
+NOTA: Este script ya NO se ejecuta automáticamente.
+Los PDFs descargables (Bryan-Freire-CV-es.pdf y Bryan-Freire-CV-en.pdf) son archivos estáticos.
+
+Si necesitas regenerar los PDFs, ejecuta manualmente: python generate_cv_pdf_bilingual.py
 """
 
 try:

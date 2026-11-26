@@ -197,7 +197,7 @@
         <ul class="pr-rows">
           <li><span class="pr-ok" aria-hidden="true">✓</span><span class="pr-job">ui</span><span class="pr-tool">Playwright · Serenity BDD</span></li>
           <li><span class="pr-ok" aria-hidden="true">✓</span><span class="pr-job">api</span><span class="pr-tool" data-i18n="pr_api">Karate · contratos</span></li>
-          <li><span class="pr-ok" aria-hidden="true">✓</span><span class="pr-job">perf</span><span class="pr-tool" data-i18n="pr_perf">k6 · umbrales p95</span></li>
+          <li><span class="pr-ok" aria-hidden="true">✓</span><span class="pr-job">static</span><span class="pr-tool" data-i18n="pr_static">tipos · lint</span></li>
           <li><span class="pr-ok" aria-hidden="true">✓</span><span class="pr-job">a11y</span><span class="pr-tool">axe · WCAG 2.1 AA</span></li>
           <li><span class="pr-ok" aria-hidden="true">✓</span><span class="pr-job">report</span><span class="pr-tool" data-i18n="pr_report">evidencia por paso</span></li>
         </ul>
@@ -218,26 +218,26 @@
     <section class="block" id="cases">
       <div class="file-label">cases.spec.ts</div>
       <h2 class="section-title" data-i18n="cases_title">Casos</h2>
-      <p class="section-sub" data-i18n="cases_sub">Tres problemas de testing, qué construí para resolverlos y dónde puedes comprobarlo.</p>
+      <p class="section-sub" data-i18n="cases_sub">Problemas de testing, qué construí para resolverlos y dónde ver la evidencia.</p>
       <div class="case-list">
         <article class="case" aria-labelledby="case1-title">
           <div class="case-head">
             <span class="case-num">01</span>
-            <span class="arch-type e2e">Framework</span>
+            <span class="arch-type e2e">E2E · API</span>
           </div>
-          <h3 class="case-title" id="case1-title" data-i18n="case1_title">Framework de automatización Playwright + TypeScript</h3>
+          <h3 class="case-title" id="case1-title" data-i18n="case1_title">Framework E2E y API con Playwright + TypeScript</h3>
           <div class="case-body">
             <div class="case-block">
               <div class="case-label" data-i18n="lbl_problem">Problema</div>
-              <p data-i18n="case1_problem">Un equipo necesita una sola base para pruebas de UI, API, accesibilidad y performance, y un pipeline que falle ante cualquier regresión.</p>
+              <p data-i18n="case1_problem">Un equipo necesita una base única y mantenible para automatizar flujos E2E y pruebas de API, que cualquier QA pueda extender sin empezar de cero.</p>
             </div>
             <div class="case-block">
               <div class="case-label" data-i18n="lbl_built">Qué construí</div>
-              <p data-i18n="case1_built">Plantilla con Page Objects, fixtures, pruebas de API sin navegador, axe (WCAG 2.1 AA), scripts k6 con umbrales y trazabilidad a requisitos verificada en CI.</p>
+              <p data-i18n="case1_built">Plantilla con Page Objects, componentes reutilizables, fixtures y datos por escenario para E2E, y un cliente de API tipado con validación de contratos y pruebas negativas, sin navegador.</p>
             </div>
             <div class="case-block case-result">
               <div class="case-label" data-i18n="lbl_result">Resultado</div>
-              <p data-i18n="case1_result">El pipeline se detiene ante errores de tipos, lint, pruebas, accesibilidad o trazabilidad, y cada ejecución en <code>main</code> publica su reporte HTML.</p>
+              <p data-i18n="case1_result">Las pruebas E2E en varios navegadores y las de API corren en cada pull request, y cada ejecución en <code>main</code> publica su reporte HTML con evidencia por paso.</p>
             </div>
             <div class="case-block">
               <div class="case-label" data-i18n="lbl_evidence">Evidencia</div>
@@ -248,7 +248,7 @@
               </ul>
             </div>
           </div>
-          <div class="case-tools"><span class="tag">Playwright</span><span class="tag">TypeScript</span><span class="tag">axe-core</span><span class="tag">k6</span><span class="tag">GitHub Actions</span></div>
+          <div class="case-tools"><span class="tag">Playwright</span><span class="tag">TypeScript</span><span class="tag">Page Object</span><span class="tag">API testing</span><span class="tag">GitHub Actions</span></div>
         </article>
         <article class="case" aria-labelledby="case2-title">
           <div class="case-head">
@@ -297,7 +297,7 @@
             </div>
             <div class="case-block case-result">
               <div class="case-label" data-i18n="lbl_result">Resultado</div>
-              <p data-i18n="case3_result">Encontré y documenté un defecto real: el recibo muestra el mes anterior. Quedó como bug conocido, así la suite sigue verde y esa prueba falla hasta que se corrija.</p>
+              <p data-i18n="case3_result">Encontré y documenté un defecto real: el recibo muestra el mes anterior. Quedó registrado como bug conocido: la suite sigue en verde y esa prueba se pondrá en verde cuando se corrija.</p>
             </div>
             <div class="case-block">
               <div class="case-label" data-i18n="lbl_evidence">Evidencia</div>
@@ -308,6 +308,34 @@
             </div>
           </div>
           <div class="case-tools"><span class="tag">Serenity BDD</span><span class="tag">Screenplay</span><span class="tag">Cucumber</span><span class="tag">Java</span><span class="tag">Excel DDT</span></div>
+        </article>
+        <article class="case" aria-labelledby="case4-title">
+          <div class="case-head">
+            <span class="case-num">04</span>
+            <span class="arch-type functional">MCP · IA</span>
+          </div>
+          <h3 class="case-title" id="case4-title" data-i18n="case4_title">Servidor MCP para Azure DevOps integrado al IDE</h3>
+          <div class="case-body">
+            <div class="case-block">
+              <div class="case-label" data-i18n="lbl_problem">Problema</div>
+              <p data-i18n="case4_problem">Llevar Azure DevOps al IDE para que el asistente de IA consulte y actualice el trabajo del equipo sin salir del editor.</p>
+            </div>
+            <div class="case-block">
+              <div class="case-label" data-i18n="lbl_built">Qué construí</div>
+              <p data-i18n="case4_built">Un servidor MCP independiente que se integra al IDE, organizado en skills y construido con las estructuras y buenas prácticas que recomienda Anthropic.</p>
+            </div>
+            <div class="case-block case-result">
+              <div class="case-label" data-i18n="lbl_result">Resultado</div>
+              <p data-i18n="case4_result">Funciona de forma independiente dentro del IDE, como parte de mi trabajo actual.</p>
+            </div>
+            <div class="case-block">
+              <div class="case-label" data-i18n="lbl_evidence">Evidencia</div>
+              <ul class="case-links">
+              <li><span class="case-private" data-i18n="ev_private">Código privado (proyecto interno)</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="case-tools"><span class="tag">MCP</span><span class="tag">Agent skills</span><span class="tag">Azure DevOps</span><span class="tag">IDE</span></div>
         </article>
       </div>
       <div class="more-projects">
@@ -357,7 +385,7 @@
           <div class="exp-dates" data-i18n="exp1_dates">Ene 2026 — Presente · Quito, Ecuador</div>
         </div>
         
-        <div class="exp-role-desc" data-i18n="exp1_about">Liderazgo QA de productos bancarios (Cuentas, Inversiones, Core Migrations, Normativa): implementación E2E/APIs/Mobile/Performance que redujeron ciclos de regresión 75%. Optimicé ejecución: E2E 60→20 min, APIs 60→15 min, Mobile 30→15 min. Integré controles CI/CD Azure DevOps disminuyendo defectos post-release 35%. Gestión equipo ~5 QAs con 30 casos → 13 certificados (100% cobertura). Documentación viva y automatización BDD con Cucumber.</div>
+        <div class="exp-role-desc" data-i18n="exp1_about">Lidero QA de productos bancarios (Cuentas, Inversiones, Migraciones Core, Normativa). Implementé pruebas E2E, API, mobile y de performance que redujeron los ciclos de regresión en 75%: E2E 60→20 min, APIs 60→15 min, mobile 30→15 min. Integré controles de calidad en el CI/CD de Azure DevOps y bajé los defectos post-release en 35%. Coordino un equipo de ~5 QAs; de 30 casos, 13 certificados (100% de cobertura). Documentación viva y automatización BDD con Cucumber.</div>
 
         <div class="exp-section">
           <h4 data-i18n="exp1_init_title" class="exp-subsection-title">Stack & Iniciativas Clave</h4>
@@ -365,12 +393,12 @@
             <div class="initiative">
               <div class="init-name">Selenium + SerenityBDD · Karate + Cucumber</div>
               <div class="init-metric"><span class="init-time">E2E: 60→20 min</span> | <span class="init-time">API: 60→15 min</span></div>
-              <div class="init-desc" data-i18n="exp1_e2e">BDD framework para automatización UI/APIs de flujos bancarios. Contract testing y CI/CD integration. Documentación viva con Cucumber.</div>
+              <div class="init-desc" data-i18n="exp1_e2e">Framework BDD para automatizar UI, APIs y mobile en flujos bancarios, con contract testing, integración CI/CD y documentación viva en Cucumber.</div>
             </div>
             <div class="initiative">
               <div class="init-name">k6 + Grafana · Report Automation · HU Parser Tool</div>
               <div class="init-metric"><span class="init-time">Performance CI/CD</span> | <span class="init-time">Reportes 2h→45min (-62.5%)</span></div>
-              <div class="init-desc" data-i18n="exp1_perf">Load testing en tiempo real, dashboards operacionales. Automatización de informes y extracción de AC → test checklists.</div>
+              <div class="init-desc" data-i18n="exp1_perf">Pruebas de carga en tiempo real y dashboards operacionales. Automatización de informes y una herramienta que convierte criterios de aceptación en checklists de prueba.</div>
             </div>
           </div>
         </div>
@@ -414,10 +442,10 @@
           </div>
         </div>
 
-        <h4 data-i18n="proj_dest_title" class="exp-subsection-title exp-projects-title">Proyectos Destacados</h4>
+        <h4 data-i18n="proj_dest_title" class="exp-subsection-title exp-projects-title">Proyectos destacados</h4>
         <div class="exp-projects">
           <div class="mini-proj"><div class="mp-type">CORE</div><div class="mp-title" data-i18n="mp1">Banking API Automation Suite (Migraciones)</div></div>
-          <div class="mini-proj"><div class="mp-type">COMPLIANCE</div><div class="mp-title" data-i18n="mp3">Normativa Inversiones & Retenciones (13 casos certificados)</div></div>
+          <div class="mini-proj"><div class="mp-type">COMPLIANCE</div><div class="mp-title" data-i18n="mp3">Normativa Inversiones y Retenciones (13 casos certificados)</div></div>
         </div>
       </div>
 
@@ -430,7 +458,7 @@
             <div class="ti-company">NTT DATA</div>
           </div>
           <div class="ti-dates" data-i18n="exp2_dates">Sep 2023 — Ene 2026 · Quito, Ecuador</div>
-          <div class="exp-compact-desc" data-i18n="exp2_desc">Reduje la ambigüedad en requerimientos y amplié cobertura de pruebas automatizadas. Diseñé suites E2E con Selenium/Cucumber y pruebas API con Karate. Reduje ciclos de testing en 35%, integré CI/CD con Azure DevOps, participé en planificación estratégica de testing con risk-based approach, mejorando predictibilidad en entregas.</div>
+          <div class="exp-compact-desc" data-i18n="exp2_desc">Automatización y pruebas funcionales en proyectos cloud. Diseñé suites E2E con Selenium y Cucumber y pruebas de API con Karate, y reduje los ciclos de pruebas en 35%. Integré las pruebas al CI/CD de Azure DevOps y participé en la planificación basada en riesgos, lo que hizo más predecibles las entregas.</div>
         </div>
 
         <div class="exp-compact">
@@ -439,7 +467,7 @@
             <div class="ti-company">Bayteq</div>
           </div>
           <div class="ti-dates" data-i18n="exp3_dates">Mar 2023 — Jun 2023 · Quito, Ecuador</div>
-          <div class="exp-compact-desc" data-i18n="exp3_desc">Fundamentos de testing: casos de prueba manual, ejecución en navegadores y reportes de defectos. Aprendizaje en metodología ISTQB. Participación en regresión funcional de aplicaciones web. Stack: Jira, Postman, navegadores modernos.</div>
+          <div class="exp-compact-desc" data-i18n="exp3_desc">Fundamentos de testing: casos de prueba manuales, ejecución en varios navegadores y reporte de defectos con prácticas ISTQB. Regresión funcional de aplicaciones web con Jira y Postman.</div>
         </div>
 
         <div class="exp-compact">
@@ -448,7 +476,7 @@
             <div class="ti-company">Perseject</div>
           </div>
           <div class="ti-dates" data-i18n="exp4_dates">Dic 2022 — Mar 2023 · Quito, Ecuador</div>
-          <div class="exp-compact-desc" data-i18n="exp4_desc">Análisis de requisitos y diseño de estrategias de testing. Creación de casos de prueba y test plans documentados. Ejecución de pruebas funcionales y regresión. Reportería de defectos con trazabilidad hacia requisitos.</div>
+          <div class="exp-compact-desc" data-i18n="exp4_desc">Análisis de requisitos y diseño de estrategias de prueba. Casos y planes de prueba documentados, ejecución funcional y de regresión, y defectos trazados a requisitos.</div>
         </div>
 
         <div class="exp-compact">
@@ -457,7 +485,7 @@
             <div class="ti-company">Zurich Insurance</div>
           </div>
           <div class="ti-dates" data-i18n="exp5_dates">Jun 2022 — Dic 2022 · Quito, Ecuador</div>
-          <div class="exp-compact-desc" data-i18n="exp5_desc">Testing funcional y exploratorio en seguros de vida y vehículos. Validación de procesos regulatorios y cálculos de prima. Diseño de casos de prueba para flujos críticos. Experiencia con sistemas legacy.</div>
+          <div class="exp-compact-desc" data-i18n="exp5_desc">Pruebas funcionales y exploratorias de seguros de vida y vehículos: procesos regulatorios y cálculo de primas. Diseño de casos para flujos críticos en sistemas legacy.</div>
         </div>
 
         <div class="exp-compact">
@@ -466,7 +494,7 @@
             <div class="ti-company">Banco Guayaquil</div>
           </div>
           <div class="ti-dates" data-i18n="exp6_dates">Ene 2022 — Jun 2022 · Quito, Ecuador</div>
-          <div class="exp-compact-desc" data-i18n="exp6_desc">Soporte técnico IT y testing básico en sistemas bancarios internos. Participación en validación de actualizaciones de software. Documentación de incidencias y problemas de sistemas. Introducción a ambientes bancarios.</div>
+          <div class="exp-compact-desc" data-i18n="exp6_desc">Soporte IT y pruebas básicas de sistemas bancarios internos: validación de actualizaciones y documentación de incidencias. Mi primera experiencia en banca.</div>
         </div>
 
         <div class="exp-compact">
@@ -475,7 +503,7 @@
             <div class="ti-company">Halliburton</div>
           </div>
           <div class="ti-dates" data-i18n="exp7_dates">Mar 2018 — Ago 2018 · Orellana, Ecuador</div>
-          <div class="exp-compact-desc" data-i18n="exp7_desc">Soporte IT en operaciones oil & gas. Mantenimiento de infraestructura en campo. Testing básico de sistemas y software. Experiencia en ambientes de misión crítica en sector energético.</div>
+          <div class="exp-compact-desc" data-i18n="exp7_desc">Soporte IT en operaciones de campo de oil & gas: mantenimiento de infraestructura y pruebas básicas de sistemas en entornos de misión crítica.</div>
         </div>
 
       </div>
@@ -492,14 +520,14 @@
         <div class="skill-cat"><h3 data-i18n="sk_ci">CI/CD y DevOps</h3><div class="tags"><a class="tag tag-link" href="https://github.com/bryanalexfreire/qa-playwright-agents-archetype" target="_blank" rel="noopener">GitHub Actions ↗</a><span class="tag">Azure DevOps</span><span class="tag">Git</span><span class="tag">Docker</span><a class="tag tag-link" href="https://github.com/bryanalexfreire/karate-api-tests" target="_blank" rel="noopener">Gradle ↗</a><span class="tag">Maven</span><span class="tag">SonarCloud</span></div></div>
         <div class="skill-cat"><h3 data-i18n="sk_lang">Lenguajes</h3><div class="tags"><a class="tag tag-link" href="https://github.com/bryanalexfreire/qa-playwright-agents-archetype" target="_blank" rel="noopener">TypeScript ↗</a><a class="tag tag-link" href="https://github.com/bryanalexfreire/serenity-screenplay-e2e" target="_blank" rel="noopener">Java ↗</a><a class="tag tag-link" href="https://github.com/bryanalexfreire/selenium-pytest-piano-e2e" target="_blank" rel="noopener">Python ↗</a><a class="tag tag-link" href="https://github.com/bryanalexfreire/k6-login-load-test" target="_blank" rel="noopener">JavaScript ↗</a><span class="tag">SQL</span><span class="tag">PostgreSQL</span></div></div>
         <div class="skill-cat"><h3 data-i18n="sk_mgmt">Gestión y calidad</h3><div class="tags"><span class="tag">ISTQB</span><span class="tag">Risk-based testing</span><span class="tag">Jira · Xray</span><span class="tag">Zephyr</span><span class="tag">Confluence</span><span class="tag">Scrum · Kanban</span><span class="tag">ATDD · TDD</span></div></div>
-        <div class="skill-cat"><h3 data-i18n="sk_ai">IA y herramientas</h3><div class="tags"><span class="tag">GitHub Copilot</span><span class="tag">ChatGPT</span><span class="tag">Claude</span><span class="tag">Stratio</span></div></div>
+        <div class="skill-cat"><h3 data-i18n="sk_ai">IA y herramientas</h3><div class="tags"><span class="tag">GitHub Copilot</span><span class="tag">ChatGPT</span><span class="tag">Claude</span><span class="tag">MCP</span><span class="tag">Agent skills</span><span class="tag">Stratio</span></div></div>
       </div>
     </section>
 
     <section class="block" id="credentials">
       <div class="file-label">credentials.spec.ts</div>
       <h2 class="section-title" data-i18n="cred_title">Credenciales</h2>
-      <p class="section-sub" data-i18n="cred_sub">Formación académica y certificaciones profesionales que respaldan mi experiencia en calidad de software.</p>
+      <p class="section-sub" data-i18n="cred_sub">Formación académica, certificaciones y cursos que respaldan mi trabajo en calidad de software.</p>
 
       <div class="cred-subsection">
         <h3 class="cred-subsection-title" data-i18n="cert_title">Certificaciones y cursos</h3>
@@ -787,7 +815,7 @@
           <div>
             <div class="edu-tag" data-i18n="edu_tag_focus">Enfoque</div>
             <div class="edu-focus-title"><span data-i18n="edu_focus_title">Calidad de Software, QA Automation y DevOps</span></div>
-            <div class="edu-sub"><span data-i18n="edu_focus_desc">Aprendizaje continuo en testing funcional, APIs, performance y CI/CD. Actualización profesional permanente.</span></div>
+            <div class="edu-sub"><span data-i18n="edu_focus_desc">Testing funcional, APIs, performance y CI/CD, con actualización profesional permanente.</span></div>
           </div>
         </div>
         <div class="edu-card">

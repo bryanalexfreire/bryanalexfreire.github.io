@@ -666,3 +666,14 @@ a.tag-link:hover {
     display: block !important;
   }
 }
+
+/* Evidence that is not public */
+.case-private {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  border: 1px dashed var(--border);
+  padding: 7px 12px;
+  border-radius: var(--radius-pill);
+}

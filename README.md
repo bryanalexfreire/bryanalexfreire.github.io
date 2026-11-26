@@ -43,7 +43,7 @@ assets/js/site.js     language, theme, CV links, certificates toggle and scroll 
 assets/docs/          certificates (PDF)
 cv/                   CV in PDF (ES, EN)
 tests/                Playwright site checks and a small static server
-generate_cv_pdf_bilingual.py   script that builds the CV PDFs
+scripts/cv/           CV content (build_cv.py) and the PDF renderer; `npm run cv` rebuilds cv/
 ```
 
 ## Run locally

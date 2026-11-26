@@ -6,7 +6,8 @@
   "scripts": {
     "serve": "node tests/serve.mjs",
     "test": "playwright test",
-    "test:report": "playwright show-report"
+    "test:report": "playwright show-report",
+    "cv": "python3 scripts/cv/build_cv.py scripts/cv/out && node scripts/cv/render.cjs scripts/cv/out cv"
   },
   "license": "UNLICENSED",
   "devDependencies": {

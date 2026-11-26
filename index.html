@@ -208,10 +208,10 @@
     <section class="results" aria-labelledby="results-label">
       <h2 class="results-label" id="results-label" data-i18n="results_label">Resultados en equipos donde trabajé</h2>
       <div class="results-grid">
-        <div class="result"><div class="result-num">-75%</div><div class="result-label" data-i18n="r1_label">Tiempo de regresión</div><div class="result-detail">E2E 60→20 min · API 60→15 min</div></div>
-        <div class="result"><div class="result-num">+50%</div><div class="result-label" data-i18n="r2_label">Feedback técnico más rápido</div><div class="result-detail">60 min → 30 min</div></div>
-        <div class="result"><div class="result-num">-35%</div><div class="result-label" data-i18n="r3_label">Defectos post-release</div><div class="result-detail" data-i18n="r3_detail">Controles de calidad en CI/CD (Azure DevOps)</div></div>
-        <div class="result"><div class="result-num">+30%</div><div class="result-label" data-i18n="r4_label">Autonomía del equipo</div><div class="result-detail" data-i18n="r4_detail">Equipo de ~5 QAs, ejecución sin bloqueos</div></div>
+        <div class="result"><div class="result-num">-75%</div><div class="result-label" data-i18n="r1_label">Tiempo de ejecución de pruebas</div><div class="result-detail">E2E 60→20 min · API 60→15 min</div></div>
+        <div class="result"><div class="result-num">+50%</div><div class="result-label" data-i18n="r2_label">Feedback más rápido</div><div class="result-detail" data-i18n="r2_detail">Hacia el equipo de desarrollo</div></div>
+        <div class="result"><div class="result-num">-83%</div><div class="result-label" data-i18n="r3_label">Validación de cambios regulatorios</div><div class="result-detail">3 h → 30 min</div></div>
+        <div class="result"><div class="result-num">-15%</div><div class="result-label" data-i18n="r4_label">Ciclos de regresión</div><div class="result-detail" data-i18n="r4_detail">Productos core bancarios</div></div>
       </div>
     </section>
 
@@ -381,11 +381,11 @@
 
       <div class="exp-featured">
         <div class="exp-head">
-          <div><span class="exp-role" data-i18n="exp1_role">QA Engineer</span> · <span class="exp-company">Banco Pichincha S.A</span><span class="current-badge" data-i18n="current_badge">★ Posición actual</span></div>
+          <div><span class="exp-role" data-i18n="exp1_role">Quality Engineer</span> · <span class="exp-company">Banco Pichincha S.A</span><span class="current-badge" data-i18n="current_badge">★ Posición actual</span></div>
           <div class="exp-dates" data-i18n="exp1_dates">Ene 2026 — Presente · Quito, Ecuador</div>
         </div>
         
-        <div class="exp-role-desc" data-i18n="exp1_about">Lidero QA de productos bancarios (Cuentas, Inversiones, Migraciones Core, Normativa). Implementé pruebas E2E, API, mobile y de performance que redujeron los ciclos de regresión en 75%: E2E 60→20 min, APIs 60→15 min, mobile 30→15 min. Integré controles de calidad en el CI/CD de Azure DevOps y bajé los defectos post-release en 35%. Coordino un equipo de ~5 QAs; de 30 casos, 13 certificados (100% de cobertura). Documentación viva y automatización BDD con Cucumber.</div>
+        <div class="exp-role-desc" data-i18n="exp1_about">Lidero un equipo multifuncional de ~5 QAs en productos core bancarios (Cuentas, Inversiones, Migraciones, Cumplimiento Regulatorio). Reduje hasta 75% el tiempo de ejecución de pruebas (E2E 60→20 min, APIs 60→15 min), aceleré 50% el feedback a desarrollo y reduje 15% los ciclos de regresión. Implementé contract testing y documentación viva en los pipelines CI/CD y alcancé 100% de cobertura automatizada en 13 casos de retención certificados con BDD (Cucumber).</div>
 
         <div class="exp-section">
           <h4 data-i18n="exp1_init_title" class="exp-subsection-title">Stack & Iniciativas Clave</h4>
@@ -393,12 +393,12 @@
             <div class="initiative">
               <div class="init-name">Selenium + SerenityBDD · Karate + Cucumber</div>
               <div class="init-metric"><span class="init-time">E2E: 60→20 min</span> | <span class="init-time">API: 60→15 min</span></div>
-              <div class="init-desc" data-i18n="exp1_e2e">Framework BDD para automatizar UI, APIs y mobile en flujos bancarios, con contract testing, integración CI/CD y documentación viva en Cucumber.</div>
+              <div class="init-desc" data-i18n="exp1_e2e">Framework BDD para automatizar UI y APIs en flujos bancarios, con contract testing, integración CI/CD y documentación viva en Cucumber.</div>
             </div>
             <div class="initiative">
-              <div class="init-name">k6 + Grafana · Report Automation · HU Parser Tool</div>
-              <div class="init-metric"><span class="init-time">Performance CI/CD</span> | <span class="init-time">Reportes 2h→45min (-62.5%)</span></div>
-              <div class="init-desc" data-i18n="exp1_perf">Pruebas de carga en tiempo real y dashboards operacionales. Automatización de informes y una herramienta que convierte criterios de aceptación en checklists de prueba.</div>
+              <div class="init-name">k6 · Contract Testing · Living Documentation</div>
+              <div class="init-metric"><span class="init-time">Performance CI/CD</span> | <span class="init-time" data-i18n="exp1_perf_metric">Regresión -15%</span></div>
+              <div class="init-desc" data-i18n="exp1_perf">Pruebas de performance con k6 y automatización a nivel de integración y E2E dentro de los pipelines de Azure DevOps, con trazabilidad de validaciones críticas para negocio y tecnología.</div>
             </div>
           </div>
         </div>
@@ -408,36 +408,18 @@
           <div class="exp-metrics">
             <div class="metric-group">
               <div class="metric-label">Velocity & Coverage</div>
-              <div class="metric-row">
-                <span class="metric-type">Ciclos regresión:</span>
-                <span class="metric-value">-67% E2E, -75% API, -50% Mobile</span>
-              </div>
-              <div class="metric-row">
-                <span class="metric-type">Normativa:</span>
-                <span class="metric-value">13/30 casos (100% cobertura retenciones)</span>
-              </div>
+              <div class="metric-row"><span class="metric-type" data-i18n="m_exec">Tiempo de ejecución:</span> <span class="metric-value" data-i18n="m_exec_v">-75%</span></div>
+              <div class="metric-row"><span class="metric-type" data-i18n="m_norm">Normativa:</span> <span class="metric-value" data-i18n="m_norm_v">100% (13 casos)</span></div>
             </div>
             <div class="metric-group">
               <div class="metric-label">Quality & Efficiency</div>
-              <div class="metric-row">
-                <span class="metric-type">Defectos post-release:</span>
-                <span class="metric-value">-35%</span>
-              </div>
-              <div class="metric-row">
-                <span class="metric-type">Report automation:</span>
-                <span class="metric-value">-62.5% (2h → 45min)</span>
-              </div>
+              <div class="metric-row"><span class="metric-type" data-i18n="m_reg">Ciclos de regresión:</span> <span class="metric-value">-15%</span></div>
+              <div class="metric-row"><span class="metric-type" data-i18n="m_feedback">Feedback a desarrollo:</span> <span class="metric-value">+50%</span></div>
             </div>
             <div class="metric-group">
               <div class="metric-label">Leadership & Growth</div>
-              <div class="metric-row">
-                <span class="metric-type">Team:</span>
-                <span class="metric-value">~5 QAs en multi-product tests</span>
-              </div>
-              <div class="metric-row">
-                <span class="metric-type">Autonomy:</span>
-                <span class="metric-value">+30% en ejecución sin blockers</span>
-              </div>
+              <div class="metric-row"><span class="metric-type" data-i18n="m_team">Equipo:</span> <span class="metric-value" data-i18n="m_team_v">~5 QAs</span></div>
+              <div class="metric-row"><span class="metric-type">Mentoring:</span> <span class="metric-value" data-i18n="m_mentor_v">E2E · Karate · Perf</span></div>
             </div>
           </div>
         </div>
@@ -454,11 +436,11 @@
 
         <div class="exp-compact">
           <div class="exp-compact-head">
-            <div class="ti-role">QA Engineer</div>
+            <div class="ti-role">QA Automation Engineer</div>
             <div class="ti-company">NTT DATA</div>
           </div>
           <div class="ti-dates" data-i18n="exp2_dates">Sep 2023 — Ene 2026 · Quito, Ecuador</div>
-          <div class="exp-compact-desc" data-i18n="exp2_desc">Automatización y pruebas funcionales en proyectos cloud. Diseñé suites E2E con Selenium y Cucumber y pruebas de API con Karate, y reduje los ciclos de pruebas en 35%. Integré las pruebas al CI/CD de Azure DevOps y participé en la planificación basada en riesgos, lo que hizo más predecibles las entregas.</div>
+          <div class="exp-compact-desc" data-i18n="exp2_desc">Consultor QA asignado a Banco Pichincha. Automaticé la validación de cambios regulatorios en tasas de inversiones (3 h → 30 min) y los flujos de apertura de cuentas (30 → 15 min). En el Centro de Excelencia de Calidad capacité a 12 QAs de nuevo ingreso en ISTQB, E2E y Karate, y lideré el onboarding de ~10 QAs.</div>
         </div>
 
         <div class="exp-compact">
@@ -467,16 +449,16 @@
             <div class="ti-company">Bayteq</div>
           </div>
           <div class="ti-dates" data-i18n="exp3_dates">Mar 2023 — Jun 2023 · Quito, Ecuador</div>
-          <div class="exp-compact-desc" data-i18n="exp3_desc">Fundamentos de testing: casos de prueba manuales, ejecución en varios navegadores y reporte de defectos con prácticas ISTQB. Regresión funcional de aplicaciones web con Jira y Postman.</div>
+          <div class="exp-compact-desc" data-i18n="exp3_desc">Pruebas funcionales manuales en web y móvil, y pruebas de API con Postman. Apoyo en el refinamiento de requerimientos y en la definición de escenarios de aceptación.</div>
         </div>
 
         <div class="exp-compact">
           <div class="exp-compact-head">
-            <div class="ti-role">QA Analyst</div>
+            <div class="ti-role">QA Automation Analyst</div>
             <div class="ti-company">Perseject</div>
           </div>
           <div class="ti-dates" data-i18n="exp4_dates">Dic 2022 — Mar 2023 · Quito, Ecuador</div>
-          <div class="exp-compact-desc" data-i18n="exp4_desc">Análisis de requisitos y diseño de estrategias de prueba. Casos y planes de prueba documentados, ejecución funcional y de regresión, y defectos trazados a requisitos.</div>
+          <div class="exp-compact-desc" data-i18n="exp4_desc">Automatización E2E de aplicaciones web con Selenium, Java, Cucumber y Gherkin, pruebas de performance con JMeter y flujos de automatización para generar datos de prueba.</div>
         </div>
 
         <div class="exp-compact">
@@ -484,8 +466,8 @@
             <div class="ti-role" data-i18n="exp5_role">Pasante QA</div>
             <div class="ti-company">Zurich Insurance</div>
           </div>
-          <div class="ti-dates" data-i18n="exp5_dates">Jun 2022 — Dic 2022 · Quito, Ecuador</div>
-          <div class="exp-compact-desc" data-i18n="exp5_desc">Pruebas funcionales y exploratorias de seguros de vida y vehículos: procesos regulatorios y cálculo de primas. Diseño de casos para flujos críticos en sistemas legacy.</div>
+          <div class="ti-dates" data-i18n="exp5_dates">Jul 2022 — Dic 2022 · Quito, Ecuador</div>
+          <div class="exp-compact-desc" data-i18n="exp5_desc">Participé en la construcción de un arquetipo de automatización con Java, Selenium y Cucumber, y validé la consistencia funcional entre navegadores y dispositivos.</div>
         </div>
 
         <div class="exp-compact">
@@ -494,7 +476,7 @@
             <div class="ti-company">Banco Guayaquil</div>
           </div>
           <div class="ti-dates" data-i18n="exp6_dates">Ene 2022 — Jun 2022 · Quito, Ecuador</div>
-          <div class="exp-compact-desc" data-i18n="exp6_desc">Soporte IT y pruebas básicas de sistemas bancarios internos: validación de actualizaciones y documentación de incidencias. Mi primera experiencia en banca.</div>
+          <div class="exp-compact-desc" data-i18n="exp6_desc">Soporte técnico por tickets: instalación de sistemas operativos y aplicativos, y configuración de equipos POS. Mi primera experiencia en banca.</div>
         </div>
 
         <div class="exp-compact">
@@ -503,7 +485,7 @@
             <div class="ti-company">Halliburton</div>
           </div>
           <div class="ti-dates" data-i18n="exp7_dates">Mar 2018 — Ago 2018 · Orellana, Ecuador</div>
-          <div class="exp-compact-desc" data-i18n="exp7_desc">Soporte IT en operaciones de campo de oil & gas: mantenimiento de infraestructura y pruebas básicas de sistemas en entornos de misión crítica.</div>
+          <div class="exp-compact-desc" data-i18n="exp7_desc">Soporte técnico de primer nivel a usuarios locales y remotos, documentación de fallas recurrentes y apoyo en la gestión de red.</div>
         </div>
 
       </div>

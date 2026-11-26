@@ -3,17 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bryan Freire — QA Automation & Performance Engineer</title>
-<meta name="description" content="QA Engineer with 4+ years designing end-to-end quality strategies. Specialized in test automation, E2E testing, API automation, performance testing, and CI/CD integration.">
-<meta name="keywords" content="QA Engineer, Test Automation, Selenium, Karate, k6, Performance Testing, E2E Testing, API Testing, BDD, Cucumber">
+<title>Bryan Freire — QA Automation Engineer · Playwright, API &amp; Performance</title>
+<meta name="description" content="QA Automation Engineer with 4+ years building test automation that runs on every pull request: Playwright, Serenity BDD, Karate, k6 and CI/CD. Case studies with public code and reports.">
+<meta name="keywords" content="QA Automation Engineer, SDET, Playwright, TypeScript, Serenity BDD, Karate, k6, Performance Testing, API Testing, E2E Testing, CI/CD, ISTQB">
 <meta name="author" content="Bryan Freire">
 <meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0B0E14">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://bryanalexfreire.com/">
 
 <!-- Open Graph Tags -->
 <meta property="og:type" content="profile">
-<meta property="og:title" content="Bryan Freire — QA Automation & Performance Engineer">
-<meta property="og:description" content="4+ years crafting end-to-end quality strategies. Specialized in test automation, performance testing, and CI/CD integration.">
+<meta property="og:title" content="Bryan Freire — QA Automation Engineer">
+<meta property="og:description" content="QA Automation Engineer · Playwright, API & Performance. Case studies with public code, reports and results.">
 <meta property="og:url" content="https://bryanalexfreire.com/">
 <meta property="og:site_name" content="Bryan Freire Portfolio">
 <meta property="og:image" content="https://bryanalexfreire.com/assets/img/profile-og.png">
@@ -25,8 +27,8 @@
 
 <!-- Twitter Card Tags -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Bryan Freire — QA Automation & Performance Engineer">
-<meta name="twitter:description" content="4+ years crafting end-to-end quality strategies. Specialized in test automation, performance testing, and CI/CD integration.">
+<meta name="twitter:title" content="Bryan Freire — QA Automation Engineer">
+<meta name="twitter:description" content="QA Automation Engineer · Playwright, API & Performance. Case studies with public code, reports and results.">
 <meta name="twitter:image" content="https://bryanalexfreire.com/assets/img/profile-og.png">
 <meta name="twitter:site" content="@bryanalexfreire">
 
@@ -41,7 +43,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<!-- CSS Modular Bundle -->
+<!-- Styles -->
 <link rel="stylesheet" href="assets/css/variables.css">
 <link rel="stylesheet" href="assets/css/base.css">
 <link rel="stylesheet" href="assets/css/components.css">
@@ -50,8 +52,8 @@
 <link rel="stylesheet" href="assets/css/responsive.css">
 <link rel="stylesheet" href="assets/css/print.css">
 <link rel="stylesheet" href="assets/css/xp-pro.css">
+<link rel="stylesheet" href="assets/css/sections.css">
 
-<!-- JSON-LD Structured Data (Person Schema) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -62,35 +64,34 @@
     "https://www.linkedin.com/in/bryanalexanderfreire/",
     "https://github.com/bryanalexfreire"
   ],
-  "jobTitle": "QA Engineer",
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Banco Pichincha S.A"
-  },
+  "jobTitle": "QA Automation Engineer",
   "email": "bryanalexfreire@gmail.com",
-  "telephone": "+593-984-291-545",
-  "location": {
-    "@type": "Place",
-    "name": "Quito, Ecuador"
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Quito",
+    "addressCountry": "EC"
   },
-  "image": "https://bryanalexfreire.com/assets/img/profile.png",
-  "description": "Software Quality Engineer with 4+ years designing end-to-end quality strategies. Specialized in test automation (E2E, API, Mobile), performance testing, and CI/CD integration.",
+  "description": "QA Automation Engineer with 4+ years building test automation that runs on every pull request: Playwright, Serenity BDD, Karate, k6 and CI/CD. Case studies with public code and reports.",
   "knowsAbout": [
     "QA Automation",
     "Test Automation",
+    "Playwright",
+    "TypeScript",
+    "Serenity BDD",
     "Selenium",
     "Karate",
     "k6",
     "Performance Testing",
-    "E2E Testing",
     "API Testing",
+    "E2E Testing",
+    "Accessibility Testing",
     "BDD",
-    "Cucumber",
     "CI/CD",
-    "DevOps",
+    "GitHub Actions",
+    "Azure DevOps",
     "Java",
-    "JavaScript",
-    "SQL"
+    "Python",
+    "JavaScript"
   ],
   "alumniOf": {
     "@type": "EducationalOrganization",
@@ -99,7 +100,6 @@
 }
 </script>
 
-<!-- JSON-LD Breadcrumb Schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -114,18 +114,24 @@
     {
       "@type": "ListItem",
       "position": 2,
+      "name": "Case studies",
+      "item": "https://bryanalexfreire.com/#cases"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
       "name": "Experience",
       "item": "https://bryanalexfreire.com/#experience"
     },
     {
       "@type": "ListItem",
-      "position": 3,
+      "position": 4,
       "name": "Skills",
       "item": "https://bryanalexfreire.com/#skills"
     },
     {
       "@type": "ListItem",
-      "position": 4,
+      "position": 5,
       "name": "Credentials",
       "item": "https://bryanalexfreire.com/#credentials"
     }
@@ -133,314 +139,210 @@
 }
 </script>
 
+<script src="assets/js/i18n.js" defer></script>
+<script src="assets/js/site.js" defer></script>
 </head>
 <body data-theme="dark" data-lang="es">
+  <a class="skip-link" href="#main" data-i18n="skip_link">Saltar al contenido</a>
 
-  <div id="ticker">
-    <span id="ticker-status" class="file-label" style="margin:0;"><span class="dot">●</span> <span id="ticker-text">suite.run()</span></span>
+  <div id="ticker" aria-hidden="true">
+    <span id="ticker-status" class="file-label"><span class="dot">●</span> <span id="ticker-text">suite.run()</span></span>
     <div id="ticker-track"><div id="ticker-fill"></div></div>
     <span id="ticker-pct">0%</span>
   </div>
 
   <header>
-    <div class="logo">&gt; <span>bryan.freire</span><span style="color:var(--accent)">_</span></div>
-    <nav class="main-nav">
+    <a class="logo" href="#hero" aria-label="Bryan Freire">&gt; <span>bryan.freire</span><span class="logo-cursor">_</span></a>
+    <nav class="main-nav" aria-label="Secciones">
       <a href="#hero" data-i18n="nav_home">Inicio</a>
-      <a href="#archetypes" data-i18n="nav_archetypes">Arquetipos</a>
+      <a href="#cases" data-i18n="nav_cases">Casos</a>
+      <a href="#services" data-i18n="nav_services">Cómo ayudo</a>
       <a href="#experience" data-i18n="nav_experience">Experiencia</a>
-      <a href="#skills" data-i18n="nav_skills">Habilidades</a>
+      <a href="#skills" data-i18n="nav_skills">Stack</a>
       <a href="#credentials" data-i18n="nav_certs">Certificaciones</a>
-      <a href="#credentials" data-i18n="nav_edu">Educación</a>
     </nav>
-    <nav class="controls">
-      <button class="pill-btn" onclick="toggleLang()" id="lang-toggle">EN</button>
-      <button class="pill-btn" onclick="toggleTheme()" id="theme-toggle">☀️ <span data-i18n="light_mode">Claro</span></button>
-      <button class="pill-btn" onclick="downloadCV()" data-i18n="download_cv">↓ <span data-i18n="cv_label">CV</span></button>
-    </nav>
+    <div class="controls">
+      <button type="button" class="pill-btn" id="lang-toggle" title="English">EN</button>
+      <button type="button" class="pill-btn" id="theme-toggle">☀️ <span>Claro</span></button>
+      <a class="pill-btn" id="cv-header" href="cv/CV Bryan Freire.pdf" download>↓ <span data-i18n="cv_label">CV</span></a>
+    </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero" id="hero">
       <div class="hero-main">
-        <div class="eyebrow" data-i18n="eyebrow">QA ENGINEER · BDD/JAVA/PYTHON · CI/CD</div>
-        <h1 data-i18n="hero_title">Bryan Freire construye<br>confianza en el software,<br>un test a la vez.</h1>
-        <p class="subtitle" data-i18n="hero_sub">Ingeniero de Calidad de Software con 4+ años diseñando estrategias de calidad end-to-end: de pasantías en QA a liderar la estrategia de pruebas de equipos multifuncionales. Especializado en automatización BDD, testing funcional, E2E, APIs y performance con SerenityBDD, Cucumber, Karate y k6.</p>
-        <div class="hero-meta" data-i18n="hero_meta">Quito, Ecuador · bryanalexfreire@gmail.com · +593 984 291 545</div>
+        <p class="eyebrow" data-i18n="hero_hello">Hola, soy Bryan Freire</p>
+        <h1 data-i18n="hero_title">QA Automation Engineer<span class="h1-sub">Playwright, API y Performance</span></h1>
+        <p class="subtitle" data-i18n="hero_sub">Construyo suites de automatización que corren en cada pull request y detienen regresiones antes de producción. Más de 4 años en banca, seguros y consultoría.</p>
         <div class="hero-ctas">
-          <a href="#problem-solve" class="btn-primary" data-i18n="explore_impact">Explore Impact →</a>
-          <a href="#archetypes" class="btn-secondary" data-i18n="view_cases">View Cases</a>
+          <a href="#cases" class="btn-primary" data-i18n="cta_cases">Ver casos →</a>
+          <a href="cv/CV Bryan Freire.pdf" class="btn-secondary" id="cv-main" download data-i18n="cta_cv">↓ Descargar CV</a>
+          <a href="cv/CV Bryan Freire EN.pdf" class="cv-alt" id="cv-alt" download data-i18n="cta_cv_alt">English version</a>
         </div>
-        <div class="hero-links">
-          <a href="https://www.linkedin.com/in/bryanalexanderfreire/" target="_blank">LinkedIn</a>
-          <a href="https://github.com/bryanalexfreire" target="_blank">GitHub</a>
+        <div class="hero-foot">
+          <p class="hero-meta" data-i18n="hero_meta">Quito, Ecuador · bryanalexfreire@gmail.com</p>
+          <div class="hero-links">
+            <a href="https://www.linkedin.com/in/bryanalexanderfreire/" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.6 8.65 21 11.2 21 14.5V21h-4v-5.8c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.52-2.25 3.1V21H9z"/></svg> LinkedIn</a>
+            <a href="https://github.com/bryanalexfreire" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg> GitHub</a>
+          </div>
         </div>
       </div>
-      <div class="specialties">
-        <h3 data-i18n="spec_title">Especialidades</h3>
-        <div class="spec-item" data-i18n="spec0">Functional & Manual Testing</div>
-        <div class="spec-item" data-i18n="spec1">QA Automation (E2E, API)</div>
-        <div class="spec-item" data-i18n="spec2">Performance Testing</div>
-        <div class="spec-item" data-i18n="spec3">Quality Engineering</div>
-        <div class="spec-item" data-i18n="spec4">CI/CD & DevOps</div>
-        <div class="spec-item" data-i18n="spec5">Agile & Testing Strategy</div>
+
+      <aside class="pr-card" aria-labelledby="pr-title">
+        <div class="pr-card-head">
+          <span class="pr-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>on: pull_request</span>
+        </div>
+        <h2 class="pr-title" id="pr-title" data-i18n="pr_title">Lo que corre en cada pull request</h2>
+        <ul class="pr-rows">
+          <li><span class="pr-ok" aria-hidden="true">✓</span><span class="pr-job">ui</span><span class="pr-tool">Playwright · Serenity BDD</span></li>
+          <li><span class="pr-ok" aria-hidden="true">✓</span><span class="pr-job">api</span><span class="pr-tool" data-i18n="pr_api">Karate · contratos</span></li>
+          <li><span class="pr-ok" aria-hidden="true">✓</span><span class="pr-job">perf</span><span class="pr-tool" data-i18n="pr_perf">k6 · umbrales p95</span></li>
+          <li><span class="pr-ok" aria-hidden="true">✓</span><span class="pr-job">a11y</span><span class="pr-tool">axe · WCAG 2.1 AA</span></li>
+          <li><span class="pr-ok" aria-hidden="true">✓</span><span class="pr-job">report</span><span class="pr-tool" data-i18n="pr_report">evidencia por paso</span></li>
+        </ul>
+        <div class="pr-foot"><span aria-hidden="true">●</span> <span data-i18n="pr_foot">5 checks · listo para revisión</span></div>
+      </aside>
+    </section>
+
+    <section class="results" aria-labelledby="results-label">
+      <h2 class="results-label" id="results-label" data-i18n="results_label">Resultados en equipos donde trabajé</h2>
+      <div class="results-grid">
+        <div class="result"><div class="result-num">-75%</div><div class="result-label" data-i18n="r1_label">Tiempo de regresión</div><div class="result-detail">E2E 60→20 min · API 60→15 min</div></div>
+        <div class="result"><div class="result-num">+50%</div><div class="result-label" data-i18n="r2_label">Feedback técnico más rápido</div><div class="result-detail">60 min → 30 min</div></div>
+        <div class="result"><div class="result-num">-35%</div><div class="result-label" data-i18n="r3_label">Defectos post-release</div><div class="result-detail" data-i18n="r3_detail">Controles de calidad en CI/CD (Azure DevOps)</div></div>
+        <div class="result"><div class="result-num">+30%</div><div class="result-label" data-i18n="r4_label">Autonomía del equipo</div><div class="result-detail" data-i18n="r4_detail">Equipo de ~5 QAs, ejecución sin bloqueos</div></div>
       </div>
     </section>
 
-    <section style="padding-bottom: 56px;">
-      <div class="stats-table-container">
-        <table class="stats-table">
-          <tbody>
-            <tr>
-              <td class="stat-metric" data-context="Ciclos de Regresión">-75%</td>
-              <td class="stat-metric" data-context="Feedback Técnico">+50%</td>
-              <td class="stat-metric" data-context="Defectos Post-Release">-35%</td>
-              <td class="stat-metric" data-context="Autonomía del Equipo">+30%</td>
-            </tr>
-            <tr>
-              <td class="stat-label" data-i18n="stat_cov">E2E/API EXECUTION</td>
-              <td class="stat-label" data-i18n="stat_fb">FEEDBACK SPEED</td>
-              <td class="stat-label" data-i18n="stat_def">DEFECT PREVENTION</td>
-              <td class="stat-label" data-i18n="stat_prod">TEAM GROWTH</td>
-            </tr>
-            <tr>
-              <td class="stat-desc" data-i18n="stat_cov_desc" data-detail="E2E 60→20 min, API 60→15 min">E2E & API Optimization</td>
-              <td class="stat-desc" data-i18n="stat_fb_desc" data-detail="Real-time Prioritization">Faster Decision Making</td>
-              <td class="stat-desc" data-i18n="stat_def_desc" data-detail="Quality Controls">Post-Release Impact</td>
-              <td class="stat-desc" data-i18n="stat_prod_desc" data-detail="Tool & Process">Team Autonomy</td>
-            </tr>
-          </tbody>
-        </table>
+    <section class="block" id="cases">
+      <div class="file-label">cases.spec.ts</div>
+      <h2 class="section-title" data-i18n="cases_title">Casos</h2>
+      <p class="section-sub" data-i18n="cases_sub">Tres problemas de testing, qué construí para resolverlos y dónde puedes comprobarlo.</p>
+      <div class="case-list">
+        <article class="case" aria-labelledby="case1-title">
+          <div class="case-head">
+            <span class="case-num">01</span>
+            <span class="arch-type e2e">Framework</span>
+          </div>
+          <h3 class="case-title" id="case1-title" data-i18n="case1_title">Framework de automatización Playwright + TypeScript</h3>
+          <div class="case-body">
+            <div class="case-block">
+              <div class="case-label" data-i18n="lbl_problem">Problema</div>
+              <p data-i18n="case1_problem">Un equipo necesita una sola base para pruebas de UI, API, accesibilidad y performance, y un pipeline que falle ante cualquier regresión.</p>
+            </div>
+            <div class="case-block">
+              <div class="case-label" data-i18n="lbl_built">Qué construí</div>
+              <p data-i18n="case1_built">Plantilla con Page Objects, fixtures, pruebas de API sin navegador, axe (WCAG 2.1 AA), scripts k6 con umbrales y trazabilidad a requisitos verificada en CI.</p>
+            </div>
+            <div class="case-block case-result">
+              <div class="case-label" data-i18n="lbl_result">Resultado</div>
+              <p data-i18n="case1_result">El pipeline se detiene ante errores de tipos, lint, pruebas, accesibilidad o trazabilidad, y cada ejecución en <code>main</code> publica su reporte HTML.</p>
+            </div>
+            <div class="case-block">
+              <div class="case-label" data-i18n="lbl_evidence">Evidencia</div>
+              <ul class="case-links">
+              <li><a href="https://github.com/bryanalexfreire/qa-playwright-agents-archetype" target="_blank" rel="noopener"><span data-i18n="ev_repo">Repositorio</span> ↗</a></li>
+              <li><a href="https://bryanalexfreire.github.io/qa-playwright-agents-archetype/" target="_blank" rel="noopener"><span data-i18n="ev_report">Reporte en vivo</span> ↗</a></li>
+              <li><a href="https://github.com/bryanalexfreire/qa-playwright-agents-archetype/actions/workflows/ci.yml" target="_blank" rel="noopener">Pipeline CI ↗</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="case-tools"><span class="tag">Playwright</span><span class="tag">TypeScript</span><span class="tag">axe-core</span><span class="tag">k6</span><span class="tag">GitHub Actions</span></div>
+        </article>
+        <article class="case" aria-labelledby="case2-title">
+          <div class="case-head">
+            <span class="case-num">02</span>
+            <span class="arch-type api">API · Performance</span>
+          </div>
+          <h3 class="case-title" id="case2-title" data-i18n="case2_title">API y carga: Karate + k6</h3>
+          <div class="case-body">
+            <div class="case-block">
+              <div class="case-label" data-i18n="lbl_problem">Problema</div>
+              <p data-i18n="case2_problem">Validar el login y el registro de una API antes de la UI, y saber cómo responde el servicio con carga sostenida.</p>
+            </div>
+            <div class="case-block">
+              <div class="case-label" data-i18n="lbl_built">Qué construí</div>
+              <p data-i18n="case2_built">Suite Karate con escenarios positivos y negativos (usuario inválido, campos vacíos, usuario duplicado) en CI, y una prueba k6 de tasa constante: 20 req/s durante 25 minutos con umbrales de p95 y de tasa de error.</p>
+            </div>
+            <div class="case-block case-result">
+              <div class="case-label" data-i18n="lbl_result">Resultado</div>
+              <p data-i18n="case2_result"><strong>p95 de 338 ms</strong> (umbral: 1500 ms) en 30.000 peticiones. Ninguna respuesta fue 200: lo reporté como hallazgo, con causas probables y próximos pasos, en lugar de entregar un falso verde.</p>
+            </div>
+            <div class="case-block">
+              <div class="case-label" data-i18n="lbl_evidence">Evidencia</div>
+              <ul class="case-links">
+              <li><a href="https://github.com/bryanalexfreire/karate-api-tests" target="_blank" rel="noopener"><span data-i18n="ev_karate">Suite Karate</span> ↗</a></li>
+              <li><a href="https://github.com/bryanalexfreire/k6-login-load-test" target="_blank" rel="noopener"><span data-i18n="ev_k6">Prueba k6</span> ↗</a></li>
+              <li><a href="https://github.com/bryanalexfreire/k6-login-load-test/blob/main/RESULTS.md" target="_blank" rel="noopener"><span data-i18n="ev_k6_results">Análisis de resultados</span> ↗</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="case-tools"><span class="tag">Karate</span><span class="tag">Java</span><span class="tag">Cucumber</span><span class="tag">k6</span><span class="tag">JavaScript</span></div>
+        </article>
+        <article class="case" aria-labelledby="case3-title">
+          <div class="case-head">
+            <span class="case-num">03</span>
+            <span class="arch-type perf">E2E</span>
+          </div>
+          <h3 class="case-title" id="case3-title" data-i18n="case3_title">E2E con evidencia: Serenity Screenplay</h3>
+          <div class="case-body">
+            <div class="case-block">
+              <div class="case-label" data-i18n="lbl_problem">Problema</div>
+              <p data-i18n="case3_problem">Un flujo de compra completo (login, carrito, checkout) debe probarse en varios navegadores y dejar evidencia que cualquiera pueda revisar sin ejecutar nada.</p>
+            </div>
+            <div class="case-block">
+              <div class="case-label" data-i18n="lbl_built">Qué construí</div>
+              <p data-i18n="case3_built">Serenity BDD con Screenplay y Cucumber, datos desde Excel, Chrome, Firefox y Edge, una captura por paso y un reporte publicado por ejecución.</p>
+            </div>
+            <div class="case-block case-result">
+              <div class="case-label" data-i18n="lbl_result">Resultado</div>
+              <p data-i18n="case3_result">Encontré y documenté un defecto real: el recibo muestra el mes anterior. Quedó como bug conocido, así la suite sigue verde y esa prueba falla hasta que se corrija.</p>
+            </div>
+            <div class="case-block">
+              <div class="case-label" data-i18n="lbl_evidence">Evidencia</div>
+              <ul class="case-links">
+              <li><a href="https://github.com/bryanalexfreire/serenity-screenplay-e2e" target="_blank" rel="noopener"><span data-i18n="ev_repo">Repositorio</span> ↗</a></li>
+              <li><a href="https://github.com/bryanalexfreire/serenity-screenplay-e2e/tree/main/reports" target="_blank" rel="noopener"><span data-i18n="ev_reports">Reportes publicados</span> ↗</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="case-tools"><span class="tag">Serenity BDD</span><span class="tag">Screenplay</span><span class="tag">Cucumber</span><span class="tag">Java</span><span class="tag">Excel DDT</span></div>
+        </article>
+      </div>
+      <div class="more-projects">
+        <h3 class="more-title" data-i18n="more_title">Más proyectos</h3>
+        <p><a href="https://github.com/bryanalexfreire/selenium-pytest-piano-e2e" target="_blank" rel="noopener">selenium-pytest-piano-e2e ↗</a> <span data-i18n="more1">Selenium + Pytest con Page Object, datos en JSON y capturas en el reporte HTML.</span></p>
       </div>
     </section>
 
-    <section class="block" id="problem-solve">
-      <div class="file-label">strategy.ts</div>
-      <h2 class="section-title" data-i18n="problem_title">¿Qué Problema Resuelvo?</h2>
-      <div class="section-sub" data-i18n="problem_sub">Pipeline de automatización que transforma el riesgo en velocidad de entrega.</div>
-      
-      <div class="pipeline-container">
-        <svg class="pipeline-diagram" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid meet">
-          <!-- Línea principal horizontal -->
-          <line x1="50" y1="300" x2="950" y2="300" stroke="currentColor" stroke-width="2" opacity="0.3"/>
-          
-          <!-- SOFTWARE DELIVERY (inicio) -->
-          <g class="pipeline-node" data-stage="1">
-            <rect x="20" y="270" width="120" height="60" rx="8" class="node-box"/>
-            <text x="80" y="305" class="node-text">SOFTWARE</text>
-            <text x="80" y="325" class="node-text">DELIVERY</text>
-          </g>
-          <path d="M 150 300 L 180 300" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
-          
-          <!-- RISK -->
-          <g class="pipeline-node" data-stage="2">
-            <circle cx="230" cy="300" r="40" class="node-circle"/>
-            <text x="230" y="310" class="node-text-center">RISK</text>
-          </g>
-          <path d="M 270 300 L 300 300" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
-          
-          <!-- TEST STRATEGY (vertical down) -->
-          <g class="pipeline-node" data-stage="3">
-            <path d="M 350 300 L 350 380" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
-            <rect x="300" y="390" width="100" height="60" rx="8" class="node-box"/>
-            <text x="350" y="420" class="node-text-center">TEST</text>
-            <text x="350" y="440" class="node-text-center">STRATEGY</text>
-          </g>
-          
-          <!-- Three branches (E2E, API, PERFORMANCE) -->
-          <g class="pipeline-node" data-stage="4">
-            <!-- E2E -->
-            <path d="M 280 450 L 250 500" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
-            <rect x="200" y="510" width="80" height="50" rx="8" class="node-box arch-e2e"/>
-            <text x="240" y="540" class="node-text-center">E2E</text>
-            
-            <!-- API -->
-            <path d="M 350 450 L 350 500" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
-            <rect x="310" y="510" width="80" height="50" rx="8" class="node-box arch-api"/>
-            <text x="350" y="540" class="node-text-center">API</text>
-            
-            <!-- PERFORMANCE -->
-            <path d="M 420 450 L 450 500" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
-            <rect x="420" y="510" width="80" height="50" rx="8" class="node-box arch-perf"/>
-            <text x="460" y="540" class="node-text-center">PERF</text>
-          </g>
-          
-          <!-- Convergence lines -->
-          <path d="M 240 560 L 350 590" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
-          <path d="M 350 560 L 350 590" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
-          <path d="M 460 560 L 350 590" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
-          
-          <!-- AUTOMATION -->
-          <g class="pipeline-node" data-stage="5">
-            <circle cx="350" cy="300" r="40" class="node-circle"/>
-            <text x="350" y="310" class="node-text-center">AUTOMATION</text>
-          </g>
-          <path d="M 390 300 L 420 300" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
-          
-          <!-- CI/CD -->
-          <g class="pipeline-node" data-stage="6">
-            <rect x="420" y="270" width="100" height="60" rx="8" class="node-box"/>
-            <text x="470" y="305" class="node-text-center">CI/CD</text>
-          </g>
-          <path d="M 530 300 L 560 300" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
-          
-          <!-- FAST FEEDBACK -->
-          <g class="pipeline-node" data-stage="7">
-            <circle cx="610" cy="300" r="40" class="node-circle"/>
-            <text x="610" y="305" class="node-text-center">FAST</text>
-            <text x="610" y="320" class="node-text-center">FEEDBACK</text>
-          </g>
-          <path d="M 650 300 L 680 300" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
-          
-          <!-- IMPACT (final) -->
-          <g class="pipeline-node" data-stage="8">
-            <rect x="680" y="270" width="100" height="60" rx="8" class="node-box impact"/>
-            <text x="730" y="305" class="node-text-center">IMPACT</text>
-          </g>
-          
-          <!-- Arrow marker definition -->
-          <defs>
-            <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-              <polygon points="0 0, 10 3, 0 6" fill="currentColor" opacity="0.6"/>
-            </marker>
-          </defs>
-        </svg>
+    <section class="block" id="services">
+      <div class="file-label">services.config.ts</div>
+      <h2 class="section-title" data-i18n="services_title">Cómo puedo ayudar a tu equipo</h2>
+      <p class="section-sub" data-i18n="services_sub">Tres formas concretas de aportar desde la primera semana.</p>
+      <div class="svc-grid">
+        <article class="svc">
+          <div class="svc-num">01</div>
+          <h3 class="svc-title" data-i18n="svc1_title">Base de automatización con Playwright y CI</h3>
+          <p class="svc-desc" data-i18n="svc1_desc">Estructura del proyecto, los primeros flujos críticos automatizados, reporte publicado y el pipeline corriendo en cada pull request.</p>
+          <div class="svc-time"><span class="svc-time-label" data-i18n="lbl_time">Tiempo típico</span> <strong data-i18n="svc1_time">≈ 1 semana</strong></div>
+        </article>
+        <article class="svc">
+          <div class="svc-num">02</div>
+          <h3 class="svc-title" data-i18n="svc2_title">Cobertura de API</h3>
+          <p class="svc-desc" data-i18n="svc2_desc">Pruebas de contrato, negativas y de datos para tus endpoints principales con Karate o Playwright, integradas al pipeline.</p>
+          <div class="svc-time"><span class="svc-time-label" data-i18n="lbl_time">Tiempo típico</span> <strong data-i18n="svc2_time">1–2 semanas</strong></div>
+        </article>
+        <article class="svc">
+          <div class="svc-num">03</div>
+          <h3 class="svc-title" data-i18n="svc3_title">Prueba de carga con k6</h3>
+          <p class="svc-desc" data-i18n="svc3_desc">Escenario realista, umbrales acordados (p95, tasa de error) y un informe que explica qué significan los números y qué hacer después.</p>
+          <div class="svc-time"><span class="svc-time-label" data-i18n="lbl_time">Tiempo típico</span> <strong data-i18n="svc3_time">3–5 días</strong></div>
+        </article>
       </div>
-    </section>
-
-    <section class="block" id="archetypes">
-      <div class="file-label">archetypes.spec.ts</div>
-      <h2 class="section-title" data-i18n="arch_title">Arquetipos de Automatización</h2>
-      <div class="section-sub" data-i18n="arch_sub">Enfoques y soluciones implementadas en diferentes tipos de pruebas automatizadas.</div>
-      <div class="arch-grid">
-
-        <div class="arch-card">
-          <span class="arch-type functional">FUNCTIONAL TESTING</span>
-          <div class="arch-title" data-i18n="arch0_title">Functional Testing</div>
-          
-          <div class="arch-section">
-            <div class="arch-label">When</div>
-            <div class="arch-content" data-i18n="arch0_when">Business logic validation requires human insight and exploratory depth.</div>
-          </div>
-
-          <div class="arch-section">
-            <div class="arch-label">I use</div>
-            <div class="arch-tools">
-              <span class="arch-tool">ISTQB Standards</span>
-              <span class="arch-tool">Risk-Based Testing</span>
-              <span class="arch-tool">Jira/X-ray</span>
-            </div>
-          </div>
-
-          <div class="arch-section">
-            <div class="arch-label">To achieve</div>
-            <div class="arch-content" data-i18n="arch0_achieve">Comprehensive requirements coverage, edge case detection, and strategic risk mitigation.</div>
-          </div>
-        </div>
-
-        <div class="arch-card">
-          <span class="arch-type e2e">E2E AUTOMATION</span>
-          <div class="arch-title" data-i18n="arch1_title">E2E Automation</div>
-          
-          <div class="arch-section">
-            <div class="arch-label">When</div>
-            <div class="arch-content" data-i18n="arch1_when">Critical user workflows need regression protection across UI layers and browsers.</div>
-          </div>
-
-          <div class="arch-section">
-            <div class="arch-label">I use</div>
-            <div class="arch-tools">
-              <span class="arch-tool">Screenplay</span>
-              <span class="arch-tool">SerenityBDD</span>
-              <span class="arch-tool">Cucumber · BDD</span>
-            </div>
-          </div>
-
-          <div class="arch-section">
-            <div class="arch-label">To achieve</div>
-            <div class="arch-content" data-i18n="arch1_achieve">Fast feedback on cross-browser compatibility, visual regressions, and end-to-end user satisfaction.</div>
-          </div>
-          
-          <a href="https://github.com/bryanalexfreire/PruebaE2E" target="_blank" class="arch-github-btn">🔗 Ver código</a>
-        </div>
-
-        <div class="arch-card">
-          <span class="arch-type api">API AUTOMATION</span>
-          <div class="arch-title" data-i18n="arch2_title">API Automation</div>
-          
-          <div class="arch-section">
-            <div class="arch-label">When</div>
-            <div class="arch-content" data-i18n="arch2_when">UI tests are too expensive or too slow; business logic validation needs to happen earlier.</div>
-          </div>
-
-          <div class="arch-section">
-            <div class="arch-label">I use</div>
-            <div class="arch-tools">
-              <span class="arch-tool">Karate</span>
-              <span class="arch-tool">REST · Contract Testing</span>
-              <span class="arch-tool">Cucumber</span>
-            </div>
-          </div>
-
-          <div class="arch-section">
-            <div class="arch-label">To achieve</div>
-            <div class="arch-content" data-i18n="arch2_achieve">Earlier feedback on business logic and integrations; reduce bug escape rate before UI testing.</div>
-          </div>
-
-          <a href="https://github.com/bryanalexfreire/PruebaAPI" target="_blank" class="arch-github-btn">🔗 Ver código</a>
-        </div>
-
-        <div class="arch-card">
-          <span class="arch-type perf">PERFORMANCE TESTING</span>
-          <div class="arch-title" data-i18n="arch3_title">Performance Testing</div>
-          
-          <div class="arch-section">
-            <div class="arch-label">When</div>
-            <div class="arch-content" data-i18n="arch3_when">Systems must handle production load; SLAs and user experience are non-negotiable.</div>
-          </div>
-
-          <div class="arch-section">
-            <div class="arch-label">I use</div>
-            <div class="arch-tools">
-              <span class="arch-tool">k6</span>
-              <span class="arch-tool">Load Testing · JavaScript</span>
-              <span class="arch-tool">Grafana Dashboards</span>
-            </div>
-          </div>
-
-          <div class="arch-section">
-            <div class="arch-label">To achieve</div>
-            <div class="arch-content" data-i18n="arch3_achieve">Predictable system behavior under stress; data-driven capacity planning and SLA compliance.</div>
-          </div>
-
-          <a href="https://github.com/bryanalexfreire/k6" target="_blank" class="arch-github-btn">🔗 Ver código</a>
-        </div>
-
-        <div class="arch-card">
-          <span class="arch-type e2e">FRAMEWORK</span>
-          <div class="arch-title" data-i18n="arch4_title">Test Automation Framework</div>
-
-          <div class="arch-section">
-            <div class="arch-label">When</div>
-            <div class="arch-content" data-i18n="arch4_when">A team needs one consistent base for UI, API, accessibility and performance tests, with quality gates in CI.</div>
-          </div>
-
-          <div class="arch-section">
-            <div class="arch-label">I use</div>
-            <div class="arch-tools">
-              <span class="arch-tool">Playwright · TypeScript</span>
-              <span class="arch-tool">Page Object · Fixtures</span>
-              <span class="arch-tool">GitHub Actions · k6 · axe</span>
-            </div>
-          </div>
-
-          <div class="arch-section">
-            <div class="arch-label">To achieve</div>
-            <div class="arch-content" data-i18n="arch4_achieve">Faster onboarding, traceable requirements and a pipeline that fails on lint, tests, accessibility or performance regressions.</div>
-          </div>
-
-          <a href="https://github.com/bryanalexfreire/qa-playwright-agents-archetype" target="_blank" class="arch-github-btn">🔗 Ver código</a>
-        </div>
-
+      <div class="svc-cta">
+        <p data-i18n="services_cta">¿Tu equipo necesita algo de esto? Escríbeme y lo conversamos.</p>
+        <a class="btn-secondary" href="mailto:bryanalexfreire@gmail.com" data-i18n="services_cta_btn">Escribir un correo</a>
       </div>
     </section>
 
@@ -512,7 +414,7 @@
           </div>
         </div>
 
-        <h4 data-i18n="proj_dest_title" style="font-family:var(--font-mono);font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--text-muted);margin-bottom:10px;margin-top:24px;">Proyectos Destacados</h4>
+        <h4 data-i18n="proj_dest_title" class="exp-subsection-title exp-projects-title">Proyectos Destacados</h4>
         <div class="exp-projects">
           <div class="mini-proj"><div class="mp-type">CORE</div><div class="mp-title" data-i18n="mp1">Banking API Automation Suite (Migraciones)</div></div>
           <div class="mini-proj"><div class="mp-type">COMPLIANCE</div><div class="mp-title" data-i18n="mp3">Normativa Inversiones & Retenciones (13 casos certificados)</div></div>
@@ -581,86 +483,41 @@
 
     <section class="block" id="skills">
       <div class="file-label">skills.config.ts</div>
-      <h2 class="section-title" data-i18n="skills_title">Habilidades Técnicas</h2>
+      <h2 class="section-title" data-i18n="skills_title">Stack por capa</h2>
+      <p class="section-sub" data-i18n="skills_sub">Las herramientas marcadas con ↗ tienen un repositorio público donde puedes ver cómo las uso.</p>
       <div class="skills-grid">
-        <div class="skill-cat"><h3 data-i18n="sk_cat1">Automatización</h3><div class="tags"><span class="tag">Selenium</span><span class="tag">SerenityBDD</span><span class="tag">Cucumber</span><span class="tag">Karate</span><span class="tag">Gherkin</span><span class="tag">BDD</span><span class="tag">Behave</span><span class="tag">TestNG</span><span class="tag">Pytest</span></div></div>
-        <div class="skill-cat"><h3 data-i18n="sk_cat2">APIs & Backend</h3><div class="tags"><span class="tag">REST APIs</span><span class="tag">Postman</span><span class="tag">Karate</span><span class="tag">RestAssured</span><span class="tag">Contract Testing</span><span class="tag">Request</span></div></div>
-        <div class="skill-cat"><h3 data-i18n="sk_cat3">Performance</h3><div class="tags"><span class="tag">K6</span><span class="tag">JMeter</span><span class="tag">Dynatrace</span><span class="tag">Load Testing</span></div></div>
-        <div class="skill-cat"><h3 data-i18n="sk_cat4">DevOps & CI/CD</h3><div class="tags"><span class="tag">Git</span><span class="tag">Docker</span><span class="tag">Azure DevOps</span><span class="tag">Maven</span><span class="tag">Gradle</span><span class="tag">SonarCloud</span></div></div>
-        <div class="skill-cat"><h3 data-i18n="sk_cat5">Lenguajes</h3><div class="tags"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">SQL</span><span class="tag">PostgreSQL</span></div></div>
-        <div class="skill-cat"><h3 data-i18n="sk_cat6">Gestión & Calidad</h3><div class="tags"><span class="tag">Scrum/Kanban</span><span class="tag">Jira/X-ray</span><span class="tag">Zephyr</span><span class="tag">Confluence</span><span class="tag">ATDD/TDD/TDM</span><span class="tag">SOLID</span></div></div>
-        <div class="skill-cat"><h3>IA & Herramientas</h3><div class="tags"><span class="tag">GitHub Copilot</span><span class="tag">ChatGPT</span><span class="tag">Claude</span><span class="tag">Stratio</span></div></div>
+        <div class="skill-cat"><h3 data-i18n="sk_ui">UI / E2E</h3><div class="tags"><a class="tag tag-link" href="https://github.com/bryanalexfreire/qa-playwright-agents-archetype" target="_blank" rel="noopener">Playwright ↗</a><a class="tag tag-link" href="https://github.com/bryanalexfreire/serenity-screenplay-e2e" target="_blank" rel="noopener">Serenity BDD · Screenplay ↗</a><a class="tag tag-link" href="https://github.com/bryanalexfreire/selenium-pytest-piano-e2e" target="_blank" rel="noopener">Selenium ↗</a><a class="tag tag-link" href="https://github.com/bryanalexfreire/selenium-pytest-piano-e2e" target="_blank" rel="noopener">Pytest ↗</a><span class="tag">Cucumber · Gherkin</span><span class="tag">TestNG</span><span class="tag">Behave</span><a class="tag tag-link" href="https://github.com/bryanalexfreire/qa-playwright-agents-archetype" target="_blank" rel="noopener">axe-core ↗</a></div></div>
+        <div class="skill-cat"><h3 data-i18n="sk_api">API</h3><div class="tags"><a class="tag tag-link" href="https://github.com/bryanalexfreire/karate-api-tests" target="_blank" rel="noopener">Karate ↗</a><span class="tag">REST APIs</span><span class="tag">Postman</span><span class="tag">RestAssured</span><a class="tag tag-link" href="https://github.com/bryanalexfreire/qa-playwright-agents-archetype" target="_blank" rel="noopener">Contract testing ↗</a></div></div>
+        <div class="skill-cat"><h3 data-i18n="sk_perf">Performance</h3><div class="tags"><a class="tag tag-link" href="https://github.com/bryanalexfreire/k6-login-load-test" target="_blank" rel="noopener">k6 ↗</a><span class="tag">JMeter</span><span class="tag">Grafana</span><span class="tag">Dynatrace</span></div></div>
+        <div class="skill-cat"><h3 data-i18n="sk_ci">CI/CD y DevOps</h3><div class="tags"><a class="tag tag-link" href="https://github.com/bryanalexfreire/qa-playwright-agents-archetype" target="_blank" rel="noopener">GitHub Actions ↗</a><span class="tag">Azure DevOps</span><span class="tag">Git</span><span class="tag">Docker</span><a class="tag tag-link" href="https://github.com/bryanalexfreire/karate-api-tests" target="_blank" rel="noopener">Gradle ↗</a><span class="tag">Maven</span><span class="tag">SonarCloud</span></div></div>
+        <div class="skill-cat"><h3 data-i18n="sk_lang">Lenguajes</h3><div class="tags"><a class="tag tag-link" href="https://github.com/bryanalexfreire/qa-playwright-agents-archetype" target="_blank" rel="noopener">TypeScript ↗</a><a class="tag tag-link" href="https://github.com/bryanalexfreire/serenity-screenplay-e2e" target="_blank" rel="noopener">Java ↗</a><a class="tag tag-link" href="https://github.com/bryanalexfreire/selenium-pytest-piano-e2e" target="_blank" rel="noopener">Python ↗</a><a class="tag tag-link" href="https://github.com/bryanalexfreire/k6-login-load-test" target="_blank" rel="noopener">JavaScript ↗</a><span class="tag">SQL</span><span class="tag">PostgreSQL</span></div></div>
+        <div class="skill-cat"><h3 data-i18n="sk_mgmt">Gestión y calidad</h3><div class="tags"><span class="tag">ISTQB</span><span class="tag">Risk-based testing</span><span class="tag">Jira · Xray</span><span class="tag">Zephyr</span><span class="tag">Confluence</span><span class="tag">Scrum · Kanban</span><span class="tag">ATDD · TDD</span></div></div>
+        <div class="skill-cat"><h3 data-i18n="sk_ai">IA y herramientas</h3><div class="tags"><span class="tag">GitHub Copilot</span><span class="tag">ChatGPT</span><span class="tag">Claude</span><span class="tag">Stratio</span></div></div>
       </div>
     </section>
 
     <section class="block" id="credentials">
       <div class="file-label">credentials.spec.ts</div>
       <h2 class="section-title" data-i18n="cred_title">Credenciales</h2>
-      <div class="section-sub" data-i18n="cred_sub">Formación académica y certificaciones profesionales que respaldan mi experiencia en calidad de software.</div>
-      
-      <div class="cred-subsection">
-        <h3 class="cred-subsection-title" data-i18n="edu_title">Educación Académica</h3>
-        
-        <div class="edu-card">
-          <div>
-            <div class="edu-tag" data-i18n="edu_tag1">Idioma</div>
-            <div class="edu-title">Open House English</div>
-            <div class="edu-sub">Inglés | Quito, Ecuador</div>
-            <div class="edu-dates">Sep 2025 — Presente</div>
-          </div>
-          <div>
-            <div class="edu-tag" data-i18n="edu_tag2">Enfoque</div>
-            <div class="edu-focus-title">Nivel: Intermedio – B1</div>
-            <div class="edu-sub">Formación continua en idioma inglés para mejorar habilidades de comunicación técnica y profesional.</div>
-          </div>
-        </div>
-
-        <div class="edu-card">
-          <div>
-            <div class="edu-tag" data-i18n="edu_tag1">Bootcamp</div>
-            <div class="edu-title">Full Stack Bootcamp</div>
-            <div class="edu-sub">Kruger Instituto Xponencial · Quito, Ecuador</div>
-            <div class="edu-dates">Jul 2024 — Nov 2024</div>
-          </div>
-          <div>
-            <div class="edu-tag" data-i18n="edu_tag2">Enfoque</div>
-            <div class="edu-focus-title">Desarrollo Full Stack</div>
-            <div class="edu-sub">Formación intensiva en tecnologías web modernas, complementando la base de QA Automation.</div>
-          </div>
-        </div>
-
-        <div class="edu-card">
-          <div>
-            <div class="edu-tag" data-i18n="edu_tag1">Título</div>
-            <div class="edu-title" data-i18n="edu_degree">Ingeniería en Sistemas de Información</div>
-            <div class="edu-sub">Universidad Tecnológica Israel · Quito, Ecuador</div>
-            <div class="edu-dates">Oct 2021 — Sep 2024</div>
-          </div>
-          <div>
-            <div class="edu-tag" data-i18n="edu_tag2">Enfoque</div>
-            <div class="edu-focus-title" data-i18n="edu_focus_title">Calidad de Software, QA Automation y DevOps</div>
-            <div class="edu-sub" data-i18n="edu_focus_desc">Aprendizaje continuo en testing funcional, APIs, performance y CI/CD. Actualización profesional permanente.</div>
-          </div>
-        </div>
-      </div>
+      <p class="section-sub" data-i18n="cred_sub">Formación académica y certificaciones profesionales que respaldan mi experiencia en calidad de software.</p>
 
       <div class="cred-subsection">
-        <h3 class="cred-subsection-title" data-i18n="cert_title">Certificaciones Profesionales</h3>
+        <h3 class="cred-subsection-title" data-i18n="cert_title">Certificaciones y cursos</h3>
         <div class="cert-stats">
           <div class="stat"><div class="num">6</div><div class="label" data-i18n="cs1">CERTIFICACIONES</div></div>
           <div class="stat"><div class="num">22</div><div class="label" data-i18n="cs2">CURSOS COMPLETADOS</div></div>
           <div class="stat"><div class="num">180+</div><div class="label" data-i18n="cs3">HORAS DE FORMACIÓN</div></div>
           <div class="stat"><div class="num">2018-25</div><div class="label" data-i18n="cs4">FORMACIÓN CONTINUA</div></div>
         </div>
-        <div class="cert-group-title" data-i18n="cert_destacadas">Certificaciones destacadas</div>
+        <h4 class="cert-group-title" data-i18n="cert_destacadas">Destacadas</h4>
         <div class="cert-grid">
           <div class="cert-card">
             <span class="c-year">2024</span>
             <div class="c-title">ISTQB Foundation Level 4.0</div>
             <div class="c-issuer">ISTQB</div>
             <div class="cert-actions">
-              <button class="cert-btn cert-view" onclick="viewCertificate('ISTQB® Foundation Level 4.0.pdf', event)" title="Visualizar certificado">👁</button>
-              <button class="cert-btn cert-download" onclick="downloadCertificate('ISTQB® Foundation Level 4.0.pdf', event)" title="Descargar certificado">⬇</button>
+              <a class="cert-btn" href="assets/docs/certificados/ISTQB® Foundation Level 4.0.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Ver</a>
+              <a class="cert-btn" href="assets/docs/certificados/ISTQB® Foundation Level 4.0.pdf" download aria-label="PDF: ISTQB Foundation Level 4.0">↓ PDF</a>
             </div>
           </div>
           <div class="cert-card">
@@ -668,17 +525,139 @@
             <div class="c-title">ISTQB CTFL Agile Tester</div>
             <div class="c-issuer">ISTQB</div>
             <div class="cert-actions">
-              <button class="cert-btn cert-view" onclick="viewCertificate('ISTQB® Certified Tester, Foundation Level - Agile Tester (2014).pdf', event)" title="Visualizar certificado">👁</button>
-              <button class="cert-btn cert-download" onclick="downloadCertificate('ISTQB® Certified Tester, Foundation Level - Agile Tester (2014).pdf', event)" title="Descargar certificado">⬇</button>
+              <a class="cert-btn" href="assets/docs/certificados/ISTQB® Certified Tester, Foundation Level - Agile Tester (2014).pdf" target="_blank" rel="noopener" data-i18n="cert_view">Ver</a>
+              <a class="cert-btn" href="assets/docs/certificados/ISTQB® Certified Tester, Foundation Level - Agile Tester (2014).pdf" download aria-label="PDF: ISTQB CTFL Agile Tester">↓ PDF</a>
+            </div>
+          </div>
+          <div class="cert-card">
+            <span class="c-year">2024</span>
+            <div class="c-title">CSM — Certified ScrumMaster</div>
+            <div class="c-issuer">Scrum Alliance</div>
+            <div class="cert-actions">
+              <a class="cert-btn" href="assets/docs/certificados/CSM - SCRUM MASTER.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Ver</a>
+              <a class="cert-btn" href="assets/docs/certificados/CSM - SCRUM MASTER.pdf" download aria-label="PDF: CSM — Certified ScrumMaster">↓ PDF</a>
             </div>
           </div>
           <div class="cert-card">
             <span class="c-year">2025</span>
-            <div class="c-title" data-i18n="cert_k6">K6: Pruebas de rendimiento y carga</div>
+            <div class="c-title">k6: pruebas de performance</div>
             <div class="c-issuer">Udemy</div>
             <div class="cert-actions">
-              <button class="cert-btn cert-view" onclick="viewCertificate('K6 Pruebas de performance para principiantes.pdf', event)" title="Visualizar certificado">👁</button>
-              <button class="cert-btn cert-download" onclick="downloadCertificate('K6 Pruebas de performance para principiantes.pdf', event)" title="Descargar certificado">⬇</button>
+              <a class="cert-btn" href="assets/docs/certificados/K6 Pruebas de performance para principiantes.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Ver</a>
+              <a class="cert-btn" href="assets/docs/certificados/K6 Pruebas de performance para principiantes.pdf" download aria-label="PDF: k6: pruebas de performance">↓ PDF</a>
+            </div>
+          </div>
+          <div class="cert-card">
+            <span class="c-year">2025</span>
+            <div class="c-title">Karate DSL: API Automation and Performance</div>
+            <div class="c-issuer">Udemy</div>
+            <div class="cert-actions">
+              <a class="cert-btn" href="assets/docs/certificados/Karate DSL Api Automation and performance from zero to hero.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Ver</a>
+              <a class="cert-btn" href="assets/docs/certificados/Karate DSL Api Automation and performance from zero to hero.pdf" download aria-label="PDF: Karate DSL: API Automation and Performance">↓ PDF</a>
+            </div>
+          </div>
+          <div class="cert-card">
+            <span class="c-year">2025</span>
+            <div class="c-title">QA Automation con Serenity BDD</div>
+            <div class="c-issuer">Udemy</div>
+            <div class="cert-actions">
+              <a class="cert-btn" href="assets/docs/certificados/Curso de QA Automation con Serenity - De novato a experto!.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Ver</a>
+              <a class="cert-btn" href="assets/docs/certificados/Curso de QA Automation con Serenity - De novato a experto!.pdf" download aria-label="PDF: QA Automation con Serenity BDD">↓ PDF</a>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="toggle-certs no-print" id="cert-toggle-btn" aria-expanded="false" aria-controls="more-certs" data-i18n="cert_toggle">Ver todas las certificaciones y cursos ↓</button>
+        <div id="more-certs">
+          <h4 class="cert-group-title" data-i18n="cert_more_tech">Cloud, DevOps y observabilidad</h4>
+          <div class="cert-grid">
+          <div class="cert-card">
+            <span class="c-year">2025</span>
+            <div class="c-title">Fundamentos de pruebas ágiles</div>
+            <div class="c-issuer">Full Advanced</div>
+            <div class="cert-actions">
+              <a class="cert-btn" href="assets/docs/certificados/Fundamentos de pruebas Agiles.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Ver</a>
+              <a class="cert-btn" href="assets/docs/certificados/Fundamentos de pruebas Agiles.pdf" download aria-label="PDF: Fundamentos de pruebas ágiles">↓ PDF</a>
+            </div>
+          </div>
+          <div class="cert-card">
+            <span class="c-year">2025</span>
+            <div class="c-title">DevOps Foundations: CI and CD</div>
+            <div class="c-issuer">Pluralsight</div>
+            <div class="cert-actions">
+              <a class="cert-btn" href="assets/docs/certificados/DevOps Foundations Continuous Integration and Continuous Delivery.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Ver</a>
+              <a class="cert-btn" href="assets/docs/certificados/DevOps Foundations Continuous Integration and Continuous Delivery.pdf" download aria-label="PDF: DevOps Foundations: CI and CD">↓ PDF</a>
+            </div>
+          </div>
+          <div class="cert-card">
+            <span class="c-year">2025</span>
+            <div class="c-title">Dynatrace Fundamentals</div>
+            <div class="c-issuer">Pluralsight</div>
+            <div class="cert-actions">
+              <a class="cert-btn" href="assets/docs/certificados/Dynatrace Fundamentals.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Ver</a>
+              <a class="cert-btn" href="assets/docs/certificados/Dynatrace Fundamentals.pdf" download aria-label="PDF: Dynatrace Fundamentals">↓ PDF</a>
+            </div>
+          </div>
+          <div class="cert-card">
+            <span class="c-year">2025</span>
+            <div class="c-title">Observability Technologies and Implementation</div>
+            <div class="c-issuer">Pluralsight</div>
+            <div class="cert-actions">
+              <a class="cert-btn" href="assets/docs/certificados/Observability Technologies and implementation.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Ver</a>
+              <a class="cert-btn" href="assets/docs/certificados/Observability Technologies and implementation.pdf" download aria-label="PDF: Observability Technologies and Implementation">↓ PDF</a>
+            </div>
+          </div>
+          <div class="cert-card">
+            <span class="c-year">2025</span>
+            <div class="c-title">Site Reliability Engineering: The Big Picture</div>
+            <div class="c-issuer">Pluralsight</div>
+            <div class="cert-actions">
+              <a class="cert-btn" href="assets/docs/certificados/Site reliability Engineering The big picture.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Ver</a>
+              <a class="cert-btn" href="assets/docs/certificados/Site reliability Engineering The big picture.pdf" download aria-label="PDF: Site Reliability Engineering: The Big Picture">↓ PDF</a>
+            </div>
+          </div>
+          <div class="cert-card">
+            <span class="c-year">2025</span>
+            <div class="c-title">Developing Docker Apps: Core</div>
+            <div class="c-issuer">Pluralsight</div>
+            <div class="cert-actions">
+              <a class="cert-btn" href="assets/docs/certificados/Developing Docker Apps Core.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Ver</a>
+              <a class="cert-btn" href="assets/docs/certificados/Developing Docker Apps Core.pdf" download aria-label="PDF: Developing Docker Apps: Core">↓ PDF</a>
+            </div>
+          </div>
+          <div class="cert-card">
+            <span class="c-year">2025</span>
+            <div class="c-title">Git Fundamentals</div>
+            <div class="c-issuer">Pluralsight</div>
+            <div class="cert-actions">
+              <a class="cert-btn" href="assets/docs/certificados/Git Fundamentals.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Ver</a>
+              <a class="cert-btn" href="assets/docs/certificados/Git Fundamentals.pdf" download aria-label="PDF: Git Fundamentals">↓ PDF</a>
+            </div>
+          </div>
+          <div class="cert-card">
+            <span class="c-year">2025</span>
+            <div class="c-title">DevOps y Cloud con Azure DevOps</div>
+            <div class="c-issuer">Udemy</div>
+            <div class="cert-actions">
+              <a class="cert-btn" href="assets/docs/certificados/Devops y cloud con azure devops, app service pipelines y git.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Ver</a>
+              <a class="cert-btn" href="assets/docs/certificados/Devops y cloud con azure devops, app service pipelines y git.pdf" download aria-label="PDF: DevOps y Cloud con Azure DevOps">↓ PDF</a>
+            </div>
+          </div>
+          <div class="cert-card">
+            <span class="c-year">2025</span>
+            <div class="c-title">DevOps TOTAL: Docker, Kubernetes, Jenkins, AWS</div>
+            <div class="c-issuer">Udemy</div>
+            <div class="cert-actions">
+              <a class="cert-btn" href="assets/docs/certificados/DevOps TOTAL Docker, Kubernetes, Jenkins, AWS, Git &amp; Más!.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Ver</a>
+              <a class="cert-btn" href="assets/docs/certificados/DevOps TOTAL Docker, Kubernetes, Jenkins, AWS, Git &amp; Más!.pdf" download aria-label="PDF: DevOps TOTAL: Docker, Kubernetes, Jenkins, AWS">↓ PDF</a>
+            </div>
+          </div>
+          <div class="cert-card">
+            <span class="c-year">2025</span>
+            <div class="c-title">Ultimate Docker: de cero a despliegues</div>
+            <div class="c-issuer">Udemy</div>
+            <div class="cert-actions">
+              <a class="cert-btn" href="assets/docs/certificados/Ultimate Docker  guía de cero hasta despliegues.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Ver</a>
+              <a class="cert-btn" href="assets/docs/certificados/Ultimate Docker  guía de cero hasta despliegues.pdf" download aria-label="PDF: Ultimate Docker: de cero a despliegues">↓ PDF</a>
             </div>
           </div>
           <div class="cert-card">
@@ -686,497 +665,171 @@
             <div class="c-title">Stratio Generative AI Data Governance</div>
             <div class="c-issuer">StratioBD</div>
             <div class="cert-actions">
-              <button class="cert-btn cert-view" onclick="viewCertificate('Stratio Generative AI Data Governance.pdf', event)" title="Visualizar certificado">👁</button>
-              <button class="cert-btn cert-download" onclick="downloadCertificate('Stratio Generative AI Data Governance.pdf', event)" title="Descargar certificado">⬇</button>
-            </div>
-          </div>
-          <div class="cert-card">
-            <span class="c-year">2024</span>
-            <div class="c-title">CSM — Scrum Master</div>
-            <div class="c-issuer">Scrum Alliance</div>
-            <div class="cert-actions">
-              <button class="cert-btn cert-view" onclick="viewCertificate('CSM - SCRUM MASTER.pdf', event)" title="Visualizar certificado">👁</button>
-              <button class="cert-btn cert-download" onclick="downloadCertificate('CSM - SCRUM MASTER.pdf', event)" title="Descargar certificado">⬇</button>
+              <a class="cert-btn" href="assets/docs/certificados/Stratio Generative AI Data Governance.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Ver</a>
+              <a class="cert-btn" href="assets/docs/certificados/Stratio Generative AI Data Governance.pdf" download aria-label="PDF: Stratio Generative AI Data Governance">↓ PDF</a>
             </div>
           </div>
           <div class="cert-card">
             <span class="c-year">2025</span>
-            <div class="c-title">DevOps Foundations: CI/CD</div>
-            <div class="c-issuer">Pluralsight</div>
+            <div class="c-title">Stratio Generative AI Data Fabric Basics</div>
+            <div class="c-issuer">StratioBD</div>
             <div class="cert-actions">
-              <button class="cert-btn cert-view" onclick="viewCertificate('DevOps Foundations Continuous Integration and Continuous Delivery.pdf', event)" title="Visualizar certificado">👁</button>
-              <button class="cert-btn cert-download" onclick="downloadCertificate('DevOps Foundations Continuous Integration and Continuous Delivery.pdf', event)" title="Descargar certificado">⬇</button>
+              <a class="cert-btn" href="assets/docs/certificados/Stratio Generative AI Data Fabric Basics.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Ver</a>
+              <a class="cert-btn" href="assets/docs/certificados/Stratio Generative AI Data Fabric Basics.pdf" download aria-label="PDF: Stratio Generative AI Data Fabric Basics">↓ PDF</a>
             </div>
+          </div>
+          <div class="cert-card">
+            <span class="c-year">2025</span>
+            <div class="c-title">Stratio Generative AI Data Processing</div>
+            <div class="c-issuer">StratioBD</div>
+            <div class="cert-actions">
+              <a class="cert-btn" href="assets/docs/certificados/Stratio Generative AI Data Procesing.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Ver</a>
+              <a class="cert-btn" href="assets/docs/certificados/Stratio Generative AI Data Procesing.pdf" download aria-label="PDF: Stratio Generative AI Data Processing">↓ PDF</a>
+            </div>
+          </div>
+          <div class="cert-card">
+            <span class="c-year">2025</span>
+            <div class="c-title">Aspectos básicos de GitHub Copilot</div>
+            <div class="c-issuer">Microsoft Learn</div>
+            <div class="cert-actions">
+              <a class="cert-btn" href="assets/docs/certificados/Aspectos básicos de GitHub Copilot (descripción del programador de pares de inteligencia artificial).pdf" target="_blank" rel="noopener" data-i18n="cert_view">Ver</a>
+              <a class="cert-btn" href="assets/docs/certificados/Aspectos básicos de GitHub Copilot (descripción del programador de pares de inteligencia artificial).pdf" download aria-label="PDF: Aspectos básicos de GitHub Copilot">↓ PDF</a>
+            </div>
+          </div>
+          <div class="cert-card">
+            <span class="c-year">2025</span>
+            <div class="c-title">Aceleración del desarrollo con GitHub Copilot</div>
+            <div class="c-issuer">Microsoft Learn</div>
+            <div class="cert-actions">
+              <a class="cert-btn" href="assets/docs/certificados/Aceleración del desarrollo de aplicaciones mediante GitHub Copilot.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Ver</a>
+              <a class="cert-btn" href="assets/docs/certificados/Aceleración del desarrollo de aplicaciones mediante GitHub Copilot.pdf" download aria-label="PDF: Aceleración del desarrollo con GitHub Copilot">↓ PDF</a>
+            </div>
+          </div>
+          <div class="cert-card">
+            <span class="c-year">2025</span>
+            <div class="c-title">Introducción al desarrollo web: HTML y CSS 1-2</div>
+            <div class="c-issuer">Google</div>
+            <div class="cert-actions">
+              <a class="cert-btn" href="assets/docs/certificados/Curso de introducción al desarrollo web HTML y CSS 1-2.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Ver</a>
+              <a class="cert-btn" href="assets/docs/certificados/Curso de introducción al desarrollo web HTML y CSS 1-2.pdf" download aria-label="PDF: Introducción al desarrollo web: HTML y CSS 1-2">↓ PDF</a>
+            </div>
+          </div>
+          <div class="cert-card">
+            <span class="c-year">2025</span>
+            <div class="c-title">Introducción al desarrollo web: HTML y CSS 2-2</div>
+            <div class="c-issuer">Google</div>
+            <div class="cert-actions">
+              <a class="cert-btn" href="assets/docs/certificados/Curso de introducción al desarrollo web HTML y CSS 2-2.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Ver</a>
+              <a class="cert-btn" href="assets/docs/certificados/Curso de introducción al desarrollo web HTML y CSS 2-2.pdf" download aria-label="PDF: Introducción al desarrollo web: HTML y CSS 2-2">↓ PDF</a>
+            </div>
+          </div>
+          </div>
+          <h4 class="cert-group-title" data-i18n="cert_more_soft">Habilidades blandas</h4>
+          <div class="cert-grid">
+          <div class="cert-card">
+            <span class="c-year">2025</span>
+            <div class="c-title">Curso completo en Design Thinking</div>
+            <div class="c-issuer">Udemy</div>
+            <div class="cert-actions">
+              <a class="cert-btn" href="assets/docs/certificados/Curso Completo en Design Thinking.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Ver</a>
+              <a class="cert-btn" href="assets/docs/certificados/Curso Completo en Design Thinking.pdf" download aria-label="PDF: Curso completo en Design Thinking">↓ PDF</a>
+            </div>
+          </div>
+          <div class="cert-card">
+            <span class="c-year">2025</span>
+            <div class="c-title">Liderazgo y gestión de equipos</div>
+            <div class="c-issuer">Udemy</div>
+            <div class="cert-actions">
+              <a class="cert-btn" href="assets/docs/certificados/Liderazgo y Gestión de equipos.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Ver</a>
+              <a class="cert-btn" href="assets/docs/certificados/Liderazgo y Gestión de equipos.pdf" download aria-label="PDF: Liderazgo y gestión de equipos">↓ PDF</a>
+            </div>
+          </div>
+          <div class="cert-card">
+            <span class="c-year">2025</span>
+            <div class="c-title">Decidir y priorizar para lograr tus metas</div>
+            <div class="c-issuer">Udemy</div>
+            <div class="cert-actions">
+              <a class="cert-btn" href="assets/docs/certificados/Decidir y Priorizar- Para lograr tus metas.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Ver</a>
+              <a class="cert-btn" href="assets/docs/certificados/Decidir y Priorizar- Para lograr tus metas.pdf" download aria-label="PDF: Decidir y priorizar para lograr tus metas">↓ PDF</a>
+            </div>
+          </div>
+          <div class="cert-card">
+            <span class="c-year">2025</span>
+            <div class="c-title">Servicio al cliente: cómo manejar clientes difíciles</div>
+            <div class="c-issuer">Udemy</div>
+            <div class="cert-actions">
+              <a class="cert-btn" href="assets/docs/certificados/Servicio al cliente- Como manejar clientes difíciles.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Ver</a>
+              <a class="cert-btn" href="assets/docs/certificados/Servicio al cliente- Como manejar clientes difíciles.pdf" download aria-label="PDF: Servicio al cliente: cómo manejar clientes difíciles">↓ PDF</a>
+            </div>
+          </div>
+          <div class="cert-card">
+            <span class="c-year">2025</span>
+            <div class="c-title">Inteligencia emocional para la atención al cliente</div>
+            <div class="c-issuer">Udemy</div>
+            <div class="cert-actions">
+              <a class="cert-btn" href="assets/docs/certificados/Inteligencia Emocional para la Atención al Cliente.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Ver</a>
+              <a class="cert-btn" href="assets/docs/certificados/Inteligencia Emocional para la Atención al Cliente.pdf" download aria-label="PDF: Inteligencia emocional para la atención al cliente">↓ PDF</a>
+            </div>
+          </div>
           </div>
         </div>
-        <button class="toggle-certs no-print" onclick="toggleCerts()" id="cert-toggle-btn" data-i18n="cert_toggle">Ver todas las certificaciones y cursos ↓</button>
+      </div>
 
-        <div id="more-certs">
-          <div class="cert-group-title" data-i18n="cert_profesionales">Certificaciones adicionales</div>
-          <div class="cert-grid">
-            <div class="cert-card">
-              <span class="c-year">2025</span>
-              <div class="c-title">Stratio Generative AI Data Governance</div>
-              <div class="c-issuer">StratioBD</div>
-              <div class="cert-actions">
-                <button class="cert-btn cert-view" onclick="viewCertificate('Stratio Generative AI Data Governance.pdf', event)" title="Visualizar certificado">👁</button>
-                <button class="cert-btn cert-download" onclick="downloadCertificate('Stratio Generative AI Data Governance.pdf', event)" title="Descargar certificado">⬇</button>
-              </div>
-            </div>
-            <div class="cert-card">
-              <span class="c-year">2025</span>
-              <div class="c-title">Stratio Generative AI Data Fabric Basics</div>
-              <div class="c-issuer">StratioBD</div>
-              <div class="cert-actions">
-                <button class="cert-btn cert-view" onclick="viewCertificate('Stratio Generative AI Data Fabric Basics.pdf', event)" title="Visualizar certificado">👁</button>
-                <button class="cert-btn cert-download" onclick="downloadCertificate('Stratio Generative AI Data Fabric Basics.pdf', event)" title="Descargar certificado">⬇</button>
-              </div>
-            </div>
-            <div class="cert-card">
-              <span class="c-year">2025</span>
-              <div class="c-title">Stratio Generative AI Data Processing</div>
-              <div class="c-issuer">StratioBD</div>
-              <div class="cert-actions">
-                <button class="cert-btn cert-view" onclick="viewCertificate('Stratio Generative AI Data Procesing.pdf', event)" title="Visualizar certificado">👁</button>
-                <button class="cert-btn cert-download" onclick="downloadCertificate('Stratio Generative AI Data Procesing.pdf', event)" title="Descargar certificado">⬇</button>
-              </div>
-            </div>
+      <div class="cred-subsection">
+        <h3 class="cred-subsection-title" data-i18n="edu_title">Educación</h3>
+        <div class="edu-card">
+          <div>
+            <div class="edu-tag" data-i18n="edu_tag_degree">Título</div>
+            <div class="edu-title"><span data-i18n="edu_degree">Ingeniería en Sistemas de Información</span></div>
+            <div class="edu-sub">Universidad Tecnológica Israel · Quito, Ecuador</div>
+            <div class="edu-dates">Oct 2021 — Sep 2024</div>
           </div>
-          <div class="cert-group-title" data-i18n="cert_cursos">Cursos y especializaciones</div>
-          <div class="cert-grid">
-            <div class="cert-card">
-              <span class="c-year">2025</span>
-              <div class="c-title" data-i18n="course1">Curso de QA Automation con Serenity</div>
-              <div class="c-issuer">Udemy</div>
-              <div class="cert-actions">
-                <button class="cert-btn cert-view" onclick="viewCertificate('Curso de QA Automation con Serenity - De novato a experto!.pdf', event)" title="Visualizar certificado">👁</button>
-                <button class="cert-btn cert-download" onclick="downloadCertificate('Curso de QA Automation con Serenity - De novato a experto!.pdf', event)" title="Descargar certificado">⬇</button>
-              </div>
-            </div>
-            <div class="cert-card">
-              <span class="c-year">2025</span>
-              <div class="c-title" data-i18n="course2">Fundamentos de pruebas ágiles</div>
-              <div class="c-issuer">Full Advanced</div>
-              <div class="cert-actions">
-                <button class="cert-btn cert-view" onclick="viewCertificate('Fundamentos de pruebas Agiles.pdf', event)" title="Visualizar certificado">👁</button>
-                <button class="cert-btn cert-download" onclick="downloadCertificate('Fundamentos de pruebas Agiles.pdf', event)" title="Descargar certificado">⬇</button>
-              </div>
-            </div>
-            <div class="cert-card">
-              <span class="c-year">2025</span>
-              <div class="c-title" data-i18n="course3">K6: Pruebas de performance para principiantes</div>
-              <div class="c-issuer">Udemy</div>
-              <div class="cert-actions">
-                <button class="cert-btn cert-view" onclick="viewCertificate('K6 Pruebas de performance para principiantes.pdf', event)" title="Visualizar certificado">👁</button>
-                <button class="cert-btn cert-download" onclick="downloadCertificate('K6 Pruebas de performance para principiantes.pdf', event)" title="Descargar certificado">⬇</button>
-              </div>
-            </div>
-            <div class="cert-card">
-              <span class="c-year">2025</span>
-              <div class="c-title" data-i18n="course4">Karate DSL: API Automation and Performance</div>
-              <div class="c-issuer">Udemy</div>
-              <div class="cert-actions">
-                <button class="cert-btn cert-view" onclick="viewCertificate('Karate DSL Api Automation and performance from zero to hero.pdf', event)" title="Visualizar certificado">👁</button>
-                <button class="cert-btn cert-download" onclick="downloadCertificate('Karate DSL Api Automation and performance from zero to hero.pdf', event)" title="Descargar certificado">⬇</button>
-              </div>
-            </div>
-            <div class="cert-card">
-              <span class="c-year">2025</span>
-              <div class="c-title">Dynatrace Fundamentals</div>
-              <div class="c-issuer">Pluralsight</div>
-              <div class="cert-actions">
-                <button class="cert-btn cert-view" onclick="viewCertificate('Dynatrace Fundamentals.pdf', event)" title="Visualizar certificado">👁</button>
-                <button class="cert-btn cert-download" onclick="downloadCertificate('Dynatrace Fundamentals.pdf', event)" title="Descargar certificado">⬇</button>
-              </div>
-            </div>
-            <div class="cert-card">
-              <span class="c-year">2025</span>
-              <div class="c-title" data-i18n="course6">Observability Technologies and Implementation</div>
-              <div class="c-issuer">Pluralsight</div>
-              <div class="cert-actions">
-                <button class="cert-btn cert-view" onclick="viewCertificate('Observability Technologies and implementation.pdf', event)" title="Visualizar certificado">👁</button>
-                <button class="cert-btn cert-download" onclick="downloadCertificate('Observability Technologies and implementation.pdf', event)" title="Descargar certificado">⬇</button>
-              </div>
-            </div>
-            <div class="cert-card">
-              <span class="c-year">2025</span>
-              <div class="c-title" data-i18n="course7">Site Reliability Engineering: The Big Picture</div>
-              <div class="c-issuer">Pluralsight</div>
-              <div class="cert-actions">
-                <button class="cert-btn cert-view" onclick="viewCertificate('Site reliability Engineering The big picture.pdf', event)" title="Visualizar certificado">👁</button>
-                <button class="cert-btn cert-download" onclick="downloadCertificate('Site reliability Engineering The big picture.pdf', event)" title="Descargar certificado">⬇</button>
-              </div>
-            </div>
-            <div class="cert-card">
-              <span class="c-year">2025</span>
-              <div class="c-title">DevOps Foundations: CI and CD</div>
-              <div class="c-issuer">Pluralsight</div>
-              <div class="cert-actions">
-                <button class="cert-btn cert-view" onclick="viewCertificate('DevOps Foundations Continuous Integration and Continuous Delivery.pdf', event)" title="Visualizar certificado">👁</button>
-                <button class="cert-btn cert-download" onclick="downloadCertificate('DevOps Foundations Continuous Integration and Continuous Delivery.pdf', event)" title="Descargar certificado">⬇</button>
-              </div>
-            </div>
-            <div class="cert-card">
-              <span class="c-year">2025</span>
-              <div class="c-title" data-i18n="course9">Developing Docker Apps: Core</div>
-              <div class="c-issuer">Pluralsight</div>
-              <div class="cert-actions">
-                <button class="cert-btn cert-view" onclick="viewCertificate('Developing Docker Apps Core.pdf', event)" title="Visualizar certificado">👁</button>
-                <button class="cert-btn cert-download" onclick="downloadCertificate('Developing Docker Apps Core.pdf', event)" title="Descargar certificado">⬇</button>
-              </div>
-            </div>
-            <div class="cert-card">
-              <span class="c-year">2025</span>
-              <div class="c-title">Git Fundamentals</div>
-              <div class="c-issuer">Pluralsight</div>
-              <div class="cert-actions">
-                <button class="cert-btn cert-view" onclick="viewCertificate('Git Fundamentals.pdf', event)" title="Visualizar certificado">👁</button>
-                <button class="cert-btn cert-download" onclick="downloadCertificate('Git Fundamentals.pdf', event)" title="Descargar certificado">⬇</button>
-              </div>
-            </div>
-            <div class="cert-card">
-              <span class="c-year">2025</span>
-              <div class="c-title" data-i18n="course11">DevOps y Cloud con Azure DevOps</div>
-              <div class="c-issuer">Udemy</div>
-              <div class="cert-actions">
-                <button class="cert-btn cert-view" onclick="viewCertificate('Devops y cloud con azure devops, app service pipelines y git.pdf', event)" title="Visualizar certificado">👁</button>
-                <button class="cert-btn cert-download" onclick="downloadCertificate('Devops y cloud con azure devops, app service pipelines y git.pdf', event)" title="Descargar certificado">⬇</button>
-              </div>
-            </div>
-            <div class="cert-card">
-              <span class="c-year">2025</span>
-              <div class="c-title">DevOps TOTAL: Docker, Kubernetes, Jenkins, AWS</div>
-              <div class="c-issuer">Udemy</div>
-              <div class="cert-actions">
-                <button class="cert-btn cert-view" onclick="viewCertificate('DevOps TOTAL Docker, Kubernetes, Jenkins, AWS, Git & Más!.pdf', event)" title="Visualizar certificado">👁</button>
-                <button class="cert-btn cert-download" onclick="downloadCertificate('DevOps TOTAL Docker, Kubernetes, Jenkins, AWS, Git & Más!.pdf', event)" title="Descargar certificado">⬇</button>
-              </div>
-            </div>
-            <div class="cert-card">
-              <span class="c-year">2025</span>
-              <div class="c-title" data-i18n="course13">Ultimate Docker: guía de cero hasta despliegues</div>
-              <div class="c-issuer">Udemy</div>
-              <div class="cert-actions">
-                <button class="cert-btn cert-view" onclick="viewCertificate('Ultimate Docker  guía de cero hasta despliegues.pdf', event)" title="Visualizar certificado">👁</button>
-                <button class="cert-btn cert-download" onclick="downloadCertificate('Ultimate Docker  guía de cero hasta despliegues.pdf', event)" title="Descargar certificado">⬇</button>
-              </div>
-            </div>
-            <div class="cert-card">
-              <span class="c-year">2025</span>
-              <div class="c-title" data-i18n="course14">Introducción al desarrollo web: HTML y CSS 1-2</div>
-              <div class="c-issuer">Google</div>
-              <div class="cert-actions">
-                <button class="cert-btn cert-view" onclick="viewCertificate('Curso de introducción al desarrollo web HTML y CSS 1-2.pdf', event)" title="Visualizar certificado">👁</button>
-                <button class="cert-btn cert-download" onclick="downloadCertificate('Curso de introducción al desarrollo web HTML y CSS 1-2.pdf', event)" title="Descargar certificado">⬇</button>
-              </div>
-            </div>
-            <div class="cert-card">
-              <span class="c-year">2025</span>
-              <div class="c-title" data-i18n="course15">Introducción al desarrollo web: HTML y CSS 2-2</div>
-              <div class="c-issuer">Google</div>
-              <div class="cert-actions">
-                <button class="cert-btn cert-view" onclick="viewCertificate('Curso de introducción al desarrollo web HTML y CSS 2-2.pdf', event)" title="Visualizar certificado">👁</button>
-                <button class="cert-btn cert-download" onclick="downloadCertificate('Curso de introducción al desarrollo web HTML y CSS 2-2.pdf', event)" title="Descargar certificado">⬇</button>
-              </div>
-            </div>
-            <div class="cert-card">
-              <span class="c-year">2025</span>
-              <div class="c-title" data-i18n="course16">Aspectos básicos de GitHub Copilot</div>
-              <div class="c-issuer">Microsoft Learn</div>
-              <div class="cert-actions">
-                <button class="cert-btn cert-view" onclick="viewCertificate('Aspectos básicos de GitHub Copilot (descripción del programador de pares de inteligencia artificial).pdf', event)" title="Visualizar certificado">👁</button>
-                <button class="cert-btn cert-download" onclick="downloadCertificate('Aspectos básicos de GitHub Copilot (descripción del programador de pares de inteligencia artificial).pdf', event)" title="Descargar certificado">⬇</button>
-              </div>
-            </div>
-            <div class="cert-card">
-              <span class="c-year">2025</span>
-              <div class="c-title" data-i18n="course17">Aceleración del desarrollo con GitHub Copilot</div>
-              <div class="c-issuer">Microsoft Learn</div>
-              <div class="cert-actions">
-                <button class="cert-btn cert-view" onclick="viewCertificate('Aceleración del desarrollo de aplicaciones mediante GitHub Copilot.pdf', event)" title="Visualizar certificado">👁</button>
-                <button class="cert-btn cert-download" onclick="downloadCertificate('Aceleración del desarrollo de aplicaciones mediante GitHub Copilot.pdf', event)" title="Descargar certificado">⬇</button>
-              </div>
-            </div>
-            <div class="cert-card">
-              <span class="c-year">2025</span>
-              <div class="c-title" data-i18n="course18">Curso completo en Design Thinking</div>
-              <div class="c-issuer">Udemy</div>
-              <div class="cert-actions">
-                <button class="cert-btn cert-view" onclick="viewCertificate('Curso Completo en Design Thinking.pdf', event)" title="Visualizar certificado">👁</button>
-                <button class="cert-btn cert-download" onclick="downloadCertificate('Curso Completo en Design Thinking.pdf', event)" title="Descargar certificado">⬇</button>
-              </div>
-            </div>
-            <div class="cert-card">
-              <span class="c-year">2025</span>
-              <div class="c-title" data-i18n="course19">Liderazgo y gestión de equipos</div>
-              <div class="c-issuer">Udemy</div>
-              <div class="cert-actions">
-                <button class="cert-btn cert-view" onclick="viewCertificate('Liderazgo y Gestión de equipos.pdf', event)" title="Visualizar certificado">👁</button>
-                <button class="cert-btn cert-download" onclick="downloadCertificate('Liderazgo y Gestión de equipos.pdf', event)" title="Descargar certificado">⬇</button>
-              </div>
-            </div>
-            <div class="cert-card">
-              <span class="c-year">2025</span>
-              <div class="c-title" data-i18n="course20">Decidir y priorizar para lograr tus metas</div>
-              <div class="c-issuer">Udemy</div>
-              <div class="cert-actions">
-                <button class="cert-btn cert-view" onclick="viewCertificate('Decidir y Priorizar- Para lograr tus metas.pdf', event)" title="Visualizar certificado">👁</button>
-                <button class="cert-btn cert-download" onclick="downloadCertificate('Decidir y Priorizar- Para lograr tus metas.pdf', event)" title="Descargar certificado">⬇</button>
-              </div>
-            </div>
-            <div class="cert-card">
-              <span class="c-year">2025</span>
-              <div class="c-title" data-i18n="course21">Servicio al cliente: cómo manejar clientes difíciles</div>
-              <div class="c-issuer">Udemy</div>
-              <div class="cert-actions">
-                <button class="cert-btn cert-view" onclick="viewCertificate('Servicio al cliente- Como manejar clientes difíciles.pdf', event)" title="Visualizar certificado">👁</button>
-                <button class="cert-btn cert-download" onclick="downloadCertificate('Servicio al cliente- Como manejar clientes difíciles.pdf', event)" title="Descargar certificado">⬇</button>
-              </div>
-            </div>
-            <div class="cert-card">
-              <span class="c-year">2025</span>
-              <div class="c-title" data-i18n="course22">Inteligencia emocional para la atención al cliente</div>
-              <div class="c-issuer">Udemy</div>
-              <div class="cert-actions">
-                <button class="cert-btn cert-view" onclick="viewCertificate('Inteligencia Emocional para la Atención al Cliente.pdf', event)" title="Visualizar certificado">👁</button>
-                <button class="cert-btn cert-download" onclick="downloadCertificate('Inteligencia Emocional para la Atención al Cliente.pdf', event)" title="Descargar certificado">⬇</button>
-              </div>
-            </div>
+          <div>
+            <div class="edu-tag" data-i18n="edu_tag_focus">Enfoque</div>
+            <div class="edu-focus-title"><span data-i18n="edu_focus_title">Calidad de Software, QA Automation y DevOps</span></div>
+            <div class="edu-sub"><span data-i18n="edu_focus_desc">Aprendizaje continuo en testing funcional, APIs, performance y CI/CD. Actualización profesional permanente.</span></div>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div>
+            <div class="edu-tag" data-i18n="edu_tag_boot">Bootcamp</div>
+            <div class="edu-title">Full Stack Bootcamp</div>
+            <div class="edu-sub">Kruger Instituto Xponencial · Quito, Ecuador</div>
+            <div class="edu-dates">Jul 2024 — Nov 2024</div>
+          </div>
+          <div>
+            <div class="edu-tag" data-i18n="edu_tag_focus">Enfoque</div>
+            <div class="edu-focus-title"><span data-i18n="edu_boot_focus">Desarrollo Full Stack</span></div>
+            <div class="edu-sub"><span data-i18n="edu_boot_desc">Formación intensiva en tecnologías web modernas, complementando la base de QA Automation.</span></div>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div>
+            <div class="edu-tag" data-i18n="edu_tag_lang">Idioma</div>
+            <div class="edu-title">Open House English</div>
+            <div class="edu-sub"><span data-i18n="edu_eng_sub">Inglés · Quito, Ecuador</span></div>
+            <div class="edu-dates"><span data-i18n="edu_eng_dates">Sep 2025 — Presente</span></div>
+          </div>
+          <div>
+            <div class="edu-tag" data-i18n="edu_tag_focus">Enfoque</div>
+            <div class="edu-focus-title"><span data-i18n="edu_eng_level">Nivel: Intermedio – B1</span></div>
+            <div class="edu-sub"><span data-i18n="edu_eng_desc">Formación continua en inglés para mejorar la comunicación técnica y profesional.</span></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Modal de Certificados -->
-    <div id="certModal" class="cert-modal">
-      <div class="cert-modal-content">
-        <button class="cert-modal-close" onclick="closeCertModal()">&times;</button>
-        <div class="cert-modal-body">
-          <iframe id="certFrame" src="" style="width:100%; height:600px; border:none; border-radius:8px;"></iframe>
-        </div>
-        <div class="cert-modal-footer">
-          <p id="certFileName" style="color:var(--text-muted); font-size:12px; margin:0;"></p>
-        </div>
-      </div>
-    </div>
-
     <footer id="contact">
       <h2 data-i18n="contact_title">¿Hablamos sobre cómo puedo aportar a tu equipo?</h2>
-      <p data-i18n="contact_sub">Estoy abierto a nuevas oportunidades y proyectos desafiantes.</p>
+      <p data-i18n="contact_sub">Escríbeme si quieres conversar sobre automatización, APIs o performance.</p>
       <div class="contact-links">
         <a href="mailto:bryanalexfreire@gmail.com">✉ bryanalexfreire@gmail.com</a>
-        <a href="tel:+593984291545">📞 +593 984 291 545</a>
-        <a href="https://www.linkedin.com/in/bryanalexanderfreire/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/bryanalexfreire" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/bryanalexanderfreire/" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.6 8.65 21 11.2 21 14.5V21h-4v-5.8c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.52-2.25 3.1V21H9z"/></svg> LinkedIn</a>
+        <a href="https://github.com/bryanalexfreire" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg> GitHub</a>
       </div>
+      <p class="foot-tested" data-i18n="foot_tested">Este sitio se prueba a sí mismo: Playwright y axe revisan enlaces, idiomas y accesibilidad en cada cambio. <a href="https://github.com/bryanalexfreire/bryanalexfreire.github.io/actions/workflows/site-checks.yml" target="_blank" rel="noopener">Ver pipeline ↗</a></p>
       <div class="foot-note" data-i18n="foot_note">Quito, Ecuador · Bryan Alexander Freire Chamorro</div>
     </footer>
   </main>
-
-<script>
-  const translations = {
-    es: {
-      nav_home:"Inicio", nav_archetypes:"Arquetipos", nav_experience:"Experiencia", nav_skills:"Habilidades", nav_creds:"Credenciales",
-      light_mode:"Claro", dark_mode:"Oscuro", download_cv:"↓ Descargar CV", cv_label:"CV",
-      eyebrow:"QA ENGINEER · FUNCTIONAL & AUTOMATIZACIÓN",
-      hero_title:"Bryan Freire construye confianza en el software, un test a la vez.",
-      hero_sub:"Ingeniero de Calidad de Software con 4+ años diseñando estrategias de calidad end-to-end: desde exploración manual hasta suites de automatización que corren en cada pull request.",
-      hero_meta:"Quito, Ecuador · bryanalexfreire@gmail.com · +593 984 291 545",
-      see_projects:"Ver proyectos", explore_impact:"Explorar Impacto →", view_cases:"Ver Casos",
-      spec_title:"Especialidades", spec0:"Functional & Manual Testing", spec1:"QA Automation (E2E, API)", spec2:"Performance Testing", spec3:"Quality Engineering", spec4:"CI/CD & DevOps", spec5:"Agile & Testing Strategy",
-      hstat1:"COBERTURA FUNCIONAL Y REGRESIÓN", hstat2:"TIEMPO DE FEEDBACK TÉCNICO", hstat3:"DEFECTOS POST-RELEASE", hstat4:"PRODUCTIVIDAD DEL EQUIPO",
-      stat_cov:"COVERAGE", stat_fb:"FEEDBACK", stat_def:"DEFECTS", stat_prod:"PRODUCTIVITY",
-      stat_cov_desc:"Functional + Regression", stat_fb_desc:"60 min → 30 min", stat_def_desc:"Post-release", stat_prod_desc:"Team autonomy",
-      problem_title:"¿Qué Problema Resuelvo?", problem_sub:"Pipeline de automatización que transforma el riesgo en velocidad de entrega.",
-      arch_title:"Arquetipos de Automatización", arch_sub:"Enfoques y soluciones implementadas en diferentes tipos de pruebas automatizadas.",
-      arch0_title:"Functional Testing", arch0_when:"La validación de lógica de negocio requiere comprensión humana y profundidad exploratoria.", arch0_achieve:"Cobertura integral de requisitos, detección de casos extremos y mitigación estratégica de riesgos.",
-      arch1_title:"E2E Automation", arch1_when:"Los flujos críticos necesitan protección contra regresión en múltiples navegadores y capas UI.", arch1_achieve:"Feedback rápido en compatibilidad cross-browser, regresiones visuales y satisfacción del usuario.",
-      arch2_title:"API Automation", arch2_when:"Las pruebas UI son demasiado costosas o lentas; la lógica de negocio debe validarse más temprano.", arch2_achieve:"Feedback temprano en lógica de negocio e integraciones; reducir escape de bugs antes de testing UI.",
-      arch3_title:"Performance Testing", arch3_when:"Los sistemas deben manejar carga de producción; los SLAs y la experiencia del usuario son innegociables.", arch3_achieve:"Comportamiento predecible bajo estrés; planificación de capacidad basada en datos y cumplimiento de SLAs.",
-      arch4_title:"Framework de automatización", arch4_when:"Un equipo necesita una base única para pruebas UI, API, accesibilidad y performance, con controles de calidad en CI.", arch4_achieve:"Onboarding más rápido, requisitos trazables y un pipeline que falla ante regresiones de lint, tests, accesibilidad o performance.",
-      exp_title:"Experiencia Profesional", exp_sub:"Trayectoria en calidad, automatización y performance testing.",
-      exp1_role:"QA Engineer", current_badge:"★ Posición actual", exp1_dates:"Ene 2026 — Presente · Quito, Ecuador",
-      es1:"cobertura funcional y regresión", es2:"defectos post-release", es3:"tiempo de feedback técnico",
-      exp1_about:"Liderazgo QA de productos bancarios (Cuentas, Inversiones, Migraciones Core, Normativa): implementación E2E/APIs/Mobile/Performance que redujeron ciclos de regresión 75%. Optimicé ejecución: E2E 60→20 min, APIs 60→15 min, Mobile 30→15 min. Integré controles CI/CD Azure DevOps disminuyendo defectos post-release 35%. Gestión equipo ~5 QAs con 30 casos → 13 certificados (100% cobertura). Documentación viva y automatización BDD con Cucumber.",
-      exp1_init_title:"Stack & Iniciativas Clave",
-      exp1_e2e:"Framework BDD para automatización UI/APIs/Mobile en flujos bancarios. Contract testing e integración CI/CD. Documentación viva con Cucumber.",
-      exp1_perf:"Load testing en tiempo real, dashboards operacionales. Automatización de informes y extracción de AC → test checklists.",
-      exp1_achievements_title:"Impacto Clave",
-      cred_title:"Credenciales", cred_sub:"Formación académica y certificaciones profesionales que respaldan mi experiencia en calidad de software.",
-      cred_subsection_title:"Formación profesional",
-      exp2_desc:"Automatización y testing funcional en proyectos cloud. Diseño de suites E2E con Selenium/Cucumber. Reduje ciclos testing 35% implementando automatización integración y E2E. Integración CI/CD con Azure DevOps, participación planificación risk-based testing.",
-      exp3_desc:"Fundamentos de testing: casos de prueba manual, ejecución en navegadores y reportes de defectos. Aprendizaje en metodología ISTQB. Participación en regresión funcional de aplicaciones web. Stack: Jira, Postman, navegadores modernos.",
-      exp4_desc:"Análisis de requisitos y diseño de estrategias de testing. Creación de casos de prueba y test plans documentados. Ejecución de pruebas funcionales y regresión. Reportería de defectos con trazabilidad hacia requisitos.",
-      exp5_desc:"Testing funcional y exploratorio en seguros de vida y vehículos. Validación de procesos regulatorios y cálculos de prima. Diseño de casos de prueba para flujos críticos. Experiencia con sistemas legacy.",
-      exp6_desc:"Soporte técnico IT y testing básico en sistemas bancarios internos. Participación en validación de actualizaciones de software. Documentación de incidencias y problemas de sistemas. Introducción a ambientes bancarios.",
-      exp7_desc:"Soporte IT en operaciones oil & gas. Mantenimiento de infraestructura en campo. Testing básico de sistemas y software. Experiencia en ambientes de misión crítica en sector energético.",
-      other_exp:"Otras experiencias", desc_pending:"Descripción pendiente (responsabilidades, logros, stack)",
-      exp2_dates:"Sep 2023 — Ene 2026 · Quito, Ecuador", exp3_dates:"Mar 2023 — Jun 2023 · Quito, Ecuador", exp4_dates:"Dic 2022 — Mar 2023 · Quito, Ecuador",
-      exp5_role:"Pasante QA", exp5_dates:"Jun 2022 — Dic 2022 · Quito, Ecuador", exp6_dates:"Ene 2022 — Jun 2022 · Quito, Ecuador", exp7_dates:"Mar 2018 — Ago 2018 · Orellana, Ecuador",
-      skills_title:"Habilidades Técnicas",
-      sk_cat1:"Automatización", sk_cat2:"APIs & Backend", sk_cat3:"Performance", sk_cat4:"DevOps & CI/CD", sk_cat5:"Lenguajes", sk_cat6:"Gestión & Calidad",
-      cert_title:"Certificaciones", cert_sub:"Certificaciones y cursos que respaldan mi formación continua en calidad de software, automatización, performance y metodologías ágiles.",
-      cs1:"CERTIFICACIONES", cs2:"CURSOS COMPLETADOS", cs3:"HORAS DE FORMACIÓN", cs4:"FORMACIÓN CONTINUA",
-      cert_destacadas:"Certificaciones destacadas", cert_k6:"K6: Pruebas de rendimiento y carga",
-      cert_toggle:"Ver todas las certificaciones y cursos ↓", cert_toggle_less:"Ocultar certificaciones y cursos ↑",
-      cert_profesionales:"Certificaciones profesionales", cert_cursos:"Cursos y especializaciones",
-      course1:"Curso de QA Automation con Serenity", course2:"Fundamentos de pruebas ágiles", course3:"K6: Pruebas de performance para principiantes", course4:"Karate DSL: API Automation and Performance", course6:"Observability Technologies and Implementation", course7:"Site Reliability Engineering: The Big Picture", course9:"Developing Docker Apps: Core", course11:"DevOps y Cloud con Azure DevOps", course13:"Ultimate Docker: guía de cero hasta despliegues", course14:"Introducción al desarrollo web: HTML y CSS 1-2", course15:"Introducción al desarrollo web: HTML y CSS 2-2", course16:"Aspectos básicos de GitHub Copilot", course17:"Aceleración del desarrollo con GitHub Copilot", course18:"Curso completo en Design Thinking", course19:"Liderazgo y gestión de equipos", course20:"Decidir y priorizar para lograr tus metas", course21:"Servicio al cliente: cómo manejar clientes difíciles", course22:"Inteligencia emocional para la atención al cliente",
-      edu_title:"Educación", edu_sub:"Formación académica orientada a ingeniería, calidad y mejora continua.",
-      edu_tag1:"Título", edu_degree:"Ingeniería en Sistemas de Información", edu_tag2:"Enfoque", edu_focus_title:"Calidad de Software, QA Automation y DevOps",
-      edu_focus_desc:"Aprendizaje continuo en testing funcional, APIs, performance y CI/CD. Actualización profesional permanente.",
-      contact_title:"¿Hablamos sobre cómo puedo aportar a tu equipo?", contact_sub:"Estoy abierto a nuevas oportunidades y proyectos desafiantes.",
-      foot_note:"Quito, Ecuador · Bryan Alexander Freire Chamorro",
-      ticker_texts:["suite.run()","ejecutando casos de prueba...","validando regresión...","build estable ✓"]
-    },
-    en: {
-      nav_home:"Home", nav_archetypes:"Archetypes", nav_experience:"Experience", nav_skills:"Skills", nav_creds:"Credentials",
-      light_mode:"Light", dark_mode:"Dark", download_cv:"↓ Download CV", cv_label:"CV",
-      eyebrow:"QA ENGINEER · FUNCTIONAL & AUTOMATION",
-      hero_title:"Bryan Freire builds trust in software, one test at a time.",
-      hero_sub:"Software Quality Engineer with 4+ years designing end-to-end quality strategies: from manual exploration to automation suites that run on every pull request.",
-      hero_meta:"Quito, Ecuador · bryanalexfreire@gmail.com · +593 984 291 545",
-      see_projects:"View projects", explore_impact:"Explore Impact →", view_cases:"View Cases",
-      spec_title:"Specialties", spec0:"Functional & Manual Testing", spec1:"QA Automation (E2E, API)", spec2:"Performance Testing", spec3:"Quality Engineering", spec4:"CI/CD & DevOps", spec5:"Agile & Testing Strategy",
-      hstat1:"FUNCTIONAL & REGRESSION COVERAGE", hstat2:"TECHNICAL FEEDBACK TIME", hstat3:"POST-RELEASE DEFECTS", hstat4:"TEAM PRODUCTIVITY",
-      stat_cov:"COVERAGE", stat_fb:"FEEDBACK", stat_def:"DEFECTS", stat_prod:"PRODUCTIVITY",
-      stat_cov_desc:"Functional + Regression", stat_fb_desc:"60 min → 30 min", stat_def_desc:"Post-release", stat_prod_desc:"Team autonomy",
-      problem_title:"What Problem Do I Solve?", problem_sub:"Automation pipeline that transforms risk into delivery speed.",
-      arch_title:"Automation Archetypes", arch_sub:"Approaches and solutions implemented across different types of automated testing.",
-      arch0_title:"Functional Testing", arch0_when:"Business logic validation requires human insight and exploratory depth.", arch0_achieve:"Comprehensive requirements coverage, edge case detection, and strategic risk mitigation.",
-      arch1_title:"E2E Automation", arch1_when:"Critical user workflows need regression protection across UI layers and browsers.", arch1_achieve:"Fast feedback on cross-browser compatibility, visual regressions, and end-to-end user satisfaction.",
-      arch2_title:"API Automation", arch2_when:"UI tests are too expensive or too slow; business logic validation needs to happen earlier.", arch2_achieve:"Earlier feedback on business logic and integrations; reduce bug escape rate before UI testing.",
-      arch3_title:"Performance Testing", arch3_when:"Systems must handle production load; SLAs and user experience are non-negotiable.", arch3_achieve:"Predictable system behavior under stress; data-driven capacity planning and SLA compliance.",
-      arch4_title:"Test Automation Framework", arch4_when:"A team needs one consistent base for UI, API, accessibility and performance tests, with quality gates in CI.", arch4_achieve:"Faster onboarding, traceable requirements and a pipeline that fails on lint, tests, accessibility or performance regressions.",
-      exp_title:"Professional Experience", exp_sub:"Track record in quality, automation, and performance testing.",
-      exp1_role:"QA Engineer", current_badge:"★ Current position", exp1_dates:"Jan 2026 — Present · Quito, Ecuador",
-      es1:"functional & regression coverage", es2:"post-release defects", es3:"technical feedback time",
-      exp1_about:"QA leadership of banking products (Accounts, Investments, Core Migrations, Regulatory Compliance): E2E/APIs/Mobile/Performance implementation reducing regression cycles 75%. Optimized execution: E2E 60→20 min, APIs 60→15 min, Mobile 30→15 min. Integrated CI/CD Azure DevOps quality controls decreasing post-release defects 35%. Team management ~5 QAs with 30 cases → 13 certified (100% coverage). Living documentation and BDD automation with Cucumber.",
-      exp1_init_title:"Stack & Key Initiatives",
-      exp1_e2e:"BDD framework for UI/APIs/Mobile automation in banking workflows. Contract testing and CI/CD integration. Living documentation with Cucumber.",
-      exp1_perf:"Real-time load testing, operational dashboards. Report automation and AC extraction → test checklists.",
-      exp1_achievements_title:"Key Impact",
-      cred_title:"Credentials", cred_sub:"Academic training and professional certifications supporting my expertise in software quality.",
-      cred_subsection_title:"Professional development",
-      mp1:"Banking API Automation Suite (Migrations)", mp3:"Normativa Inversiones & Retenciones (13 casos certificados)",
-      exp2_desc:"Automation and functional testing in cloud projects. E2E suite design with Selenium/Cucumber. 35% reduction in testing cycles. CI/CD integration with Azure DevOps and risk-based testing strategy. Improved delivery predictability through comprehensive test planning.",
-      exp3_desc:"Testing fundamentals: manual test cases, browser execution, and defect reporting. ISTQB methodology learning. Participation in functional regression testing of web applications. Stack: Jira, Postman, modern browsers.",
-      exp4_desc:"Requirements analysis and testing strategy design. Test case creation and documented test plans. Functional and regression test execution. Defect reporting with requirements traceability.",
-      exp5_desc:"Functional and exploratory testing in life and vehicle insurance. Regulatory process and premium calculation validation. Test case design for critical workflows. Experience with legacy systems.",
-      exp6_desc:"IT technical support and basic testing in internal banking systems. Participation in software update validation. Documentation of system incidents and issues. Introduction to banking environments.",
-      exp7_desc:"IT support in oil & gas operations. Field infrastructure maintenance. Basic system and software testing. Experience in mission-critical environments in the energy sector.",
-      other_exp:"Other experience", desc_pending:"Description pending (responsibilities, achievements, stack)",
-      exp2_dates:"Sep 2023 — Jan 2026 · Quito, Ecuador", exp3_dates:"Mar 2023 — Jun 2023 · Quito, Ecuador", exp4_dates:"Dec 2022 — Mar 2023 · Quito, Ecuador",
-      exp5_role:"QA Intern", exp5_dates:"Jun 2022 — Dec 2022 · Quito, Ecuador", exp6_dates:"Jan 2022 — Jun 2022 · Quito, Ecuador", exp7_dates:"Mar 2018 — Aug 2018 · Orellana, Ecuador",
-      skills_title:"Technical Skills",
-      sk_cat1:"Automation", sk_cat2:"APIs & Backend", sk_cat3:"Performance", sk_cat4:"DevOps & CI/CD", sk_cat5:"Languages", sk_cat6:"Management & Quality",
-      cert_title:"Certifications", cert_sub:"Certifications and courses backing my continuous learning in software quality, automation, performance, and agile methodologies.",
-      cs1:"CERTIFICATIONS", cs2:"COURSES COMPLETED", cs3:"TRAINING HOURS", cs4:"CONTINUOUS LEARNING",
-      cert_destacadas:"Featured certifications", cert_k6:"K6: Load & Performance Testing",
-      cert_toggle:"View all certifications & courses ↓", cert_toggle_less:"Hide certifications & courses ↑",
-      cert_profesionales:"Professional certifications", cert_cursos:"Courses & specializations",
-      course1:"QA Automation Course with Serenity", course2:"Agile Testing Fundamentals", course3:"K6: Performance Testing for Beginners", course4:"Karate DSL: API Automation and Performance", course6:"Observability Technologies and Implementation", course7:"Site Reliability Engineering: The Big Picture", course9:"Developing Docker Apps: Core", course11:"DevOps and Cloud with Azure DevOps", course13:"Ultimate Docker: From Zero to Deployments", course14:"Intro to Web Development: HTML & CSS 1-2", course15:"Intro to Web Development: HTML & CSS 2-2", course16:"GitHub Copilot Fundamentals", course17:"Accelerating Development with GitHub Copilot", course18:"Complete Design Thinking Course", course19:"Team Leadership and Management", course20:"Deciding and Prioritizing to Reach Your Goals", course21:"Customer Service: Handling Difficult Customers", course22:"Emotional Intelligence for Customer Service",
-      edu_title:"Education", edu_sub:"Academic background oriented toward engineering, quality, and continuous improvement.",
-      edu_tag1:"Degree", edu_degree:"Information Systems Engineering", edu_tag2:"Focus", edu_focus_title:"Software Quality, QA Automation & DevOps",
-      edu_focus_desc:"Continuous learning in functional testing, APIs, performance, and CI/CD. Ongoing professional development.",
-      contact_title:"Let's talk about how I can help your team", contact_sub:"Open to new opportunities and challenging projects.",
-      foot_note:"Quito, Ecuador · Bryan Alexander Freire Chamorro",
-      ticker_texts:["suite.run()","running test cases...","validating regression...","build stable ✓"]
-    }
-  };
-
-  let currentLang = 'es';
-  let currentTheme = 'dark';
-  let certsOpen = false;
-
-  function applyLang(lang) {
-    currentLang = lang;
-    document.body.setAttribute('data-lang', lang);
-    document.documentElement.setAttribute('lang', lang);
-    const dict = translations[lang];
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-      const key = el.getAttribute('data-i18n');
-      if (dict[key] !== undefined) el.innerHTML = dict[key];
-    });
-    document.getElementById('lang-toggle').textContent = lang === 'es' ? 'EN' : 'ES';
-    document.getElementById('theme-toggle').innerHTML = currentTheme === 'dark' ? '☀️ ' + dict.light_mode : '🌙 ' + dict.dark_mode;
-    document.getElementById('cert-toggle-btn').textContent = certsOpen ? dict.cert_toggle_less : dict.cert_toggle;
-  }
-  function toggleLang() { applyLang(currentLang === 'es' ? 'en' : 'es'); }
-  function toggleTheme() {
-    currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    document.body.setAttribute('data-theme', currentTheme);
-    const dict = translations[currentLang];
-    document.getElementById('theme-toggle').innerHTML = currentTheme === 'dark' ? '☀️ ' + dict.light_mode : '🌙 ' + dict.dark_mode;
-  }
-  function toggleCerts() {
-    certsOpen = !certsOpen;
-    document.getElementById('more-certs').classList.toggle('show', certsOpen);
-    document.getElementById('cert-toggle-btn').textContent = certsOpen ? translations[currentLang].cert_toggle_less : translations[currentLang].cert_toggle;
-  }
-
-  function downloadCV() {
-    const link = document.createElement('a');
-    const filename = currentLang === 'es' ? 'CV Bryan Freire.pdf' : 'CV Bryan Freire EN.pdf';
-    link.href = 'cv/' + filename;
-    link.download = filename;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }
-
-  function viewCertificate(filename, event) {
-    if (event) event.preventDefault();
-    const modal = document.getElementById('certModal');
-    const frame = document.getElementById('certFrame');
-    const fileNameEl = document.getElementById('certFileName');
-    const filepath = 'assets/docs/certificados/' + filename;
-    
-    frame.src = filepath;
-    fileNameEl.textContent = '📄 ' + filename;
-    modal.classList.add('show');
-  }
-
-  function downloadCertificate(filename, event) {
-    if (event) event.preventDefault();
-    const filepath = 'assets/docs/certificados/' + filename;
-    const link = document.createElement('a');
-    link.href = filepath;
-    link.download = filename;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }
-
-  function closeCertModal() {
-    const modal = document.getElementById('certModal');
-    modal.classList.remove('show');
-    document.getElementById('certFrame').src = '';
-  }
-
-  // Close modal when clicking outside of it
-  window.onclick = function(event) {
-    const modal = document.getElementById('certModal');
-    if (event.target === modal) {
-      closeCertModal();
-    }
-  }
-
-  const fill = document.getElementById('ticker-fill');
-  const pct = document.getElementById('ticker-pct');
-  const tickerText = document.getElementById('ticker-text');
-  function onScroll() {
-    const h = document.documentElement;
-    const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
-    const clamped = Math.max(0, Math.min(100, scrolled || 0));
-    fill.style.width = clamped + '%';
-    pct.textContent = Math.round(clamped) + '%';
-    const texts = translations[currentLang].ticker_texts;
-    const idx = Math.min(texts.length - 1, Math.floor((clamped / 100) * texts.length));
-    tickerText.textContent = clamped >= 99 ? texts[texts.length - 1] : texts[idx];
-  }
-  window.addEventListener('scroll', onScroll);
-  onScroll();
-  applyLang('es');
-</script>
 </body>
 </html>

@@ -1,0 +1,16 @@
+{
+  "name": "bryanalexfreire-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio site checks: links, languages, layout and accessibility.",
+  "scripts": {
+    "serve": "node tests/serve.mjs",
+    "test": "playwright test",
+    "test:report": "playwright show-report"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.1",
+    "@playwright/test": "1.63.0"
+  }
+}

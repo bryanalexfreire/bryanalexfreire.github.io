@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bryanalexfreire.com/sitemap.xml
+Sitemap: https://bryanalexfreire.github.io/sitemap.xml
 
 # Crawl delay for bots
 Crawl-delay: 1
